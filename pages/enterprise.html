@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enterprise — Payment Infrastructure | WorldFirst UK</title>
+  <meta name="description" content="Embed global payment rails into your platform. AI-ready infrastructure, API & SDK access, 67 global licences for banks, fintechs and enterprises.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="../index.html" class="header__logo">
+        <span class="header__logo-icon">W</span>
+        WorldFirst
+      </a>
+
+      <div class="biz-switcher" id="bizSwitcher">
+        <a href="personal.html" class="biz-switcher__tab">Personal</a>
+        <a href="business.html" class="biz-switcher__tab">Business</a>
+        <a href="enterprise.html" class="biz-switcher__tab biz-switcher__tab--active">Enterprise</a>
+      </div>
+
+      <nav class="nav">
+        <ul class="nav__links">
+          <li><a href="#solutions" class="nav__link">Solutions</a></li>
+          <li><a href="#api" class="nav__link">API</a></li>
+          <li><a href="#security" class="nav__link">Security</a></li>
+          <li><a href="#use-cases" class="nav__link">Use Cases</a></li>
+        </ul>
+        <div class="nav__actions">
+          <a href="#" class="btn btn--secondary btn--sm">Documentation</a>
+          <a href="#" class="btn btn--dark btn--sm">Contact sales</a>
+        </div>
+      </nav>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <div class="mobile-nav__switcher">
+      <a href="personal.html">Personal</a>
+      <a href="business.html">Business</a>
+      <a href="enterprise.html" class="active">Enterprise</a>
+    </div>
+    <div class="mobile-nav__links">
+      <a href="#solutions" class="mobile-nav__link">Solutions</a>
+      <a href="#api" class="mobile-nav__link">API</a>
+      <a href="#security" class="mobile-nav__link">Security</a>
+      <a href="#use-cases" class="mobile-nav__link">Use Cases</a>
+    </div>
+    <div class="mobile-nav__cta">
+      <a href="#" class="btn btn--dark">Contact sales</a>
+      <a href="#" class="btn btn--secondary">Documentation</a>
+    </div>
+  </div>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero hero--enterprise">
+    <div class="container">
+      <div class="hero__content">
+        <div class="hero__text">
+          <div class="hero__badge" style="background:var(--wf-enterprise-light);color:var(--wf-enterprise);">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/></svg>
+            Enterprise Platform
+          </div>
+          <h1 class="hero__title">The unified global <span style="color:var(--wf-enterprise);">financial stack</span> for smart enterprises</h1>
+          <p class="hero__subtitle">Embed WorldFirst's payment rails into your platform. Optimised infrastructure across 200+ markets with 67 global licences — so you can scale without regulatory burden.</p>
+          <div class="hero__cta">
+            <a href="#" class="btn btn--dark btn--lg">
+              Contact sales
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
+            </a>
+            <a href="#" class="btn btn--secondary">View documentation</a>
+          </div>
+          <div class="hero__stats">
+            <div>
+              <div class="hero__stat-value">67</div>
+              <div class="hero__stat-label">Global licences</div>
+            </div>
+            <div>
+              <div class="hero__stat-value">200+</div>
+              <div class="hero__stat-label">Markets covered</div>
+            </div>
+            <div>
+              <div class="hero__stat-value">25</div>
+              <div class="hero__stat-label">Instant payout currencies</div>
+            </div>
+          </div>
+        </div>
+        <div class="hero__visual">
+          <div class="hero__card" style="background:var(--wf-navy);color:#fff;">
+            <div class="hero__card-header">
+              <span class="hero__card-title" style="color:rgba(255,255,255,0.6);">API Integration</span>
+              <span style="font-size:0.8125rem;color:var(--wf-green);font-weight:600;">● Connected</span>
+            </div>
+            <div style="background:rgba(255,255,255,0.06);border-radius:var(--radius-md);padding:var(--space-md);margin-bottom:var(--space-md);font-family:monospace;font-size:0.8125rem;line-height:1.8;">
+              <div style="color:rgba(255,255,255,0.4);">// Create multi-currency account</div>
+              <div><span style="color:#C084FC;">const</span> <span style="color:#93C5FD;">account</span> = <span style="color:#C084FC;">await</span> wf.<span style="color:#FCD34D;">createAccount</span>({</div>
+              <div style="padding-left:1em;"><span style="color:#93C5FD;">currency</span>: <span style="color:#86EFAC;">'USD'</span>,</div>
+              <div style="padding-left:1em;"><span style="color:#93C5FD;">type</span>: <span style="color:#86EFAC;">'business'</span>,</div>
+              <div style="padding-left:1em;"><span style="color:#93C5FD;">region</span>: <span style="color:#86EFAC;">'US'</span></div>
+              <div>});</div>
+              <div style="margin-top:var(--space-sm);color:rgba(255,255,255,0.4);">// Initiate instant payout</div>
+              <div><span style="color:#C084FC;">const</span> <span style="color:#93C5FD;">payout</span> = <span style="color:#C084FC;">await</span> wf.<span style="color:#FCD34D;">payout</span>({</div>
+              <div style="padding-left:1em;"><span style="color:#93C5FD;">amount</span>: <span style="color:#FCA5A5;">5000</span>,</div>
+              <div style="padding-left:1em;"><span style="color:#93C5FD;">currency</span>: <span style="color:#86EFAC;">'GBP'</span>,</div>
+              <div style="padding-left:1em;"><span style="color:#93C5FD;">speed</span>: <span style="color:#86EFAC;">'instant'</span></div>
+              <div>});</div>
+            </div>
+            <div style="display:flex;gap:var(--space-sm);">
+              <span style="font-size:0.6875rem;padding:4px 10px;background:rgba(134,239,172,0.15);color:#86EFAC;border-radius:var(--radius-full);font-weight:600;">200 OK</span>
+              <span style="font-size:0.6875rem;padding:4px 10px;background:rgba(147,197,253,0.15);color:#93C5FD;border-radius:var(--radius-full);font-weight:600;">Latency: 120ms</span>
+            </div>
+          </div>
+          <div class="hero__float hero__float--1" style="background:var(--wf-navy);color:#fff;">
+            <div style="display:flex;align-items:center;gap:8px;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>
+              <div>
+                <div style="font-weight:600;font-size:0.8125rem;">99.99% uptime</div>
+                <div style="font-size:0.75rem;opacity:0.6;">Last 90 days</div>
+              </div>
+            </div>
+          </div>
+          <div class="hero__float hero__float--2" style="background:var(--wf-navy);color:#fff;">
+            <div style="display:flex;align-items:center;gap:8px;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C084FC" stroke-width="2.5"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/></svg>
+              <div>
+                <div style="font-weight:600;font-size:0.8125rem;">AI-ready MCP</div>
+                <div style="font-size:0.75rem;opacity:0.6;">Protocol enabled</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TRUST BAR ========== -->
+  <section class="trust-bar">
+    <div class="container">
+      <div class="trust-bar__label">Trusted by banks, fintechs and platforms worldwide</div>
+      <div class="trust-bar__logos">
+        <span class="trust-bar__logo">Banks</span>
+        <span class="trust-bar__logo">Fintechs</span>
+        <span class="trust-bar__logo">Marketplaces</span>
+        <span class="trust-bar__logo">Travel</span>
+        <span class="trust-bar__logo">Education</span>
+        <span class="trust-bar__logo">Workforce</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SOLUTIONS ========== -->
+  <section class="section" id="solutions">
+    <div class="container">
+      <div class="section__header">
+        <div class="section__label" style="color:var(--wf-enterprise);">Solutions</div>
+        <h2 class="section__title">Enterprise-grade payment infrastructure</h2>
+        <p class="section__desc">Choose pre-built widgets for rapid deployment or a full API for complete control. We handle global complexity so you can focus on growth.</p>
+      </div>
+
+      <div class="grid grid--3">
+        <div class="feature-card">
+          <div class="feature-card__icon feature-card__icon--purple">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+          <h4 class="feature-card__title">Instant payouts</h4>
+          <p class="feature-card__desc">Local payment connections enable instant payouts in 25 currencies. Pay sellers, workers, or customers in real-time across their preferred corridors.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-card__icon feature-card__icon--purple">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+          <h4 class="feature-card__title">Multi-currency accounts</h4>
+          <p class="feature-card__desc">Instantly create multi-currency accounts with local bank details for your customers. Manage them through a flexible, workflow-driven API.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-card__icon feature-card__icon--purple">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h4 class="feature-card__title">Regulatory coverage</h4>
+          <p class="feature-card__desc">Operate across 200+ markets leveraging our 67 global licences. Expand internationally without the burden of obtaining your own licences.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-card__icon feature-card__icon--purple">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20m5-15H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H7"/></svg>
+          </div>
+          <h4 class="feature-card__title">FX &amp; treasury</h4>
+          <p class="feature-card__desc">Competitive FX rates for your platform. Offer currency conversion as a feature to your users, or manage your own treasury across multiple currencies.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-card__icon feature-card__icon--purple">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 10h20"/></svg>
+          </div>
+          <h4 class="feature-card__title">Card issuing</h4>
+          <p class="feature-card__desc">Issue virtual and physical Mastercards under your brand. World Card capabilities with zero FX markup, spending limits, and real-time controls.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-card__icon feature-card__icon--purple">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1"/></svg>
+          </div>
+          <h4 class="feature-card__title">Compliance &amp; KYC</h4>
+          <p class="feature-card__desc">Built-in AML, KYC, and sanctions screening. Our compliance infrastructure handles the regulatory complexity across all markets you operate in.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== API SECTION ========== -->
+  <section class="section section--dark" id="api">
+    <div class="container">
+      <div class="section__header">
+        <div class="section__label" style="color:var(--wf-orange);">Developer Experience</div>
+        <h2 class="section__title">Build with our API</h2>
+        <p class="section__desc">Whether you choose pre-built widgets or a full API integration, WorldFirst handles the global complexity.</p>
+      </div>
+
+      <div class="grid grid--3">
+        <div style="background:rgba(255,255,255,0.05);border-radius:var(--radius-lg);padding:var(--space-xl);border:1px solid rgba(255,255,255,0.1);">
+          <div style="width:48px;height:48px;border-radius:var(--radius-md);background:rgba(192,132,252,0.15);display:flex;align-items:center;justify-content:center;margin-bottom:var(--space-lg);">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#C084FC" stroke-width="2"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/></svg>
+          </div>
+          <h4 style="color:#fff;margin-bottom:var(--space-sm);">RESTful API</h4>
+          <p style="color:rgba(255,255,255,0.6);font-size:0.9375rem;line-height:1.65;">Full REST API with comprehensive documentation, SDKs for major languages, and sandbox environments for testing.</p>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.05);border-radius:var(--radius-lg);padding:var(--space-xl);border:1px solid rgba(255,255,255,0.1);">
+          <div style="width:48px;height:48px;border-radius:var(--radius-md);background:rgba(147,197,253,0.15);display:flex;align-items:center;justify-content:center;margin-bottom:var(--space-lg);">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#93C5FD" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+          </div>
+          <h4 style="color:#fff;margin-bottom:var(--space-sm);">Pre-built widgets</h4>
+          <p style="color:rgba(255,255,255,0.6);font-size:0.9375rem;line-height:1.65;">Drop-in UI components for payment flows, account creation, and currency conversion. Go live in days, not months.</p>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.05);border-radius:var(--radius-lg);padding:var(--space-xl);border:1px solid rgba(255,255,255,0.1);">
+          <div style="width:48px;height:48px;border-radius:var(--radius-md);background:rgba(252,211,77,0.15);display:flex;align-items:center;justify-content:center;margin-bottom:var(--space-lg);">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FCD34D" stroke-width="2"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2z"/><path d="M12 16v-4m0-4h.01"/></svg>
+          </div>
+          <h4 style="color:#fff;margin-bottom:var(--space-sm);">Webhooks &amp; events</h4>
+          <p style="color:rgba(255,255,255,0.6);font-size:0.9375rem;line-height:1.65;">Real-time event notifications for payment status, account changes, and compliance updates. Never miss a critical event.</p>
+        </div>
+      </div>
+
+      <div style="text-align:center;margin-top:var(--space-2xl);">
+        <a href="#" class="btn btn--primary btn--lg">
+          Read the docs
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== AI-READY ========== -->
+  <section class="section">
+    <div class="container">
+      <div class="grid grid--2" style="max-width:1000px;margin:0 auto;gap:var(--space-3xl);align-items:center;">
+        <div>
+          <div class="section__label" style="color:var(--wf-enterprise);text-align:left;">AI-Ready Infrastructure</div>
+          <h2 style="margin-bottom:var(--space-lg);">Built for the age of AI</h2>
+          <p style="color:var(--wf-gray-500);font-size:1.1rem;margin-bottom:var(--space-xl);">Enterprise-grade controls to safely connect your internal AI agents with global financial rails. Evolve your systems with our Model Context Protocol (MCP) integration.</p>
+
+          <div style="display:flex;flex-direction:column;gap:var(--space-lg);">
+            <div style="display:flex;align-items:flex-start;gap:var(--space-md);">
+              <div style="width:40px;height:40px;border-radius:var(--radius-md);background:var(--wf-enterprise-light);color:var(--wf-enterprise);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2z"/><path d="M12 8v4l2 2"/></svg>
+              </div>
+              <div>
+                <strong style="color:var(--wf-navy);">MCP integration</strong>
+                <p style="color:var(--wf-gray-500);font-size:0.9375rem;margin:4px 0 0;">Model Context Protocol for enhanced security, integration, and scalability across your AI-powered operations.</p>
+              </div>
+            </div>
+            <div style="display:flex;align-items:flex-start;gap:var(--space-md);">
+              <div style="width:40px;height:40px;border-radius:var(--radius-md);background:var(--wf-enterprise-light);color:var(--wf-enterprise);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <div>
+                <strong style="color:var(--wf-navy);">AI agent controls</strong>
+                <p style="color:var(--wf-gray-500);font-size:0.9375rem;margin:4px 0 0;">Fine-grained permissions and audit trails for AI agents interacting with financial systems. Full visibility and control.</p>
+              </div>
+            </div>
+            <div style="display:flex;align-items:flex-start;gap:var(--space-md);">
+              <div style="width:40px;height:40px;border-radius:var(--radius-md);background:var(--wf-enterprise-light);color:var(--wf-enterprise);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/></svg>
+              </div>
+              <div>
+                <strong style="color:var(--wf-navy);">Intelligent routing</strong>
+                <p style="color:var(--wf-gray-500);font-size:0.9375rem;margin:4px 0 0;">AI-optimised payment routing selects the fastest, cheapest path for every transaction across our global network.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="background:var(--wf-navy);border-radius:var(--radius-xl);padding:var(--space-xl);color:#fff;">
+          <div style="font-family:monospace;font-size:0.8125rem;line-height:2;">
+            <div style="color:rgba(255,255,255,0.4);">// MCP Integration Example</div>
+            <div><span style="color:#C084FC;">import</span> { <span style="color:#93C5FD;">WorldFirstMCP</span> } <span style="color:#C084FC;">from</span></div>
+            <div style="padding-left:1em;"><span style="color:#86EFAC;">'@worldfirst/mcp-sdk'</span>;</div>
+            <br>
+            <div><span style="color:#C084FC;">const</span> <span style="color:#93C5FD;">mcp</span> = <span style="color:#C084FC;">new</span> <span style="color:#FCD34D;">WorldFirstMCP</span>({</div>
+            <div style="padding-left:1em;"><span style="color:#93C5FD;">apiKey</span>: process.env.<span style="color:#FCA5A5;">WF_KEY</span>,</div>
+            <div style="padding-left:1em;"><span style="color:#93C5FD;">environment</span>: <span style="color:#86EFAC;">'production'</span>,</div>
+            <div style="padding-left:1em;"><span style="color:#93C5FD;">aiControls</span>: {</div>
+            <div style="padding-left:2em;"><span style="color:#93C5FD;">maxAmount</span>: <span style="color:#FCA5A5;">50000</span>,</div>
+            <div style="padding-left:2em;"><span style="color:#93C5FD;">requireApproval</span>: <span style="color:#FCA5A5;">true</span>,</div>
+            <div style="padding-left:2em;"><span style="color:#93C5FD;">auditLog</span>: <span style="color:#FCA5A5;">true</span></div>
+            <div style="padding-left:1em;">}</div>
+            <div>});</div>
+            <br>
+            <div style="color:rgba(255,255,255,0.4);">// AI agent can now interact</div>
+            <div style="color:rgba(255,255,255,0.4);">// with financial rails safely</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SECURITY ========== -->
+  <section class="section section--gray" id="security">
+    <div class="container">
+      <div class="section__header">
+        <div class="section__label" style="color:var(--wf-enterprise);">Security &amp; Compliance</div>
+        <h2 class="section__title">Enterprise-grade security you can trust</h2>
+        <p class="section__desc">Built on decades of financial infrastructure experience, backed by Ant International.</p>
+      </div>
+
+      <div class="grid grid--4">
+        <div style="text-align:center;padding:var(--space-xl);">
+          <div style="width:64px;height:64px;border-radius:50%;background:var(--wf-enterprise-light);color:var(--wf-enterprise);display:flex;align-items:center;justify-content:center;margin:0 auto var(--space-md);font-size:1.5rem;">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h4 style="margin-bottom:var(--space-xs);">FCA Regulated</h4>
+          <p style="color:var(--wf-gray-500);font-size:0.875rem;">Authorised by the UK Financial Conduct Authority</p>
+        </div>
+        <div style="text-align:center;padding:var(--space-xl);">
+          <div style="width:64px;height:64px;border-radius:50%;background:var(--wf-enterprise-light);color:var(--wf-enterprise);display:flex;align-items:center;justify-content:center;margin:0 auto var(--space-md);font-size:1.5rem;">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          </div>
+          <h4 style="margin-bottom:var(--space-xs);">PCI DSS</h4>
+          <p style="color:var(--wf-gray-500);font-size:0.875rem;">Highest-level PCI DSS certification for card data security</p>
+        </div>
+        <div style="text-align:center;padding:var(--space-xl);">
+          <div style="width:64px;height:64px;border-radius:50%;background:var(--wf-enterprise-light);color:var(--wf-enterprise);display:flex;align-items:center;justify-content:center;margin:0 auto var(--space-md);font-size:1.5rem;">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12a9 9 0 0 1-9 9m9-9a9 9 0 0 0-9-9m9 9H3m9 9a9 9 0 0 1-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9"/></svg>
+          </div>
+          <h4 style="margin-bottom:var(--space-xs);">67 Licences</h4>
+          <p style="color:var(--wf-gray-500);font-size:0.875rem;">Global regulatory coverage across 200+ markets</p>
+        </div>
+        <div style="text-align:center;padding:var(--space-xl);">
+          <div style="width:64px;height:64px;border-radius:50%;background:var(--wf-enterprise-light);color:var(--wf-enterprise);display:flex;align-items:center;justify-content:center;margin:0 auto var(--space-md);font-size:1.5rem;">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m8 12 3 3 5-5"/></svg>
+          </div>
+          <h4 style="margin-bottom:var(--space-xs);">99.99% Uptime</h4>
+          <p style="color:var(--wf-gray-500);font-size:0.875rem;">Enterprise SLA with 24/7 monitoring and support</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== USE CASES ========== -->
+  <section class="section" id="use-cases">
+    <div class="container">
+      <div class="section__header">
+        <div class="section__label" style="color:var(--wf-enterprise);">Use Cases</div>
+        <h2 class="section__title">Power payments for any platform</h2>
+        <p class="section__desc">WorldFirst Enterprise serves platforms across multiple industries.</p>
+      </div>
+
+      <div class="grid grid--3">
+        <div class="feature-card">
+          <div style="font-size:2rem;margin-bottom:var(--space-md);">🏦</div>
+          <h4 class="feature-card__title">Banks &amp; financial institutions</h4>
+          <p class="feature-card__desc">Offer your customers fast, affordable cross-border payments without building payment infrastructure. White-label or API integration options.</p>
+          <a href="#" class="feature-card__link" style="color:var(--wf-enterprise);">
+            Learn more
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <div class="feature-card">
+          <div style="font-size:2rem;margin-bottom:var(--space-md);">🛍️</div>
+          <h4 class="feature-card__title">Marketplaces &amp; platforms</h4>
+          <p class="feature-card__desc">Pay sellers and merchants globally with instant payouts. Multi-currency accounts and automated splits for marketplace economics.</p>
+          <a href="#" class="feature-card__link" style="color:var(--wf-enterprise);">
+            Learn more
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <div class="feature-card">
+          <div style="font-size:2rem;margin-bottom:var(--space-md);">✈️</div>
+          <h4 class="feature-card__title">Travel &amp; hospitality</h4>
+          <p class="feature-card__desc">Settle with hotels, airlines, and suppliers in local currencies. Reduce FX costs and simplify multi-currency reconciliation.</p>
+          <a href="#" class="feature-card__link" style="color:var(--wf-enterprise);">
+            Learn more
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <div class="feature-card">
+          <div style="font-size:2rem;margin-bottom:var(--space-md);">🎓</div>
+          <h4 class="feature-card__title">Education</h4>
+          <p class="feature-card__desc">Enable tuition payments from international students in their local currencies. Reduce barriers and processing times for global education.</p>
+          <a href="#" class="feature-card__link" style="color:var(--wf-enterprise);">
+            Learn more
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <div class="feature-card">
+          <div style="font-size:2rem;margin-bottom:var(--space-md);">👥</div>
+          <h4 class="feature-card__title">Workforce &amp; HR</h4>
+          <p class="feature-card__desc">Pay remote workers and contractors worldwide in their local currencies. Automate payroll across borders with compliance built in.</p>
+          <a href="#" class="feature-card__link" style="color:var(--wf-enterprise);">
+            Learn more
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <div class="feature-card">
+          <div style="font-size:2rem;margin-bottom:var(--space-md);">💰</div>
+          <h4 class="feature-card__title">Spend management</h4>
+          <p class="feature-card__desc">Issue cards, manage expenses, and control spending across teams and regions. Multi-currency expense management with real-time visibility.</p>
+          <a href="#" class="feature-card__link" style="color:var(--wf-enterprise);">
+            Learn more
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== HOW TO GET STARTED ========== -->
+  <section class="section section--gray">
+    <div class="container">
+      <div class="section__header">
+        <div class="section__label" style="color:var(--wf-enterprise);">Getting Started</div>
+        <h2 class="section__title">From initiation to launch</h2>
+        <p class="section__desc">Proven workflows guide your team through every step of the integration process.</p>
+      </div>
+
+      <div class="steps">
+        <div class="step">
+          <div class="step__number" style="background:var(--wf-enterprise-light);color:var(--wf-enterprise);">1</div>
+          <h4 class="step__title">Consultation</h4>
+          <p class="step__desc">Our enterprise team works with you to understand your payment needs, volumes, and technical requirements. We'll design a tailored solution for your platform.</p>
+        </div>
+        <div class="step">
+          <div class="step__number" style="background:var(--wf-enterprise-light);color:var(--wf-enterprise);">2</div>
+          <h4 class="step__title">Integration</h4>
+          <p class="step__desc">Access sandbox environments, comprehensive documentation, and dedicated technical support. Choose widgets for rapid go-live or API for full customisation.</p>
+        </div>
+        <div class="step">
+          <div class="step__number" style="background:var(--wf-enterprise-light);color:var(--wf-enterprise);">3</div>
+          <h4 class="step__title">Launch &amp; scale</h4>
+          <p class="step__desc">Go live with confidence. Your dedicated account manager provides ongoing support, optimisation, and guidance as you scale across new markets.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== STATS ========== -->
+  <section class="stats-bar">
+    <div class="container">
+      <div class="stats-bar__grid">
+        <div class="stats-bar__item">
+          <div class="stats-bar__number">67</div>
+          <div class="stats-bar__label">Global licences</div>
+        </div>
+        <div class="stats-bar__item">
+          <div class="stats-bar__number">99.99%</div>
+          <div class="stats-bar__label">Uptime SLA</div>
+        </div>
+        <div class="stats-bar__item">
+          <div class="stats-bar__number">120ms</div>
+          <div class="stats-bar__label">Avg. API latency</div>
+        </div>
+        <div class="stats-bar__item">
+          <div class="stats-bar__number">24/7</div>
+          <div class="stats-bar__label">Enterprise support</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA ========== -->
+  <section class="section">
+    <div class="container">
+      <div class="cta-banner" style="background:linear-gradient(135deg,#4C1D95,#7C3AED);">
+        <h2 class="cta-banner__title">Ready to embed global payments?</h2>
+        <p class="cta-banner__desc">Talk to our enterprise team about your payment infrastructure needs. Custom pricing, dedicated support, and tailored solutions.</p>
+        <div class="cta-banner__actions">
+          <a href="#" class="btn btn--lg" style="background:#fff;color:var(--wf-enterprise);border-color:#fff;">
+            Contact sales
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
+          </a>
+          <a href="#" class="btn btn--ghost">View documentation</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FAQ ========== -->
+  <section class="section section--gray">
+    <div class="container">
+      <div class="section__header">
+        <div class="section__label" style="color:var(--wf-enterprise);">FAQ</div>
+        <h2 class="section__title">Enterprise FAQs</h2>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-item__question">
+            What is the WorldFirst Enterprise platform?
+            <svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14m-7-7h14"/></svg>
+          </button>
+          <div class="faq-item__answer">
+            <p>WorldFirst Enterprise provides payment infrastructure that banks, fintechs, and large platforms can embed into their own products. It includes APIs for multi-currency accounts, global payouts, FX, card issuing, and compliance — all backed by our 67 global licences.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__question">
+            How long does integration take?
+            <svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14m-7-7h14"/></svg>
+          </button>
+          <div class="faq-item__answer">
+            <p>With pre-built widgets, you can go live in days. Full API integrations typically take 2-6 weeks depending on complexity. Our dedicated technical team supports you throughout the process with sandbox environments and comprehensive documentation.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__question">
+            What is the MCP integration?
+            <svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14m-7-7h14"/></svg>
+          </button>
+          <div class="faq-item__answer">
+            <p>The Model Context Protocol (MCP) integration allows you to safely connect AI agents with WorldFirst's financial rails. It provides enterprise-grade controls including approval workflows, spending limits, and full audit trails for AI-initiated transactions.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__question">
+            How is enterprise pricing structured?
+            <svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14m-7-7h14"/></svg>
+          </button>
+          <div class="faq-item__answer">
+            <p>Enterprise pricing is custom-tailored based on your volumes, markets, and use case. Contact our sales team for a detailed proposal. We offer competitive rates that scale with your growth, with no hidden fees.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <span class="footer__logo-icon">W</span>
+            WorldFirst
+          </div>
+          <p class="footer__desc">Making global payments simple since 2004. Part of Ant International, serving 240,000+ businesses in 200+ markets worldwide.</p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="LinkedIn">in</a>
+            <a href="#" class="footer__social-link" aria-label="Twitter">𝕏</a>
+            <a href="#" class="footer__social-link" aria-label="Facebook">f</a>
+            <a href="#" class="footer__social-link" aria-label="YouTube">▶</a>
+          </div>
+        </div>
+        <div>
+          <h5 class="footer__column-title">Products</h5>
+          <a href="personal.html" class="footer__link">Personal Account</a>
+          <a href="business.html" class="footer__link">World Account</a>
+          <a href="enterprise.html" class="footer__link">Enterprise API</a>
+          <a href="#" class="footer__link">World Card</a>
+          <a href="#" class="footer__link">FX Risk Management</a>
+          <a href="#" class="footer__link">Collections</a>
+        </div>
+        <div>
+          <h5 class="footer__column-title">Company</h5>
+          <a href="#" class="footer__link">About us</a>
+          <a href="#" class="footer__link">Careers</a>
+          <a href="#" class="footer__link">Press &amp; Media</a>
+          <a href="#" class="footer__link">Blog</a>
+          <a href="#" class="footer__link">Partners</a>
+          <a href="#" class="footer__link">Contact</a>
+        </div>
+        <div>
+          <h5 class="footer__column-title">Resources</h5>
+          <a href="#" class="footer__link">Help centre</a>
+          <a href="#" class="footer__link">API Documentation</a>
+          <a href="#" class="footer__link">Currency converter</a>
+          <a href="#" class="footer__link">Business guides</a>
+          <a href="#" class="footer__link">E-commerce guides</a>
+          <a href="#" class="footer__link">Trustpilot reviews</a>
+        </div>
+        <div>
+          <h5 class="footer__column-title">Legal</h5>
+          <a href="#" class="footer__link">Terms of service</a>
+          <a href="#" class="footer__link">Privacy policy</a>
+          <a href="#" class="footer__link">Cookie policy</a>
+          <a href="#" class="footer__link">Regulatory info</a>
+          <a href="#" class="footer__link">Complaints</a>
+          <a href="#" class="footer__link">Modern slavery</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2024 WorldFirst. All rights reserved. Authorised by the FCA (FRN: 900508)</span>
+        <div class="footer__legal-links">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Cookies</a>
+          <a href="#">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

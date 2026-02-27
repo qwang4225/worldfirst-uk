@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business — World Account | WorldFirst UK</title>
+  <meta name="description" content="The World Account for growing businesses. Collect marketplace earnings, pay suppliers globally, manage FX risk and grow internationally.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="../index.html" class="header__logo">
+        <span class="header__logo-icon">W</span>
+        WorldFirst
+      </a>
+
+      <div class="biz-switcher" id="bizSwitcher">
+        <a href="personal.html" class="biz-switcher__tab">Personal</a>
+        <a href="business.html" class="biz-switcher__tab biz-switcher__tab--active">Business</a>
+        <a href="enterprise.html" class="biz-switcher__tab">Enterprise</a>
+      </div>
+
+      <nav class="nav">
+        <ul class="nav__links">
+          <li><a href="#collect" class="nav__link">Collect</a></li>
+          <li><a href="#pay" class="nav__link">Pay</a></li>
+          <li><a href="#manage" class="nav__link">Manage</a></li>
+          <li><a href="#pricing" class="nav__link">Pricing</a></li>
+        </ul>
+        <div class="nav__actions">
+          <a href="#" class="btn btn--secondary btn--sm">Log in</a>
+          <a href="#" class="btn btn--primary btn--sm">Open account</a>
+        </div>
+      </nav>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <div class="mobile-nav__switcher">
+      <a href="personal.html">Personal</a>
+      <a href="business.html" class="active">Business</a>
+      <a href="enterprise.html">Enterprise</a>
+    </div>
+    <div class="mobile-nav__links">
+      <a href="#collect" class="mobile-nav__link">Collect</a>
+      <a href="#pay" class="mobile-nav__link">Pay</a>
+      <a href="#manage" class="mobile-nav__link">Manage</a>
+      <a href="#pricing" class="mobile-nav__link">Pricing</a>
+    </div>
+    <div class="mobile-nav__cta">
+      <a href="#" class="btn btn--primary">Open business account</a>
+      <a href="#" class="btn btn--secondary">Log in</a>
+    </div>
+  </div>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero hero--business">
+    <div class="container">
+      <div class="hero__content">
+        <div class="hero__text">
+          <div class="hero__badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+            World Account
+          </div>
+          <h1 class="hero__title">Your world of <span class="text-gradient">business</span> in one account</h1>
+          <p class="hero__subtitle">Collect marketplace earnings in 20+ currencies, pay suppliers in 100+ currencies across 210+ countries, and manage FX risk — all from a single account with no setup fees.</p>
+          <div class="hero__cta">
+            <a href="#" class="btn btn--primary btn--lg">
+              Open business account
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
+            </a>
+            <a href="#collect" class="btn btn--secondary">See how it works</a>
+          </div>
+          <div class="hero__stats">
+            <div>
+              <div class="hero__stat-value">240K+</div>
+              <div class="hero__stat-label">Businesses served</div>
+            </div>
+            <div>
+              <div class="hero__stat-value">130+</div>
+              <div class="hero__stat-label">Marketplaces connected</div>
+            </div>
+            <div>
+              <div class="hero__stat-value">£87B+</div>
+              <div class="hero__stat-label">Transferred globally</div>
+            </div>
+          </div>
+        </div>
+        <div class="hero__visual">
+          <div class="hero__card">
+            <div class="hero__card-header">
+              <span class="hero__card-title">Business Dashboard</span>
+              <span style="font-size:0.8125rem;color:var(--wf-green);font-weight:600;">● Live</span>
+            </div>
+            <div style="display:flex;justify-content:space-between;margin-bottom:var(--space-lg);padding:var(--space-md);background:var(--wf-orange-light);border-radius:var(--radius-md);">
+              <div>
+                <div style="font-size:0.75rem;color:var(--wf-gray-500);">Total balance</div>
+                <div style="font-size:1.5rem;font-weight:800;color:var(--wf-navy);">£142,580.35</div>
+              </div>
+              <div style="text-align:right;">
+                <div style="font-size:0.75rem;color:var(--wf-gray-500);">This month</div>
+                <div style="font-size:1rem;font-weight:600;color:var(--wf-green);">+£28,450</div>
+              </div>
+            </div>
+            <div class="currency-row">
+              <div class="currency-row__left">
+                <div class="currency-flag">🇬🇧</div>
+                <div>
+                  <div class="currency-code">GBP</div>
+                  <div class="currency-name">Supplier payments</div>
+                </div>
+              </div>
+              <div class="currency-amount">£45,200</div>
+            </div>
+            <div class="currency-row">
+              <div class="currency-row__left">
+                <div class="currency-flag">🇺🇸</div>
+                <div>
+                  <div class="currency-code">USD</div>
+                  <div class="currency-name">Amazon US earnings</div>
+                </div>
+              </div>
+              <div class="currency-amount currency-amount--positive">$52,840</div>
+            </div>
+            <div class="currency-row">
+              <div class="currency-row__left">
+                <div class="currency-flag">🇪🇺</div>
+                <div>
+                  <div class="currency-code">EUR</div>
+                  <div class="currency-name">Amazon EU earnings</div>
+                </div>
+              </div>
+              <div class="currency-amount currency-amount--positive">€31,200</div>
+            </div>
+            <div class="currency-row">
+              <div class="currency-row__left">
+                <div class="currency-flag">🇯🇵</div>
+                <div>
+                  <div class="currency-code">JPY</div>
+                  <div class="currency-name">Amazon JP earnings</div>
+                </div>
+              </div>
+              <div class="currency-amount currency-amount--positive">¥1,820,000</div>
+            </div>
+          </div>
+          <div class="hero__float hero__float--1">
+            <div style="display:flex;align-items:center;gap:8px;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>
+              <div>
+                <div style="font-weight:600;font-size:0.8125rem;color:var(--wf-navy);">Collection received</div>
+                <div style="font-size:0.75rem;color:var(--wf-gray-500);">$8,420 from Amazon</div>
+              </div>
+            </div>
+          </div>
+          <div class="hero__float hero__float--2">
+            <div style="display:flex;align-items:center;gap:8px;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FF6C2C" stroke-width="2.5"><path d="M22 2 11 13"/><path d="m22 2-7 20-4-9-9-4 20-7z"/></svg>
+              <div>
+                <div style="font-weight:600;font-size:0.8125rem;color:var(--wf-navy);">Batch payment sent</div>
+                <div style="font-size:0.75rem;color:var(--wf-gray-500);">12 suppliers paid</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TRUST BAR ========== -->
+  <section class="trust-bar">
+    <div class="container">
+      <div class="trust-bar__label">Collect from 130+ marketplaces including</div>
+      <div class="trust-bar__logos">
+        <span class="trust-bar__logo">Amazon</span>
+        <span class="trust-bar__logo">eBay</span>
+        <span class="trust-bar__logo">Shopify</span>
+        <span class="trust-bar__logo">Etsy</span>
+        <span class="trust-bar__logo">Wish</span>
+        <span class="trust-bar__logo">Cdiscount</span>
+        <span class="trust-bar__logo">Wayfair</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== COLLECT ========== -->
+  <section class="section" id="collect">
+    <div class="container">
+      <div class="section__header">
+        <div class="section__label">Collect</div>
+        <h2 class="section__title">Collect global revenue in one place</h2>
+        <p class="section__desc">Get paid by international customers and marketplaces. Receive funds in 20+ currencies with local bank details.</p>
+      </div>
+
+      <div class="grid grid--3">
+        <div class="feature-card">
+          <div class="feature-card__icon feature-card__icon--orange">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12a9 9 0 0 1-9 9m9-9a9 9 0 0 0-9-9m9 9H3m9 9a9 9 0 0 1-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9"/></svg>
+          </div>
+          <h4 class="feature-card__title">Marketplace collections</h4>
+          <p class="feature-card__desc">Connect with 130+ marketplaces and online payment providers including Amazon, eBay, Shopify, Etsy, PayPal, and Stripe. Earnings arrive directly in your World Account.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-card__icon feature-card__icon--orange">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+          </div>
+          <h4 class="feature-card__title">Local bank details</h4>
+          <p class="feature-card__desc">Get local receiving accounts in 20+ currencies. Your overseas customers can pay you like a local vendor — faster, cheaper, and with no international fees.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-card__icon feature-card__icon--orange">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20m5-15H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H7"/></svg>
+          </div>
+          <h4 class="feature-card__title">Smart currency conversion</h4>
+          <p class="feature-card__desc">Hold multiple currencies and convert when rates are best for you. Set rate alerts and use firm orders to automatically convert at your target rate.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PAY ========== -->
+  <section class="section section--gray" id="pay">
+    <div class="container">
+      <div class="section__header">
+        <div class="section__label">Pay</div>
+        <h2 class="section__title">Pay suppliers and partners worldwide</h2>
+        <p class="section__desc">Send payments in 100+ currencies to 210+ countries and territories. Most arrive within hours.</p>
+      </div>
+
+      <div class="grid grid--3">
+        <div class="feature-card">
+          <div class="feature-card__icon feature-card__icon--orange">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2 11 13"/><path d="m22 2-7 20-4-9-9-4 20-7z"/></svg>
+          </div>
+          <h4 class="feature-card__title">Fast international payments</h4>
+          <p class="feature-card__desc">Direct local payment connections mean your payments arrive faster — often in hours, not days. Track every payment in real-time.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-card__icon feature-card__icon--orange">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1"/></svg>
+          </div>
+          <h4 class="feature-card__title">Batch payments</h4>
+          <p class="feature-card__desc">Upload a spreadsheet to pay hundreds of suppliers at once. Define payment rules, set approval workflows, and process bulk payments in a single click.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-card__icon feature-card__icon--orange">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 10h20"/></svg>
+          </div>
+          <h4 class="feature-card__title">World Card for business</h4>
+          <p class="feature-card__desc">Issue virtual and physical Mastercard cards to your team. Set spending limits, categorise expenses, and pay from your multi-currency balance with zero FX markup.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== MANAGE ========== -->
+  <section class="section" id="manage">
+    <div class="container">
+      <div class="section__header">
+        <div class="section__label">Manage</div>
+        <h2 class="section__title">Tools to manage and grow globally</h2>
+        <p class="section__desc">Everything you need to control your international finances from one dashboard.</p>
+      </div>
+
+      <div class="grid grid--2" style="max-width:1000px;margin:0 auto;gap:var(--space-2xl);">
+        <div class="feature-card">
+          <div class="feature-card__icon feature-card__icon--orange">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20m5-15H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H7"/></svg>
+          </div>
+          <h4 class="feature-card__title">FX risk management</h4>
+          <p class="feature-card__desc">Protect your margins with forward contracts — lock in today's exchange rate for payments up to 24 months in the future. Use firm orders to auto-convert at your ideal rate.</p>
+          <a href="#" class="feature-card__link">
+            Learn more
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-card__icon feature-card__icon--orange">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h4 class="feature-card__title">Team management</h4>
+          <p class="feature-card__desc">Add team members and customise their access levels. Set payment approval workflows, define spending limits, and keep full control of your business finances.</p>
+          <a href="#" class="feature-card__link">
+            Learn more
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-card__icon feature-card__icon--orange">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/></svg>
+          </div>
+          <h4 class="feature-card__title">Accounting integrations</h4>
+          <p class="feature-card__desc">Connect to Xero, QuickBooks, and Wave. Automatically sync transactions, reconcile payments, and keep your books up to date without manual data entry.</p>
+          <a href="#" class="feature-card__link">
+            Learn more
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-card__icon feature-card__icon--orange">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h4 class="feature-card__title">Security &amp; compliance</h4>
+          <p class="feature-card__desc">FCA regulated with 67 global licences. PCI DSS certified, 3DS transaction verification, 24/7 fraud monitoring, and funds safeguarded at tier-1 banks.</p>
+          <a href="#" class="feature-card__link">
+            Learn more
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== STATS ========== -->
+  <section class="stats-bar">
+    <div class="container">
+      <div class="stats-bar__grid">
+        <div class="stats-bar__item">
+          <div class="stats-bar__number">210+</div>
+          <div class="stats-bar__label">Countries &amp; territories</div>
+        </div>
+        <div class="stats-bar__item">
+          <div class="stats-bar__number">100+</div>
+          <div class="stats-bar__label">Payment currencies</div>
+        </div>
+        <div class="stats-bar__item">
+          <div class="stats-bar__number">130+</div>
+          <div class="stats-bar__label">Marketplace connections</div>
+        </div>
+        <div class="stats-bar__item">
+          <div class="stats-bar__number">24mo</div>
+          <div class="stats-bar__label">Forward contract duration</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PRICING ========== -->
+  <section class="section section--gray" id="pricing">
+    <div class="container">
+      <div class="section__header">
+        <div class="section__label">Pricing</div>
+        <h2 class="section__title">Transparent pricing that scales with you</h2>
+        <p class="section__desc">No setup fees, no monthly fees. Save more as your volume grows with tiered pricing.</p>
+      </div>
+
+      <div class="pricing-grid" style="max-width:800px;margin:0 auto;grid-template-columns:repeat(2,1fr);">
+        <div class="pricing-card">
+          <div class="pricing-card__name">Essentials</div>
+          <div class="pricing-card__price">Free <span>/ month</span></div>
+          <p class="pricing-card__desc">For businesses getting started with international payments.</p>
+          <div class="pricing-card__features">
+            <div class="pricing-card__feature">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>
+              Multi-currency World Account
+            </div>
+            <div class="pricing-card__feature">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>
+              Send to 210+ countries
+            </div>
+            <div class="pricing-card__feature">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>
+              Marketplace collections
+            </div>
+            <div class="pricing-card__feature">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>
+              Competitive exchange rates
+            </div>
+            <div class="pricing-card__feature">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>
+              World Card (virtual &amp; physical)
+            </div>
+          </div>
+          <a href="#" class="btn btn--secondary" style="width:100%;">Get started free</a>
+        </div>
+
+        <div class="pricing-card pricing-card--featured">
+          <div class="pricing-card__badge">Best Value</div>
+          <div class="pricing-card__name">Advanced</div>
+          <div class="pricing-card__price">£50 <span>one-time</span></div>
+          <p class="pricing-card__desc">For established businesses scaling internationally.</p>
+          <div class="pricing-card__features">
+            <div class="pricing-card__feature">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>
+              Everything in Essentials, plus:
+            </div>
+            <div class="pricing-card__feature">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>
+              Receive in 22+ currencies
+            </div>
+            <div class="pricing-card__feature">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>
+              FX forward contracts
+            </div>
+            <div class="pricing-card__feature">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>
+              Batch payments &amp; team roles
+            </div>
+            <div class="pricing-card__feature">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>
+              Invoice &amp; payment link tools
+            </div>
+            <div class="pricing-card__feature">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>
+              Volume-based pricing discounts
+            </div>
+          </div>
+          <a href="#" class="btn btn--primary" style="width:100%;">Upgrade to Advanced</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== USE CASES ========== -->
+  <section class="section">
+    <div class="container">
+      <div class="section__header">
+        <div class="section__label">Who It's For</div>
+        <h2 class="section__title">Built for businesses like yours</h2>
+      </div>
+
+      <div class="grid grid--4">
+        <div class="feature-card" style="text-align:center;">
+          <div style="font-size:2.5rem;margin-bottom:var(--space-md);">🛒</div>
+          <h4 class="feature-card__title">E-commerce sellers</h4>
+          <p class="feature-card__desc">Collect earnings from Amazon, eBay, Shopify and 130+ marketplaces. Convert and withdraw at the best rates.</p>
+        </div>
+        <div class="feature-card" style="text-align:center;">
+          <div style="font-size:2.5rem;margin-bottom:var(--space-md);">🏭</div>
+          <h4 class="feature-card__title">Importers &amp; exporters</h4>
+          <p class="feature-card__desc">Pay international suppliers quickly and lock in FX rates to protect your margins on future orders.</p>
+        </div>
+        <div class="feature-card" style="text-align:center;">
+          <div style="font-size:2.5rem;margin-bottom:var(--space-md);">💼</div>
+          <h4 class="feature-card__title">Freelancers &amp; agencies</h4>
+          <p class="feature-card__desc">Invoice international clients and get paid in their currency. No more losing money on bank conversions.</p>
+        </div>
+        <div class="feature-card" style="text-align:center;">
+          <div style="font-size:2.5rem;margin-bottom:var(--space-md);">📈</div>
+          <h4 class="feature-card__title">Growing SMEs</h4>
+          <p class="feature-card__desc">Scale internationally with multi-currency accounts, team management, and accounting integrations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TESTIMONIALS ========== -->
+  <section class="section section--gray">
+    <div class="container">
+      <div class="section__header">
+        <div class="section__label">Customer Stories</div>
+        <h2 class="section__title">Trusted by 240,000+ businesses</h2>
+      </div>
+
+      <div class="testimonial-grid">
+        <div class="testimonial">
+          <div class="testimonial__stars">★★★★★</div>
+          <p class="testimonial__text">"We sell on Amazon US, EU and Japan. WorldFirst collects all our earnings and lets us convert when rates are right. We've saved over £15,000 this year on FX alone."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar">LW</div>
+            <div>
+              <div class="testimonial__name">Laura Watson</div>
+              <div class="testimonial__role">Director, BrightGoods Ltd</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial">
+          <div class="testimonial__stars">★★★★★</div>
+          <p class="testimonial__text">"The batch payment feature is a game-changer. We pay 50+ suppliers monthly across Asia and Europe — what used to take a full day now takes 10 minutes."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar">DK</div>
+            <div>
+              <div class="testimonial__name">David Kim</div>
+              <div class="testimonial__role">Operations Manager, TradeLink</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial">
+          <div class="testimonial__stars">★★★★★</div>
+          <p class="testimonial__text">"Forward contracts have been essential for our import business. We can quote clients with confidence knowing our costs are locked in for months ahead."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar">RS</div>
+            <div>
+              <div class="testimonial__name">Rachel Singh</div>
+              <div class="testimonial__role">CEO, Pacific Imports UK</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA ========== -->
+  <section class="section">
+    <div class="container">
+      <div class="cta-banner">
+        <h2 class="cta-banner__title">Ready to take your business global?</h2>
+        <p class="cta-banner__desc">Join 240,000+ businesses who trust WorldFirst. Open your World Account in minutes — free, with no monthly fees.</p>
+        <div class="cta-banner__actions">
+          <a href="#" class="btn btn--primary btn--lg">
+            Open business account
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
+          </a>
+          <a href="#" class="btn btn--ghost">Talk to our team</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FAQ ========== -->
+  <section class="section section--gray">
+    <div class="container">
+      <div class="section__header">
+        <div class="section__label">FAQ</div>
+        <h2 class="section__title">Business account FAQs</h2>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-item__question">
+            What types of businesses can use WorldFirst?
+            <svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14m-7-7h14"/></svg>
+          </button>
+          <div class="faq-item__answer">
+            <p>WorldFirst serves a wide range of business types including freelancers, sole traders, limited companies, public companies, partnerships, and charities/trusts. Whether you're an e-commerce seller, importer/exporter, or service provider — if you make or receive international payments, WorldFirst can help.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__question">
+            How does marketplace collection work?
+            <svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14m-7-7h14"/></svg>
+          </button>
+          <div class="faq-item__answer">
+            <p>Simply link your World Account to your marketplace seller account (Amazon, eBay, etc.) using your local currency receiving details. When the marketplace pays out your earnings, the funds arrive directly in your WorldFirst account. You can then hold them, convert, or withdraw to your bank.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__question">
+            What are forward contracts?
+            <svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14m-7-7h14"/></svg>
+          </button>
+          <div class="faq-item__answer">
+            <p>Forward contracts let you lock in today's exchange rate for future payments — up to 24 months ahead. This protects your business from currency fluctuations and gives you cost certainty for budgeting and pricing. Available on the Advanced plan.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__question">
+            Can I connect WorldFirst to my accounting software?
+            <svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14m-7-7h14"/></svg>
+          </button>
+          <div class="faq-item__answer">
+            <p>Yes. WorldFirst integrates with popular accounting platforms including Xero, QuickBooks, and Wave. Transactions sync automatically, making reconciliation effortless and keeping your books up to date.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <span class="footer__logo-icon">W</span>
+            WorldFirst
+          </div>
+          <p class="footer__desc">Making global payments simple since 2004. Part of Ant International, serving 240,000+ businesses in 200+ markets worldwide.</p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="LinkedIn">in</a>
+            <a href="#" class="footer__social-link" aria-label="Twitter">𝕏</a>
+            <a href="#" class="footer__social-link" aria-label="Facebook">f</a>
+            <a href="#" class="footer__social-link" aria-label="YouTube">▶</a>
+          </div>
+        </div>
+        <div>
+          <h5 class="footer__column-title">Products</h5>
+          <a href="personal.html" class="footer__link">Personal Account</a>
+          <a href="business.html" class="footer__link">World Account</a>
+          <a href="enterprise.html" class="footer__link">Enterprise API</a>
+          <a href="#" class="footer__link">World Card</a>
+          <a href="#" class="footer__link">FX Risk Management</a>
+          <a href="#" class="footer__link">Collections</a>
+        </div>
+        <div>
+          <h5 class="footer__column-title">Company</h5>
+          <a href="#" class="footer__link">About us</a>
+          <a href="#" class="footer__link">Careers</a>
+          <a href="#" class="footer__link">Press &amp; Media</a>
+          <a href="#" class="footer__link">Blog</a>
+          <a href="#" class="footer__link">Partners</a>
+          <a href="#" class="footer__link">Contact</a>
+        </div>
+        <div>
+          <h5 class="footer__column-title">Resources</h5>
+          <a href="#" class="footer__link">Help centre</a>
+          <a href="#" class="footer__link">API Documentation</a>
+          <a href="#" class="footer__link">Currency converter</a>
+          <a href="#" class="footer__link">Business guides</a>
+          <a href="#" class="footer__link">E-commerce guides</a>
+          <a href="#" class="footer__link">Trustpilot reviews</a>
+        </div>
+        <div>
+          <h5 class="footer__column-title">Legal</h5>
+          <a href="#" class="footer__link">Terms of service</a>
+          <a href="#" class="footer__link">Privacy policy</a>
+          <a href="#" class="footer__link">Cookie policy</a>
+          <a href="#" class="footer__link">Regulatory info</a>
+          <a href="#" class="footer__link">Complaints</a>
+          <a href="#" class="footer__link">Modern slavery</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2024 WorldFirst. All rights reserved. Authorised by the FCA (FRN: 900508)</span>
+        <div class="footer__legal-links">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Cookies</a>
+          <a href="#">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
