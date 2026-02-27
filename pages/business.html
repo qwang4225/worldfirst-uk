@@ -15,29 +15,184 @@
   <!-- ========== HEADER ========== -->
   <header class="header" id="header">
     <div class="header__inner">
+      <!-- Logo: Ant International | WorldFirst -->
       <a href="../index.html" class="header__logo">
-        <span class="header__logo-icon">W</span>
-        WorldFirst
+        <div class="logo-ant">
+          <svg width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="16" cy="18" r="8" fill="#1677FF"/>
+            <circle cx="16" cy="7" r="5" fill="#1677FF"/>
+            <path d="M8 14L3 8" stroke="#1677FF" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M24 14L29 8" stroke="#1677FF" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+          <span class="logo-ant__text">Ant<br>International</span>
+        </div>
+        <span class="logo-divider"></span>
+        <span class="logo-brand">WorldFirst</span>
       </a>
 
-      <div class="biz-switcher" id="bizSwitcher">
-        <a href="personal.html" class="biz-switcher__tab">Personal</a>
-        <a href="business.html" class="biz-switcher__tab biz-switcher__tab--active">Business</a>
-        <a href="enterprise.html" class="biz-switcher__tab">Enterprise</a>
-      </div>
+      <!-- Main Navigation with Mega Dropdowns -->
+      <nav class="nav" id="mainNav">
+        <div class="nav__item nav__item--has-dropdown">
+          <a href="business.html" class="nav__link">Business <svg class="nav__arrow" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 9l6 6 6-6"/></svg></a>
+          <div class="mega-dropdown">
+            <div class="mega-dropdown__featured">
+              <div class="mega-dropdown__featured-visual">
+                <svg viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg"><rect width="200" height="120" rx="8" fill="#FFF3ED"/><rect x="20" y="20" width="70" height="45" rx="6" fill="#FFE0CC"/><rect x="30" y="30" width="50" height="12" rx="3" fill="#FFCAAA"/><rect x="30" y="47" width="35" height="8" rx="2" fill="#FFCAAA"/><circle cx="140" cy="45" r="22" fill="#FFE0CC"/><rect x="110" y="75" width="70" height="25" rx="6" fill="#FFE0CC"/></svg>
+              </div>
+              <div class="mega-dropdown__featured-content">
+                <h4><a href="business.html">World Account &rarr;</a></h4>
+                <p>Multi-currency accounts, competitive FX, and global transfers &mdash; everything you need to pay and get paid internationally.</p>
+              </div>
+            </div>
+            <div class="mega-dropdown__columns">
+              <div class="mega-dropdown__col">
+                <h5>Products</h5>
+                <ul>
+                  <li><a href="business.html#collect">Receive Payments</a></li>
+                  <li><a href="business.html#pay">Send Payments</a></li>
+                  <li><a href="business.html">Pay with a Virtual Card</a></li>
+                  <li><a href="business.html">Fix a Future FX Rate</a></li>
+                  <li><a href="business.html#manage">Manage Team &amp; Accounts</a></li>
+                  <li><a href="business.html">Integrate Accounting Software</a></li>
+                </ul>
+              </div>
+              <div class="mega-dropdown__col">
+                <h5>Industries</h5>
+                <ul>
+                  <li><a href="business.html">Importer &amp; Exporter</a></li>
+                  <li><a href="business.html">E-commerce Seller</a></li>
+                  <li><a href="business.html">Pay to China</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="mega-dropdown__sidebar">
+              <a href="business.html#pricing">Pricing</a>
+              <a href="business.html">Why Choose WorldFirst?</a>
+              <a href="business.html">Help Centre</a>
+              <a href="business.html">World Card with Cashback</a>
+            </div>
+          </div>
+        </div>
 
-      <nav class="nav">
-        <ul class="nav__links">
-          <li><a href="#collect" class="nav__link">Collect</a></li>
-          <li><a href="#pay" class="nav__link">Pay</a></li>
-          <li><a href="#manage" class="nav__link">Manage</a></li>
-          <li><a href="#pricing" class="nav__link">Pricing</a></li>
-        </ul>
-        <div class="nav__actions">
-          <a href="#" class="btn btn--secondary btn--sm">Log in</a>
-          <a href="#" class="btn btn--primary btn--sm">Open account</a>
+        <div class="nav__item nav__item--has-dropdown">
+          <a href="enterprise.html" class="nav__link">Enterprise <svg class="nav__arrow" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 9l6 6 6-6"/></svg></a>
+          <div class="mega-dropdown">
+            <div class="mega-dropdown__featured">
+              <div class="mega-dropdown__featured-visual">
+                <svg viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg"><rect width="200" height="120" rx="8" fill="#F5F3FF"/><rect x="20" y="15" width="65" height="90" rx="6" fill="#E8E0FF"/><rect x="30" y="25" width="45" height="12" rx="2" fill="#D4C8FF"/><rect x="30" y="42" width="45" height="12" rx="2" fill="#D4C8FF"/><rect x="30" y="59" width="45" height="12" rx="2" fill="#D4C8FF"/><rect x="105" y="25" width="75" height="70" rx="6" fill="#E8E0FF"/><circle cx="142" cy="55" r="18" fill="#D4C8FF"/></svg>
+              </div>
+              <div class="mega-dropdown__featured-content">
+                <h4><a href="enterprise.html">Enterprise Solutions &rarr;</a></h4>
+                <p>AI-driven financial suite for digital platforms operating across borders with seamless API integration.</p>
+              </div>
+            </div>
+            <div class="mega-dropdown__columns">
+              <div class="mega-dropdown__col">
+                <h5>Solutions</h5>
+                <ul>
+                  <li><a href="enterprise.html">API Integration</a></li>
+                  <li><a href="enterprise.html">Batch Payments</a></li>
+                  <li><a href="enterprise.html">Treasury Management</a></li>
+                  <li><a href="enterprise.html">Risk Management</a></li>
+                  <li><a href="enterprise.html">FX Hedging</a></li>
+                </ul>
+              </div>
+              <div class="mega-dropdown__col">
+                <h5>Industries</h5>
+                <ul>
+                  <li><a href="enterprise.html">Marketplaces</a></li>
+                  <li><a href="enterprise.html">Digital Platforms</a></li>
+                  <li><a href="enterprise.html">Financial Institutions</a></li>
+                  <li><a href="enterprise.html">SaaS Platforms</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="mega-dropdown__sidebar">
+              <a href="enterprise.html#pricing">Enterprise Pricing</a>
+              <a href="enterprise.html">Talk to Sales</a>
+              <a href="enterprise.html">Documentation</a>
+              <a href="enterprise.html">Case Studies</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav__item nav__item--has-dropdown">
+          <a href="personal.html" class="nav__link">Personal <svg class="nav__arrow" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 9l6 6 6-6"/></svg></a>
+          <div class="mega-dropdown">
+            <div class="mega-dropdown__featured">
+              <div class="mega-dropdown__featured-visual">
+                <svg viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg"><rect width="200" height="120" rx="8" fill="#EFF6FF"/><rect x="50" y="10" width="100" height="100" rx="14" fill="#DBEAFE"/><circle cx="100" cy="45" r="16" fill="#BFDBFE"/><rect x="70" y="68" width="60" height="24" rx="4" fill="#BFDBFE"/><circle cx="30" cy="35" r="10" fill="#DBEAFE" opacity="0.6"/><circle cx="170" cy="85" r="8" fill="#DBEAFE" opacity="0.6"/></svg>
+              </div>
+              <div class="mega-dropdown__featured-content">
+                <h4><a href="personal.html">Personal Account &rarr;</a></h4>
+                <p>Send money abroad, receive foreign income, and manage multiple currencies &mdash; all from your phone.</p>
+              </div>
+            </div>
+            <div class="mega-dropdown__columns">
+              <div class="mega-dropdown__col">
+                <h5>Services</h5>
+                <ul>
+                  <li><a href="personal.html">International Transfers</a></li>
+                  <li><a href="personal.html">Currency Exchange</a></li>
+                  <li><a href="personal.html">Multi-currency Wallet</a></li>
+                  <li><a href="personal.html">Recurring Payments</a></li>
+                </ul>
+              </div>
+              <div class="mega-dropdown__col">
+                <h5>Use Cases</h5>
+                <ul>
+                  <li><a href="personal.html">Send Money Abroad</a></li>
+                  <li><a href="personal.html">Receive Foreign Income</a></li>
+                  <li><a href="personal.html">Travel Money</a></li>
+                  <li><a href="personal.html">Expat Services</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="mega-dropdown__sidebar">
+              <a href="personal.html#pricing">Personal Pricing</a>
+              <a href="personal.html">FAQs</a>
+              <a href="personal.html">Download App</a>
+              <a href="personal.html">Security</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav__item nav__item--has-dropdown">
+          <a href="#" class="nav__link">About Us <svg class="nav__arrow" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 9l6 6 6-6"/></svg></a>
+          <div class="mega-dropdown mega-dropdown--compact">
+            <div class="mega-dropdown__columns">
+              <div class="mega-dropdown__col">
+                <h5>Company</h5>
+                <ul>
+                  <li><a href="#">About WorldFirst</a></li>
+                  <li><a href="#">Our Story</a></li>
+                  <li><a href="#">Careers</a></li>
+                  <li><a href="#">Press &amp; Media</a></li>
+                </ul>
+              </div>
+              <div class="mega-dropdown__col">
+                <h5>Resources</h5>
+                <ul>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Help Centre</a></li>
+                  <li><a href="#">Partners</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </nav>
+
+      <!-- Header Right -->
+      <div class="nav__actions">
+        <div class="region-selector">
+          <span class="region-flag">🇬🇧</span>
+          <svg class="nav__arrow" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <a href="#" class="btn btn--secondary btn--sm">Log in</a>
+        <a href="#" class="btn btn--primary btn--sm">Sign Up</a>
+      </div>
 
       <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
         <span></span><span></span><span></span>
@@ -49,17 +204,17 @@
   <div class="mobile-nav" id="mobileNav">
     <div class="mobile-nav__switcher">
       <a href="personal.html">Personal</a>
-      <a href="business.html" class="active">Business</a>
+      <a href="business.html">Business</a>
       <a href="enterprise.html">Enterprise</a>
     </div>
     <div class="mobile-nav__links">
-      <a href="#collect" class="mobile-nav__link">Collect</a>
-      <a href="#pay" class="mobile-nav__link">Pay</a>
-      <a href="#manage" class="mobile-nav__link">Manage</a>
-      <a href="#pricing" class="mobile-nav__link">Pricing</a>
+      <a href="../index.html#features" class="mobile-nav__link">Features</a>
+      <a href="../index.html#how-it-works" class="mobile-nav__link">How It Works</a>
+      <a href="../index.html#pricing" class="mobile-nav__link">Pricing</a>
+      <a href="../index.html#reviews" class="mobile-nav__link">Reviews</a>
     </div>
     <div class="mobile-nav__cta">
-      <a href="#" class="btn btn--primary">Open business account</a>
+      <a href="#" class="btn btn--primary">Get started free</a>
       <a href="#" class="btn btn--secondary">Log in</a>
     </div>
   </div>
@@ -584,7 +739,7 @@
       <div class="footer__grid">
         <div class="footer__brand">
           <div class="footer__logo">
-            <span class="footer__logo-icon">W</span>
+            <svg width="24" height="24" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="18" r="8" fill="#1677FF"/><circle cx="16" cy="7" r="5" fill="#1677FF"/><path d="M8 14L3 8" stroke="#1677FF" stroke-width="2.5" stroke-linecap="round"/><path d="M24 14L29 8" stroke="#1677FF" stroke-width="2.5" stroke-linecap="round"/></svg>
             WorldFirst
           </div>
           <p class="footer__desc">Making global payments simple since 2004. Part of Ant International, serving 240,000+ businesses in 200+ markets worldwide.</p>
