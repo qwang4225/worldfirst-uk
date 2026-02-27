@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 40" fill="none">
+  <defs>
+    <linearGradient id="tAccent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FF0050"/>
+      <stop offset="100%" stop-color="#FF8C00"/>
+    </linearGradient>
+  </defs>
+  <!-- Ant International section -->
+  <g transform="translate(0, 8)">
+    <!-- Ant icon (simplified) -->
+    <circle cx="10" cy="12" r="5" fill="#1677FF"/>
+    <circle cx="10" cy="4" r="3" fill="#1677FF"/>
+    <line x1="5" y1="8" x2="2" y2="4" stroke="#1677FF" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="15" y1="8" x2="18" y2="4" stroke="#1677FF" stroke-width="1.5" stroke-linecap="round"/>
+    <!-- Ant International text -->
+    <text x="24" y="10" font-family="'Segoe UI', Arial, sans-serif" font-size="8" font-weight="600" fill="#1a1a2e" letter-spacing="0.3">Ant</text>
+    <text x="24" y="20" font-family="'Segoe UI', Arial, sans-serif" font-size="8" font-weight="600" fill="#1a1a2e" letter-spacing="0.3">International</text>
+  </g>
+  <!-- Divider -->
+  <line x1="88" y1="6" x2="88" y2="34" stroke="#d0d0d0" stroke-width="1"/>
+  <!-- WorldFirst text -->
+  <text x="96" y="30" font-family="'Poppins', 'Segoe UI', Arial, sans-serif" font-size="26" font-weight="800" fill="#FF0050" letter-spacing="-0.5">WorldFirs</text>
+  <!-- The 't' with gradient accent -->
+  <text x="249" y="30" font-family="'Poppins', 'Segoe UI', Arial, sans-serif" font-size="26" font-weight="800" fill="#FF0050" letter-spacing="-0.5">t</text>
+  <!-- Orange accent on the t crossbar -->
+  <rect x="249" y="14" width="12" height="3.5" rx="1.5" fill="url(#tAccent)" transform="rotate(-30, 255, 16)"/>
+</svg>
