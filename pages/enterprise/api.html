@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>API Integration — Enterprise | WorldFirst UK</title>
+  <meta name="description" content="Embed global payments into your platform via RESTful APIs. Real-time webhooks, comprehensive SDKs, sandbox environment, and 200+ market coverage.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/enterprise-products.css">
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <!-- Logo: Ant International | WorldFirst -->
+      <a href="../../index.html" class="header__logo">
+        <div class="logo-ant">
+          <svg width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="16" cy="18" r="8" fill="#1677FF"/>
+            <circle cx="16" cy="7" r="5" fill="#1677FF"/>
+            <path d="M8 14L3 8" stroke="#1677FF" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M24 14L29 8" stroke="#1677FF" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+          <span class="logo-ant__text">Ant<br>International</span>
+        </div>
+        <span class="logo-divider"></span>
+        <span class="logo-brand">WorldFirst</span>
+      </a>
+
+      <!-- Main Navigation with Mega Dropdowns -->
+      <nav class="nav" id="mainNav">
+        <div class="nav__item nav__item--has-dropdown">
+          <a href="../business.html" class="nav__link">Business <svg class="nav__arrow" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 9l6 6 6-6"/></svg></a>
+          <div class="mega-dropdown">
+            <div class="mega-dropdown__featured">
+              <div class="mega-dropdown__featured-visual">
+                <svg viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg"><rect width="200" height="120" rx="8" fill="#FFF3ED"/><rect x="20" y="20" width="70" height="45" rx="6" fill="#FFE0CC"/><rect x="30" y="30" width="50" height="12" rx="3" fill="#FFCAAA"/><rect x="30" y="47" width="35" height="8" rx="2" fill="#FFCAAA"/><circle cx="140" cy="45" r="22" fill="#FFE0CC"/><rect x="110" y="75" width="70" height="25" rx="6" fill="#FFE0CC"/></svg>
+              </div>
+              <div class="mega-dropdown__featured-content">
+                <h4><a href="../business.html">World Account &rarr;</a></h4>
+                <p>Multi-currency accounts, competitive FX, and global transfers &mdash; everything you need to pay and get paid internationally.</p>
+              </div>
+            </div>
+            <div class="mega-dropdown__columns">
+              <div class="mega-dropdown__col">
+                <h5>Products</h5>
+                <ul>
+                  <li><a href="../business.html#collect">Receive Payments</a></li>
+                  <li><a href="../business.html#pay">Send Payments</a></li>
+                  <li><a href="../business.html">Pay with a Virtual Card</a></li>
+                  <li><a href="../business.html">Fix a Future FX Rate</a></li>
+                  <li><a href="../business.html#manage">Manage Team &amp; Accounts</a></li>
+                  <li><a href="../business.html">Integrate Accounting Software</a></li>
+                </ul>
+              </div>
+              <div class="mega-dropdown__col">
+                <h5>Industries</h5>
+                <ul>
+                  <li><a href="../business.html">Importer &amp; Exporter</a></li>
+                  <li><a href="../business.html">E-commerce Seller</a></li>
+                  <li><a href="../business.html">Pay to China</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="mega-dropdown__sidebar">
+              <a href="../business.html#pricing">Pricing</a>
+              <a href="../business.html">Why Choose WorldFirst?</a>
+              <a href="../business.html">Help Centre</a>
+              <a href="../business.html">World Card with Cashback</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav__item nav__item--has-dropdown">
+          <a href="../enterprise.html" class="nav__link">Enterprise <svg class="nav__arrow" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 9l6 6 6-6"/></svg></a>
+          <div class="mega-dropdown">
+            <div class="mega-dropdown__featured">
+              <div class="mega-dropdown__featured-visual">
+                <svg viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg"><rect width="200" height="120" rx="8" fill="#F5F3FF"/><rect x="20" y="15" width="65" height="90" rx="6" fill="#E8E0FF"/><rect x="30" y="25" width="45" height="12" rx="2" fill="#D4C8FF"/><rect x="30" y="42" width="45" height="12" rx="2" fill="#D4C8FF"/><rect x="30" y="59" width="45" height="12" rx="2" fill="#D4C8FF"/><rect x="105" y="25" width="75" height="70" rx="6" fill="#E8E0FF"/><circle cx="142" cy="55" r="18" fill="#D4C8FF"/></svg>
+              </div>
+              <div class="mega-dropdown__featured-content">
+                <h4><a href="../enterprise.html">Enterprise Solutions &rarr;</a></h4>
+                <p>AI-driven financial suite for digital platforms operating across borders with seamless API integration.</p>
+              </div>
+            </div>
+            <div class="mega-dropdown__columns">
+              <div class="mega-dropdown__col">
+                <h5>Solutions</h5>
+                <ul>
+                  <li><a href="api.html">API Integration</a></li>
+                  <li><a href="checkout.html">Checkout</a></li>
+                  <li><a href="account.html">Account Management</a></li>
+                  <li><a href="spend.html">Spend Management</a></li>
+                  <li><a href="ai-fx.html">AI-Powered FX</a></li>
+                  <li><a href="treasury.html">Treasury</a></li>
+                  <li><a href="embedded-finance.html">Embedded Finance</a></li>
+                </ul>
+              </div>
+              <div class="mega-dropdown__col">
+                <h5>Industries</h5>
+                <ul>
+                  <li><a href="../enterprise.html">Marketplaces</a></li>
+                  <li><a href="../enterprise.html">Digital Platforms</a></li>
+                  <li><a href="../enterprise.html">Financial Institutions</a></li>
+                  <li><a href="../enterprise.html">SaaS Platforms</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="mega-dropdown__sidebar">
+              <a href="../enterprise.html#pricing">Enterprise Pricing</a>
+              <a href="../enterprise.html">Talk to Sales</a>
+              <a href="../enterprise.html">Documentation</a>
+              <a href="../enterprise.html">Case Studies</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav__item nav__item--has-dropdown">
+          <a href="../personal.html" class="nav__link">Personal <svg class="nav__arrow" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 9l6 6 6-6"/></svg></a>
+          <div class="mega-dropdown">
+            <div class="mega-dropdown__featured">
+              <div class="mega-dropdown__featured-visual">
+                <svg viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg"><rect width="200" height="120" rx="8" fill="#EFF6FF"/><rect x="50" y="10" width="100" height="100" rx="14" fill="#DBEAFE"/><circle cx="100" cy="45" r="16" fill="#BFDBFE"/><rect x="70" y="68" width="60" height="24" rx="4" fill="#BFDBFE"/><circle cx="30" cy="35" r="10" fill="#DBEAFE" opacity="0.6"/><circle cx="170" cy="85" r="8" fill="#DBEAFE" opacity="0.6"/></svg>
+              </div>
+              <div class="mega-dropdown__featured-content">
+                <h4><a href="../personal.html">Personal Account &rarr;</a></h4>
+                <p>Send money abroad, receive foreign income, and manage multiple currencies &mdash; all from your phone.</p>
+              </div>
+            </div>
+            <div class="mega-dropdown__columns">
+              <div class="mega-dropdown__col">
+                <h5>Services</h5>
+                <ul>
+                  <li><a href="../personal.html">International Transfers</a></li>
+                  <li><a href="../personal.html">Currency Exchange</a></li>
+                  <li><a href="../personal.html">Multi-currency Wallet</a></li>
+                  <li><a href="../personal.html">Recurring Payments</a></li>
+                </ul>
+              </div>
+              <div class="mega-dropdown__col">
+                <h5>Use Cases</h5>
+                <ul>
+                  <li><a href="../personal.html">Send Money Abroad</a></li>
+                  <li><a href="../personal.html">Receive Foreign Income</a></li>
+                  <li><a href="../personal.html">Travel Money</a></li>
+                  <li><a href="../personal.html">Expat Services</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="mega-dropdown__sidebar">
+              <a href="../personal.html#pricing">Personal Pricing</a>
+              <a href="../personal.html">FAQs</a>
+              <a href="../personal.html">Download App</a>
+              <a href="../personal.html">Security</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav__item nav__item--has-dropdown">
+          <a href="#" class="nav__link">About Us <svg class="nav__arrow" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 9l6 6 6-6"/></svg></a>
+          <div class="mega-dropdown mega-dropdown--compact">
+            <div class="mega-dropdown__columns">
+              <div class="mega-dropdown__col">
+                <h5>Company</h5>
+                <ul>
+                  <li><a href="#">About WorldFirst</a></li>
+                  <li><a href="#">Our Story</a></li>
+                  <li><a href="#">Careers</a></li>
+                  <li><a href="#">Press &amp; Media</a></li>
+                </ul>
+              </div>
+              <div class="mega-dropdown__col">
+                <h5>Resources</h5>
+                <ul>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Help Centre</a></li>
+                  <li><a href="#">Partners</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Header Right -->
+      <div class="nav__actions">
+        <div class="region-selector">
+          <span class="region-flag">&#127468;&#127463;</span>
+          <svg class="nav__arrow" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <a href="#" class="btn btn--secondary btn--sm">Log in</a>
+        <a href="#" class="btn btn--primary btn--sm">Sign Up</a>
+      </div>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+
+  <!-- ========== SECTION 1: PRODUCT SUB-NAV ========== -->
+  <nav class="product-subnav">
+    <div class="product-subnav__inner">
+      <a href="index.html" class="product-subnav__link">
+        <span class="product-subnav__dot" style="background: var(--ep-overview)"></span>
+        Overview
+      </a>
+      <a href="api.html" class="product-subnav__link product-subnav__link--active">
+        <span class="product-subnav__dot" style="background: var(--ep-api)"></span>
+        API Integration
+      </a>
+      <a href="checkout.html" class="product-subnav__link">
+        <span class="product-subnav__dot" style="background: var(--ep-checkout)"></span>
+        Checkout
+      </a>
+      <a href="account.html" class="product-subnav__link">
+        <span class="product-subnav__dot" style="background: var(--ep-account)"></span>
+        Account
+      </a>
+      <a href="spend.html" class="product-subnav__link">
+        <span class="product-subnav__dot" style="background: var(--ep-spend)"></span>
+        Spend
+      </a>
+      <a href="ai-fx.html" class="product-subnav__link">
+        <span class="product-subnav__dot" style="background: var(--ep-aifx)"></span>
+        AI-Powered FX
+      </a>
+      <a href="treasury.html" class="product-subnav__link">
+        <span class="product-subnav__dot" style="background: var(--ep-treasury)"></span>
+        Treasury
+      </a>
+      <a href="embedded-finance.html" class="product-subnav__link">
+        <span class="product-subnav__dot" style="background: var(--ep-embedded)"></span>
+        Embedded Finance
+      </a>
+    </div>
+  </nav>
+
+
+  <!-- ========== SECTION 2: HERO ========== -->
+  <section class="product-hero product-hero--api">
+    <div class="container product-hero__inner">
+      <div class="product-hero__content">
+        <div class="product-hero__breadcrumb">
+          <a href="../enterprise.html">Enterprise</a>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 5l7 7-7 7"/></svg>
+          <span>API Integration</span>
+        </div>
+        <div class="product-hero__tag" style="background: rgba(37,99,235,0.2);">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 18l6-6-6-6"/><path d="M8 6l-6 6 6 6"/></svg>
+          API Integration
+        </div>
+        <h1 class="product-hero__title">Embed global payments into your platform via API</h1>
+        <p class="product-hero__desc">Build powerful payment experiences with WorldFirst's RESTful APIs. Real-time webhooks, comprehensive SDKs, and a sandbox environment to test before going live &mdash; all backed by 200+ market coverage.</p>
+        <div class="product-hero__cta">
+          <a href="#" class="btn btn--accent">Contact Sales</a>
+          <a href="#" class="btn btn--ghost">View API Docs</a>
+        </div>
+      </div>
+      <div class="product-hero__visual">
+        <div class="product-hero__mockup">
+          <div class="product-hero__code">
+            <div class="comment">// Create international payment</div>
+            <div><span class="keyword">const</span> <span class="variable">payment</span> = <span class="keyword">await</span> <span class="variable">wf</span>.<span class="function">payments</span>.<span class="function">create</span>({</div>
+            <div class="indent"><span class="variable">amount</span>: <span class="number">25000</span>,</div>
+            <div class="indent"><span class="variable">currency</span>: <span class="string">'GBP'</span>,</div>
+            <div class="indent"><span class="variable">destination</span>: {</div>
+            <div class="indent2"><span class="variable">country</span>: <span class="string">'US'</span>,</div>
+            <div class="indent2"><span class="variable">currency</span>: <span class="string">'USD'</span>,</div>
+            <div class="indent2"><span class="variable">method</span>: <span class="string">'swift'</span></div>
+            <div class="indent">},</div>
+            <div class="indent"><span class="variable">speed</span>: <span class="string">'instant'</span></div>
+            <div>});</div>
+            <div class="comment">// Response: 200 OK | 145ms</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========== SECTION 3: KEY BENEFITS ========== -->
+  <section class="benefits">
+    <div class="container">
+      <div class="benefits__header">
+        <div class="benefits__label" style="color: #2563EB;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2"><path d="M16 18l6-6-6-6"/><path d="M8 6l-6 6 6 6"/></svg>
+          Why choose our API
+        </div>
+        <h2 class="benefits__title">Powerful APIs to unlock global revenue</h2>
+      </div>
+      <div class="benefits__grid">
+        <!-- Benefit 1 -->
+        <div class="benefit-card">
+          <div class="benefit-card__icon" style="background: var(--ep-api-light);">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+            </svg>
+          </div>
+          <h4 class="benefit-card__title">Rapid Integration</h4>
+          <p class="benefit-card__desc">Go live in days with comprehensive documentation, client libraries for 6+ languages, and a full sandbox environment.</p>
+        </div>
+        <!-- Benefit 2 -->
+        <div class="benefit-card">
+          <div class="benefit-card__icon" style="background: var(--ep-api-light);">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <line x1="2" y1="12" x2="22" y2="12"/>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            </svg>
+          </div>
+          <h4 class="benefit-card__title">Global Coverage</h4>
+          <p class="benefit-card__desc">Access 200+ countries and 60+ currencies through a single API. Local payment rails, competitive FX rates, real-time status.</p>
+        </div>
+        <!-- Benefit 3 -->
+        <div class="benefit-card">
+          <div class="benefit-card__icon" style="background: var(--ep-api-light);">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+            </svg>
+          </div>
+          <h4 class="benefit-card__title">Real-time Data</h4>
+          <p class="benefit-card__desc">Webhooks for every event &mdash; payment status, FX rates, compliance updates. Build reactive systems that respond instantly.</p>
+        </div>
+        <!-- Benefit 4 -->
+        <div class="benefit-card">
+          <div class="benefit-card__icon" style="background: var(--ep-api-light);">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+              <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+            </svg>
+          </div>
+          <h4 class="benefit-card__title">Secure &amp; Compliant</h4>
+          <p class="benefit-card__desc">OAuth 2.0, end-to-end encryption, PCI DSS Level 1. Leverage our 67 global licences without building your own compliance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========== SECTION 4: FEATURE DEEP-DIVE ========== -->
+  <section class="deepdive deepdive--gray">
+    <div class="container">
+      <div class="deepdive__header">
+        <h2>How it works</h2>
+      </div>
+
+      <!-- Row 1: Architecture (text left, visual right) -->
+      <div class="deepdive__row">
+        <div class="deepdive__text-block">
+          <div class="deepdive__tag" style="background: var(--ep-api-light); color: var(--ep-api);">Architecture</div>
+          <h3 class="deepdive__title">RESTful API architecture built for scale</h3>
+          <p class="deepdive__text">Our API follows industry-standard REST conventions with predictable resource-oriented URLs, JSON request and response bodies, and standard HTTP status codes. Designed for high throughput, low latency, and 99.99% uptime.</p>
+          <ul class="deepdive__list">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              Versioned endpoints
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              Idempotent operations
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              Pagination &amp; filtering
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              Rate limiting with graceful degradation
+            </li>
+          </ul>
+        </div>
+        <div class="deepdive__visual">
+          <div class="flow-diagram">
+            <div class="flow-diagram__step">
+              <div class="flow-diagram__step-num" style="background: var(--ep-api);">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg>
+              </div>
+              Your Platform
+            </div>
+            <div class="flow-diagram__connector" style="background: var(--ep-api);"></div>
+            <div class="flow-diagram__step">
+              <div class="flow-diagram__step-num" style="background: var(--ep-api);">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M16 18l6-6-6-6"/><path d="M8 6l-6 6 6 6"/></svg>
+              </div>
+              WorldFirst API
+            </div>
+            <div class="flow-diagram__connector" style="background: var(--ep-api);"></div>
+            <div class="flow-diagram__step">
+              <div class="flow-diagram__step-num" style="background: var(--ep-api);">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              </div>
+              Global Payment Rails
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row 2: Security (text right, visual left) -->
+      <div class="deepdive__row deepdive__row--reverse">
+        <div class="deepdive__text-block">
+          <div class="deepdive__tag" style="background: var(--ep-api-light); color: var(--ep-api);">Security</div>
+          <h3 class="deepdive__title">Enterprise-grade authentication &amp; security</h3>
+          <p class="deepdive__text">Every API request is authenticated and encrypted. Use OAuth 2.0 client credentials for machine-to-machine communication, rotate API keys without downtime, and restrict access with IP allowlisting.</p>
+          <ul class="deepdive__list">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              OAuth 2.0 client credentials
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              API key rotation
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              IP allowlisting
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              Request signing &amp; verification
+            </li>
+          </ul>
+        </div>
+        <div class="deepdive__visual">
+          <div class="dashboard-mock">
+            <div class="dashboard-mock__header">
+              <span class="dashboard-mock__title">Security Settings</span>
+              <span class="dashboard-mock__status" style="background: rgba(34,197,94,0.2); color: #22C55E;">Active</span>
+            </div>
+            <div class="dashboard-mock__row">
+              <span class="dashboard-mock__label">Auth Method</span>
+              <span class="dashboard-mock__value">OAuth 2.0</span>
+            </div>
+            <div class="dashboard-mock__row">
+              <span class="dashboard-mock__label">API Key</span>
+              <span class="dashboard-mock__value">wf_live_****7x2K</span>
+            </div>
+            <div class="dashboard-mock__row">
+              <span class="dashboard-mock__label">IP Allowlist</span>
+              <span class="dashboard-mock__value">3 IPs configured</span>
+            </div>
+            <div class="dashboard-mock__row">
+              <span class="dashboard-mock__label">Key Rotation</span>
+              <span class="dashboard-mock__value">Every 90 days</span>
+            </div>
+            <div class="dashboard-mock__row">
+              <span class="dashboard-mock__label">Encryption</span>
+              <span class="dashboard-mock__value">TLS 1.3 / AES-256</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row 3: Events (text left, visual right) -->
+      <div class="deepdive__row">
+        <div class="deepdive__text-block">
+          <div class="deepdive__tag" style="background: var(--ep-api-light); color: var(--ep-api);">Events</div>
+          <h3 class="deepdive__title">Webhook event-driven architecture</h3>
+          <p class="deepdive__text">Subscribe to real-time events and build reactive payment flows. Every status change, rate alert, and compliance notification is pushed to your endpoint within milliseconds, eliminating the need for polling.</p>
+          <ul class="deepdive__list">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              Payment status changes
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              FX rate alerts
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              Compliance notifications
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              Account balance updates
+            </li>
+          </ul>
+        </div>
+        <div class="deepdive__visual">
+          <div class="dashboard-mock">
+            <div class="dashboard-mock__header">
+              <span class="dashboard-mock__title">Webhook Events</span>
+              <span class="dashboard-mock__status" style="background: rgba(37,99,235,0.2); color: #2563EB;">Live</span>
+            </div>
+            <div class="dashboard-mock__row">
+              <span class="dashboard-mock__label">payment.completed</span>
+              <span class="dashboard-mock__value" style="color: #22C55E;">200 OK</span>
+            </div>
+            <div class="dashboard-mock__row">
+              <span class="dashboard-mock__label">fx.rate_alert</span>
+              <span class="dashboard-mock__value" style="color: #22C55E;">200 OK</span>
+            </div>
+            <div class="dashboard-mock__row">
+              <span class="dashboard-mock__label">compliance.verified</span>
+              <span class="dashboard-mock__value" style="color: #22C55E;">200 OK</span>
+            </div>
+            <div class="dashboard-mock__row">
+              <span class="dashboard-mock__label">balance.updated</span>
+              <span class="dashboard-mock__value" style="color: #22C55E;">200 OK</span>
+            </div>
+            <div class="dashboard-mock__row">
+              <span class="dashboard-mock__label">payment.initiated</span>
+              <span class="dashboard-mock__value" style="color: #F59E0B;">Pending</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========== SECTION 5: USE CASES ========== -->
+  <section class="usecases">
+    <div class="container">
+      <div class="usecases__header">
+        <h2>Built for platforms at scale</h2>
+      </div>
+      <div class="usecases__grid">
+        <!-- Use Case 1 -->
+        <div class="usecase-card">
+          <div class="usecase-card__icon" style="background: var(--ep-api-light);">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 9h18v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9z"/>
+              <path d="M3 9l2.45-4.9A2 2 0 0 1 7.24 3h9.52a2 2 0 0 1 1.8 1.1L21 9"/>
+              <path d="M12 3v6"/>
+            </svg>
+          </div>
+          <h4 class="usecase-card__title">Marketplaces</h4>
+          <p class="usecase-card__pain">Managing payouts to thousands of sellers across multiple currencies and countries.</p>
+          <p class="usecase-card__solution">Programmatic multi-currency payouts with automated FX and compliance checks.</p>
+        </div>
+        <!-- Use Case 2 -->
+        <div class="usecase-card">
+          <div class="usecase-card__icon" style="background: var(--ep-api-light);">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="3" width="20" height="14" rx="2"/>
+              <path d="M8 21h8"/>
+              <path d="M12 17v4"/>
+              <path d="M7 8h4"/>
+              <path d="M7 12h2"/>
+            </svg>
+          </div>
+          <h4 class="usecase-card__title">SaaS Platforms</h4>
+          <p class="usecase-card__pain">Embedding payment collection and disbursement into your platform without building from scratch.</p>
+          <p class="usecase-card__solution">Drop-in API endpoints for payments, accounts, and FX &mdash; go live in days.</p>
+        </div>
+        <!-- Use Case 3 -->
+        <div class="usecase-card">
+          <div class="usecase-card__icon" style="background: var(--ep-api-light);">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17.8 19.2L16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/>
+            </svg>
+          </div>
+          <h4 class="usecase-card__title">Travel Platforms</h4>
+          <p class="usecase-card__pain">Handling multi-currency bookings, supplier payments, and refunds across time zones.</p>
+          <p class="usecase-card__solution">Real-time multi-currency orchestration with instant settlement and automated reconciliation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========== SECTION 6: DEVELOPER SECTION ========== -->
+  <section class="dev-section">
+    <div class="container">
+      <div class="dev-section__header">
+        <h2>Get started in minutes</h2>
+        <p>Everything you need to integrate WorldFirst's global payment infrastructure into your platform.</p>
+      </div>
+      <div class="dev-section__grid">
+        <!-- Left: Code Snippet -->
+        <div class="dev-section__code">
+          <div class="comment"># Install the SDK</div>
+          <div><span class="function">npm</span> <span class="variable">install</span> <span class="string">@worldfirst/sdk</span></div>
+          <br>
+          <div class="comment">// Initialise the client</div>
+          <div><span class="keyword">const</span> { <span class="variable">WorldFirst</span> } = <span class="function">require</span>(<span class="string">'@worldfirst/sdk'</span>);</div>
+          <br>
+          <div><span class="keyword">const</span> <span class="variable">wf</span> = <span class="keyword">new</span> <span class="function">WorldFirst</span>({</div>
+          <div class="indent"><span class="variable">clientId</span>: <span class="variable">process</span>.<span class="variable">env</span>.<span class="variable">WF_CLIENT_ID</span>,</div>
+          <div class="indent"><span class="variable">clientSecret</span>: <span class="variable">process</span>.<span class="variable">env</span>.<span class="variable">WF_SECRET</span>,</div>
+          <div class="indent"><span class="variable">environment</span>: <span class="string">'sandbox'</span></div>
+          <div>});</div>
+          <br>
+          <div class="comment">// Fetch live FX rate</div>
+          <div><span class="keyword">const</span> <span class="variable">rate</span> = <span class="keyword">await</span> <span class="variable">wf</span>.<span class="function">fx</span>.<span class="function">getRate</span>({</div>
+          <div class="indent"><span class="variable">from</span>: <span class="string">'GBP'</span>,</div>
+          <div class="indent"><span class="variable">to</span>: <span class="string">'USD'</span>,</div>
+          <div class="indent"><span class="variable">amount</span>: <span class="number">10000</span></div>
+          <div>});</div>
+          <br>
+          <div><span class="variable">console</span>.<span class="function">log</span>(<span class="variable">rate</span>.<span class="variable">convertedAmount</span>);</div>
+          <div class="comment">// 12,650.00 USD</div>
+        </div>
+        <!-- Right: Info Cards -->
+        <div class="dev-section__info">
+          <div class="dev-section__card">
+            <h4>SDK Support</h4>
+            <p>Official client libraries for all major languages, maintained and versioned alongside our API.</p>
+            <div class="sdk-badges">
+              <span class="sdk-badge">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 18l6-6-6-6"/><path d="M8 6l-6 6 6 6"/></svg>
+                Python
+              </span>
+              <span class="sdk-badge">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 18l6-6-6-6"/><path d="M8 6l-6 6 6 6"/></svg>
+                Node.js
+              </span>
+              <span class="sdk-badge">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 18l6-6-6-6"/><path d="M8 6l-6 6 6 6"/></svg>
+                Java
+              </span>
+              <span class="sdk-badge">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 18l6-6-6-6"/><path d="M8 6l-6 6 6 6"/></svg>
+                Go
+              </span>
+              <span class="sdk-badge">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 18l6-6-6-6"/><path d="M8 6l-6 6 6 6"/></svg>
+                PHP
+              </span>
+              <span class="sdk-badge">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 18l6-6-6-6"/><path d="M8 6l-6 6 6 6"/></svg>
+                Ruby
+              </span>
+            </div>
+          </div>
+          <div class="dev-section__card">
+            <h4>Developer Resources</h4>
+            <p>Everything you need to build, test, and deploy your integration with confidence.</p>
+            <ul class="deepdive__list" style="margin-top: 12px;">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                <span style="color: rgba(255,255,255,0.8);">Full sandbox environment</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                <span style="color: rgba(255,255,255,0.8);">Interactive API reference</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                <span style="color: rgba(255,255,255,0.8);">Webhook event simulator</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                <span style="color: rgba(255,255,255,0.8);">Postman collection</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========== SECTION 7: PROOF BAR ========== -->
+  <section class="proof-bar">
+    <div class="container">
+      <div class="proof-bar__grid">
+        <div class="proof-bar__item">
+          <div class="proof-bar__number">1.5M+</div>
+          <div class="proof-bar__label">Businesses served</div>
+        </div>
+        <div class="proof-bar__item">
+          <div class="proof-bar__number">200+</div>
+          <div class="proof-bar__label">Countries supported</div>
+        </div>
+        <div class="proof-bar__item">
+          <div class="proof-bar__number">60+</div>
+          <div class="proof-bar__label">Currencies available</div>
+        </div>
+        <div class="proof-bar__item">
+          <div class="proof-bar__number">99.99%</div>
+          <div class="proof-bar__label">API uptime</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========== SECTION 8: CTA ========== -->
+  <section class="product-cta">
+    <div class="container">
+      <div class="product-cta__banner">
+        <h2 class="product-cta__title">Ready to build with our API?</h2>
+        <p class="product-cta__desc">Get sandbox access today and start integrating WorldFirst's global payment infrastructure.</p>
+        <div class="product-cta__actions">
+          <a href="#" class="btn btn--accent">Contact Sales</a>
+          <a href="#" class="btn btn--ghost">View API Docs</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <svg width="24" height="24" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="18" r="8" fill="#1677FF"/><circle cx="16" cy="7" r="5" fill="#1677FF"/><path d="M8 14L3 8" stroke="#1677FF" stroke-width="2.5" stroke-linecap="round"/><path d="M24 14L29 8" stroke="#1677FF" stroke-width="2.5" stroke-linecap="round"/></svg>
+            WorldFirst
+          </div>
+          <p class="footer__desc">Making global payments simple since 2004. Part of Ant International, serving 240,000+ businesses in 200+ markets worldwide.</p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="LinkedIn">in</a>
+            <a href="#" class="footer__social-link" aria-label="Twitter">&#120143;</a>
+            <a href="#" class="footer__social-link" aria-label="Facebook">f</a>
+            <a href="#" class="footer__social-link" aria-label="YouTube">&#9654;</a>
+          </div>
+        </div>
+        <div>
+          <h5 class="footer__column-title">Products</h5>
+          <a href="../personal.html" class="footer__link">Personal Account</a>
+          <a href="../business.html" class="footer__link">World Account</a>
+          <a href="../enterprise.html" class="footer__link">Enterprise API</a>
+          <a href="#" class="footer__link">World Card</a>
+          <a href="#" class="footer__link">FX Risk Management</a>
+          <a href="#" class="footer__link">Collections</a>
+        </div>
+        <div>
+          <h5 class="footer__column-title">Company</h5>
+          <a href="#" class="footer__link">About us</a>
+          <a href="#" class="footer__link">Careers</a>
+          <a href="#" class="footer__link">Press &amp; Media</a>
+          <a href="#" class="footer__link">Blog</a>
+          <a href="#" class="footer__link">Partners</a>
+          <a href="#" class="footer__link">Contact</a>
+        </div>
+        <div>
+          <h5 class="footer__column-title">Resources</h5>
+          <a href="#" class="footer__link">Help centre</a>
+          <a href="#" class="footer__link">API Documentation</a>
+          <a href="#" class="footer__link">Currency converter</a>
+          <a href="#" class="footer__link">Business guides</a>
+          <a href="#" class="footer__link">E-commerce guides</a>
+          <a href="#" class="footer__link">Trustpilot reviews</a>
+        </div>
+        <div>
+          <h5 class="footer__column-title">Legal</h5>
+          <a href="#" class="footer__link">Terms of service</a>
+          <a href="#" class="footer__link">Privacy policy</a>
+          <a href="#" class="footer__link">Cookie policy</a>
+          <a href="#" class="footer__link">Regulatory info</a>
+          <a href="#" class="footer__link">Complaints</a>
+          <a href="#" class="footer__link">Modern slavery</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2024 WorldFirst. All rights reserved. Authorised by the FCA (FRN: 900508)</span>
+        <div class="footer__legal-links">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Cookies</a>
+          <a href="#">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../js/main.js"></script>
+</body>
+</html>
