@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI FX — AI-Powered Currency Optimisation | WorldFirst Enterprise</title>
+  <meta name="description" content="Leverage machine learning to predict FX rate movements, automate conversion timing, and implement risk-adjusted strategies. Save 15-40 bps on FX costs.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/enterprise-products.css">
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <!-- Logo: Ant International | WorldFirst -->
+      <a href="../../index.html" class="header__logo">
+        <div class="logo-ant">
+          <svg width="28" height="28" viewBox="0 0 32 32" fill="none">
+            <circle cx="16" cy="18" r="8" fill="#1677FF"/>
+            <circle cx="16" cy="7" r="5" fill="#1677FF"/>
+            <path d="M8 14L3 8" stroke="#1677FF" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M24 14L29 8" stroke="#1677FF" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+          <span class="logo-ant__text">Ant<br>International</span>
+        </div>
+        <span class="logo-divider"></span>
+        <span class="logo-brand">WorldFirst</span>
+      </a>
+
+      <!-- Main Navigation with Mega Dropdowns -->
+      <nav class="nav" id="mainNav">
+        <div class="nav__item nav__item--has-dropdown">
+          <a href="../business.html" class="nav__link">Business <svg class="nav__arrow" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 9l6 6 6-6"/></svg></a>
+          <div class="mega-dropdown">
+            <div class="mega-dropdown__featured">
+              <div class="mega-dropdown__featured-visual">
+                <svg viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg"><rect width="200" height="120" rx="8" fill="#FFF3ED"/><rect x="20" y="20" width="70" height="45" rx="6" fill="#FFE0CC"/><rect x="30" y="30" width="50" height="12" rx="3" fill="#FFCAAA"/><rect x="30" y="47" width="35" height="8" rx="2" fill="#FFCAAA"/><circle cx="140" cy="45" r="22" fill="#FFE0CC"/><rect x="110" y="75" width="70" height="25" rx="6" fill="#FFE0CC"/></svg>
+              </div>
+              <div class="mega-dropdown__featured-content">
+                <h4><a href="../business.html">World Account &rarr;</a></h4>
+                <p>Multi-currency accounts, competitive FX, and global transfers &mdash; everything you need to pay and get paid internationally.</p>
+              </div>
+            </div>
+            <div class="mega-dropdown__columns">
+              <div class="mega-dropdown__col">
+                <h5>Products</h5>
+                <ul>
+                  <li><a href="../business.html#collect">Receive Payments</a></li>
+                  <li><a href="../business.html#pay">Send Payments</a></li>
+                  <li><a href="../business.html">Pay with a Virtual Card</a></li>
+                  <li><a href="../business.html">Fix a Future FX Rate</a></li>
+                  <li><a href="../business.html#manage">Manage Team &amp; Accounts</a></li>
+                  <li><a href="../business.html">Integrate Accounting Software</a></li>
+                </ul>
+              </div>
+              <div class="mega-dropdown__col">
+                <h5>Industries</h5>
+                <ul>
+                  <li><a href="../business.html">Importer &amp; Exporter</a></li>
+                  <li><a href="../business.html">E-commerce Seller</a></li>
+                  <li><a href="../business.html">Pay to China</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="mega-dropdown__sidebar">
+              <a href="../business.html#pricing">Pricing</a>
+              <a href="../business.html">Why Choose WorldFirst?</a>
+              <a href="../business.html">Help Centre</a>
+              <a href="../business.html">World Card with Cashback</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav__item nav__item--has-dropdown">
+          <a href="../enterprise.html" class="nav__link">Enterprise <svg class="nav__arrow" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 9l6 6 6-6"/></svg></a>
+          <div class="mega-dropdown">
+            <div class="mega-dropdown__featured">
+              <div class="mega-dropdown__featured-visual">
+                <svg viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg"><rect width="200" height="120" rx="8" fill="#F5F3FF"/><rect x="20" y="15" width="65" height="90" rx="6" fill="#E8E0FF"/><rect x="30" y="25" width="45" height="12" rx="2" fill="#D4C8FF"/><rect x="30" y="42" width="45" height="12" rx="2" fill="#D4C8FF"/><rect x="30" y="59" width="45" height="12" rx="2" fill="#D4C8FF"/><rect x="105" y="25" width="75" height="70" rx="6" fill="#E8E0FF"/><circle cx="142" cy="55" r="18" fill="#D4C8FF"/></svg>
+              </div>
+              <div class="mega-dropdown__featured-content">
+                <h4><a href="../enterprise.html">Enterprise Solutions &rarr;</a></h4>
+                <p>AI-driven financial suite for digital platforms operating across borders with seamless API integration.</p>
+              </div>
+            </div>
+            <div class="mega-dropdown__columns">
+              <div class="mega-dropdown__col">
+                <h5>Solutions</h5>
+                <ul>
+                  <li><a href="api.html">API Integration</a></li>
+                  <li><a href="checkout.html">Checkout</a></li>
+                  <li><a href="account.html">Global Accounts</a></li>
+                  <li><a href="spend.html">Spend Management</a></li>
+                  <li><a href="ai-fx.html">AI FX</a></li>
+                  <li><a href="treasury.html">Treasury</a></li>
+                  <li><a href="embedded-finance.html">Embedded Finance</a></li>
+                </ul>
+              </div>
+              <div class="mega-dropdown__col">
+                <h5>Industries</h5>
+                <ul>
+                  <li><a href="../enterprise.html">Marketplaces</a></li>
+                  <li><a href="../enterprise.html">Digital Platforms</a></li>
+                  <li><a href="../enterprise.html">Financial Institutions</a></li>
+                  <li><a href="../enterprise.html">SaaS Platforms</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="mega-dropdown__sidebar">
+              <a href="../enterprise.html#pricing">Enterprise Pricing</a>
+              <a href="../enterprise.html">Talk to Sales</a>
+              <a href="../enterprise.html">Documentation</a>
+              <a href="../enterprise.html">Case Studies</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav__item nav__item--has-dropdown">
+          <a href="../personal.html" class="nav__link">Personal <svg class="nav__arrow" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 9l6 6 6-6"/></svg></a>
+          <div class="mega-dropdown">
+            <div class="mega-dropdown__featured">
+              <div class="mega-dropdown__featured-visual">
+                <svg viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg"><rect width="200" height="120" rx="8" fill="#EFF6FF"/><rect x="50" y="10" width="100" height="100" rx="14" fill="#DBEAFE"/><circle cx="100" cy="45" r="16" fill="#BFDBFE"/><rect x="70" y="68" width="60" height="24" rx="4" fill="#BFDBFE"/><circle cx="30" cy="35" r="10" fill="#DBEAFE" opacity="0.6"/><circle cx="170" cy="85" r="8" fill="#DBEAFE" opacity="0.6"/></svg>
+              </div>
+              <div class="mega-dropdown__featured-content">
+                <h4><a href="../personal.html">Personal Account &rarr;</a></h4>
+                <p>Send money abroad, receive foreign income, and manage multiple currencies &mdash; all from your phone.</p>
+              </div>
+            </div>
+            <div class="mega-dropdown__columns">
+              <div class="mega-dropdown__col">
+                <h5>Services</h5>
+                <ul>
+                  <li><a href="../personal.html">International Transfers</a></li>
+                  <li><a href="../personal.html">Currency Exchange</a></li>
+                  <li><a href="../personal.html">Multi-currency Wallet</a></li>
+                  <li><a href="../personal.html">Recurring Payments</a></li>
+                </ul>
+              </div>
+              <div class="mega-dropdown__col">
+                <h5>Use Cases</h5>
+                <ul>
+                  <li><a href="../personal.html">Send Money Abroad</a></li>
+                  <li><a href="../personal.html">Receive Foreign Income</a></li>
+                  <li><a href="../personal.html">Travel Money</a></li>
+                  <li><a href="../personal.html">Expat Services</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="mega-dropdown__sidebar">
+              <a href="../personal.html#pricing">Personal Pricing</a>
+              <a href="../personal.html">FAQs</a>
+              <a href="../personal.html">Download App</a>
+              <a href="../personal.html">Security</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav__item nav__item--has-dropdown">
+          <a href="#" class="nav__link">About Us <svg class="nav__arrow" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 9l6 6 6-6"/></svg></a>
+          <div class="mega-dropdown mega-dropdown--compact">
+            <div class="mega-dropdown__columns">
+              <div class="mega-dropdown__col">
+                <h5>Company</h5>
+                <ul>
+                  <li><a href="#">About WorldFirst</a></li>
+                  <li><a href="#">Our Story</a></li>
+                  <li><a href="#">Careers</a></li>
+                  <li><a href="#">Press &amp; Media</a></li>
+                </ul>
+              </div>
+              <div class="mega-dropdown__col">
+                <h5>Resources</h5>
+                <ul>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Help Centre</a></li>
+                  <li><a href="#">Partners</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Header Right -->
+      <div class="nav__actions">
+        <div class="region-selector">
+          <span class="region-flag">🇬🇧</span>
+          <svg class="nav__arrow" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <a href="#" class="btn btn--secondary btn--sm">Log in</a>
+        <a href="#" class="btn btn--primary btn--sm">Sign Up</a>
+      </div>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========== PRODUCT SUB-NAV ========== -->
+  <nav class="product-subnav">
+    <div class="product-subnav__inner">
+      <a href="index.html" class="product-subnav__link">
+        <span class="product-subnav__dot" style="background: #7C3AED"></span>
+        Overview
+      </a>
+      <a href="api.html" class="product-subnav__link">
+        <span class="product-subnav__dot" style="background: #2563EB"></span>
+        API
+      </a>
+      <a href="checkout.html" class="product-subnav__link">
+        <span class="product-subnav__dot" style="background: #10B981"></span>
+        Checkout
+      </a>
+      <a href="account.html" class="product-subnav__link">
+        <span class="product-subnav__dot" style="background: #7C3AED"></span>
+        Account
+      </a>
+      <a href="spend.html" class="product-subnav__link">
+        <span class="product-subnav__dot" style="background: #F59E0B"></span>
+        Spend
+      </a>
+      <a href="ai-fx.html" class="product-subnav__link product-subnav__link--active">
+        <span class="product-subnav__dot" style="background: #06B6D4"></span>
+        AI FX
+      </a>
+      <a href="treasury.html" class="product-subnav__link">
+        <span class="product-subnav__dot" style="background: #D97706"></span>
+        Treasury
+      </a>
+      <a href="embedded-finance.html" class="product-subnav__link">
+        <span class="product-subnav__dot" style="background: #EC4899"></span>
+        Embedded Finance
+      </a>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="product-hero product-hero--aifx">
+    <div class="container product-hero__inner">
+      <div class="product-hero__content">
+        <!-- Breadcrumb -->
+        <div class="product-hero__breadcrumb">
+          <a href="../enterprise.html">Enterprise</a>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg>
+          <span>AI FX</span>
+        </div>
+
+        <!-- Tag -->
+        <div class="product-hero__tag" style="background: rgba(6,182,212,0.2); border-color: rgba(6,182,212,0.3);">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#06B6D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a4 4 0 0 1 4 4c0 1.5-.8 2.8-2 3.5v1l3.5 2 1.5 3v2H5v-2l1.5-3 3.5-2v-1C8.8 8.8 8 7.5 8 6a4 4 0 0 1 4-4z"/><path d="M9 22h6"/></svg>
+          AI-Powered FX
+        </div>
+
+        <h1 class="product-hero__title">AI-powered FX optimisation for smarter currency management</h1>
+        <p class="product-hero__desc">Leverage machine learning to predict rate movements, automate conversion timing, and implement risk-adjusted FX strategies &mdash; saving your business significant FX costs.</p>
+
+        <div class="product-hero__cta">
+          <a href="#" class="btn btn--accent">Contact Sales</a>
+          <a href="#benefits" class="btn btn--ghost">Learn More</a>
+        </div>
+      </div>
+
+      <!-- Hero Visual: AI Rate Prediction Chart -->
+      <div class="product-hero__visual">
+        <div class="product-hero__mockup">
+          <svg viewBox="0 0 400 280" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;">
+            <!-- Chart background grid -->
+            <line x1="40" y1="40" x2="40" y2="240" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+            <line x1="40" y1="240" x2="380" y2="240" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+            <line x1="40" y1="190" x2="380" y2="190" stroke="rgba(255,255,255,0.04)" stroke-width="1" stroke-dasharray="4 4"/>
+            <line x1="40" y1="140" x2="380" y2="140" stroke="rgba(255,255,255,0.04)" stroke-width="1" stroke-dasharray="4 4"/>
+            <line x1="40" y1="90" x2="380" y2="90" stroke="rgba(255,255,255,0.04)" stroke-width="1" stroke-dasharray="4 4"/>
+
+            <!-- Y-axis labels -->
+            <text x="10" y="95" fill="rgba(255,255,255,0.3)" font-size="9" font-family="Inter, sans-serif">1.284</text>
+            <text x="10" y="145" fill="rgba(255,255,255,0.3)" font-size="9" font-family="Inter, sans-serif">1.278</text>
+            <text x="10" y="195" fill="rgba(255,255,255,0.3)" font-size="9" font-family="Inter, sans-serif">1.272</text>
+            <text x="10" y="245" fill="rgba(255,255,255,0.3)" font-size="9" font-family="Inter, sans-serif">1.266</text>
+
+            <!-- X-axis labels -->
+            <text x="55" y="258" fill="rgba(255,255,255,0.3)" font-size="8" font-family="Inter, sans-serif">Mon</text>
+            <text x="115" y="258" fill="rgba(255,255,255,0.3)" font-size="8" font-family="Inter, sans-serif">Tue</text>
+            <text x="175" y="258" fill="rgba(255,255,255,0.3)" font-size="8" font-family="Inter, sans-serif">Wed</text>
+            <text x="232" y="258" fill="rgba(255,255,255,0.3)" font-size="8" font-family="Inter, sans-serif">Thu</text>
+            <text x="298" y="258" fill="rgba(255,255,255,0.3)" font-size="8" font-family="Inter, sans-serif">Fri</text>
+            <text x="355" y="258" fill="rgba(255,255,255,0.3)" font-size="8" font-family="Inter, sans-serif">Mon</text>
+
+            <!-- "Now" vertical line -->
+            <line x1="240" y1="40" x2="240" y2="240" stroke="rgba(6,182,212,0.4)" stroke-width="1" stroke-dasharray="3 3"/>
+            <text x="233" y="35" fill="#06B6D4" font-size="8" font-weight="600" font-family="Inter, sans-serif">NOW</text>
+
+            <!-- AI Prediction cone (shaded area) -->
+            <path d="M240 150 L280 135 L320 125 L360 118 L380 115 L380 195 L360 185 L320 178 L280 168 L240 150Z" fill="url(#predictionGradient)" opacity="0.6"/>
+            <defs>
+              <linearGradient id="predictionGradient" x1="240" y1="115" x2="240" y2="195" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#06B6D4" stop-opacity="0.25"/>
+                <stop offset="100%" stop-color="#06B6D4" stop-opacity="0.05"/>
+              </linearGradient>
+            </defs>
+
+            <!-- Actual rate line (solid) -->
+            <polyline points="50,200 80,195 110,180 140,185 170,165 200,170 220,155 240,150" stroke="#06B6D4" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+            <!-- AI Predicted upper bound (dotted) -->
+            <polyline points="240,150 280,135 320,125 360,118 380,115" stroke="#06B6D4" stroke-width="1.5" fill="none" stroke-dasharray="4 3" stroke-linecap="round" opacity="0.7"/>
+
+            <!-- AI Predicted lower bound (dotted) -->
+            <polyline points="240,150 280,168 320,178 360,185 380,195" stroke="#06B6D4" stroke-width="1.5" fill="none" stroke-dasharray="4 3" stroke-linecap="round" opacity="0.7"/>
+
+            <!-- AI Predicted mid-line (dotted, brighter) -->
+            <polyline points="240,150 280,148 320,143 360,138 380,135" stroke="#06B6D4" stroke-width="2" fill="none" stroke-dasharray="6 4" stroke-linecap="round" opacity="0.9"/>
+
+            <!-- Data points on actual line -->
+            <circle cx="50" cy="200" r="3" fill="#06B6D4" stroke="#0E3E4A" stroke-width="1.5"/>
+            <circle cx="110" cy="180" r="3" fill="#06B6D4" stroke="#0E3E4A" stroke-width="1.5"/>
+            <circle cx="170" cy="165" r="3" fill="#06B6D4" stroke="#0E3E4A" stroke-width="1.5"/>
+            <circle cx="240" cy="150" r="4" fill="#06B6D4" stroke="#fff" stroke-width="2">
+              <animate attributeName="r" values="4;6;4" dur="2s" repeatCount="indefinite"/>
+            </circle>
+
+            <!-- GBP/EUR label -->
+            <rect x="50" y="48" width="80" height="24" rx="6" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+            <text x="62" y="64" fill="rgba(255,255,255,0.7)" font-size="10" font-weight="600" font-family="Inter, sans-serif">GBP/EUR</text>
+
+            <!-- AI Confidence badge -->
+            <rect x="280" y="55" width="95" height="28" rx="14" fill="rgba(6,182,212,0.2)" stroke="rgba(6,182,212,0.4)" stroke-width="1"/>
+            <circle cx="296" cy="69" r="4" fill="#06B6D4">
+              <animate attributeName="opacity" values="1;0.5;1" dur="1.5s" repeatCount="indefinite"/>
+            </circle>
+            <text x="305" y="73" fill="#06B6D4" font-size="10" font-weight="700" font-family="Inter, sans-serif">AI Confidence: 94%</text>
+
+            <!-- Optimal window indicator -->
+            <rect x="275" y="135" width="50" height="20" rx="4" fill="rgba(16,185,129,0.2)" stroke="rgba(16,185,129,0.4)" stroke-width="1"/>
+            <text x="281" y="149" fill="#10B981" font-size="8" font-weight="600" font-family="Inter, sans-serif">OPTIMAL</text>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== KEY BENEFITS ========== -->
+  <section class="benefits" id="benefits">
+    <div class="container">
+      <div class="benefits__header">
+        <div class="benefits__label" style="color: #06B6D4;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#06B6D4" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          Why choose AI FX
+        </div>
+        <h2 class="benefits__title">Intelligent FX that saves you money</h2>
+      </div>
+
+      <div class="benefits__grid">
+        <!-- Card 1: AI Rate Prediction -->
+        <div class="benefit-card">
+          <div class="benefit-card__icon" style="background: #ECFEFF; color: #06B6D4;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#06B6D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2a4 4 0 0 1 4 4c0 1.5-.8 2.8-2 3.5v1l3.5 2 1.5 3v2H5v-2l1.5-3 3.5-2v-1C8.8 8.8 8 7.5 8 6a4 4 0 0 1 4-4z"/>
+              <path d="M9 22h6"/>
+            </svg>
+          </div>
+          <h4 class="benefit-card__title">AI Rate Prediction</h4>
+          <p class="benefit-card__desc">Machine learning models analyse market data, sentiment, and macro indicators to forecast short-term rate movements with high accuracy.</p>
+        </div>
+
+        <!-- Card 2: Optimal Timing -->
+        <div class="benefit-card">
+          <div class="benefit-card__icon" style="background: #ECFEFF; color: #06B6D4;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#06B6D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <polyline points="12 6 12 12 16 14"/>
+            </svg>
+          </div>
+          <h4 class="benefit-card__title">Optimal Timing</h4>
+          <p class="benefit-card__desc">Automated conversion timing that executes trades when conditions are most favourable. Set rules or let the AI decide.</p>
+        </div>
+
+        <!-- Card 3: Risk-Adjusted Strategies -->
+        <div class="benefit-card">
+          <div class="benefit-card__icon" style="background: #ECFEFF; color: #06B6D4;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#06B6D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              <polyline points="9 12 11 14 15 10"/>
+            </svg>
+          </div>
+          <h4 class="benefit-card__title">Risk-Adjusted Strategies</h4>
+          <p class="benefit-card__desc">Balance cost savings against risk tolerance. The AI recommends hedging strategies tailored to your exposure profile.</p>
+        </div>
+
+        <!-- Card 4: FX Cost Savings -->
+        <div class="benefit-card">
+          <div class="benefit-card__icon" style="background: #ECFEFF; color: #06B6D4;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#06B6D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="12" y1="1" x2="12" y2="23"/>
+              <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+            </svg>
+          </div>
+          <h4 class="benefit-card__title">FX Cost Savings</h4>
+          <p class="benefit-card__desc">Clients typically save 15-40 basis points on FX costs through AI-optimised timing and execution strategies.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FEATURE DEEP-DIVE ========== -->
+  <section class="deepdive deepdive--gray">
+    <div class="container">
+      <div class="deepdive__header">
+        <h2>How AI FX works</h2>
+      </div>
+
+      <!-- Row 1: AI Engine -->
+      <div class="deepdive__row">
+        <div class="deepdive__info">
+          <span class="deepdive__tag" style="background: #ECFEFF; color: #06B6D4;">AI Engine</span>
+          <h3 class="deepdive__title">Machine learning meets foreign exchange</h3>
+          <p class="deepdive__text">Our AI engine processes thousands of data points &mdash; market feeds, economic indicators, geopolitical signals &mdash; to generate real-time FX predictions.</p>
+          <ul class="deepdive__list">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#06B6D4" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              Multi-source data ingestion
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#06B6D4" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              Ensemble ML models
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#06B6D4" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              Real-time prediction updates
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#06B6D4" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              Continuous model retraining
+            </li>
+          </ul>
+        </div>
+        <div class="deepdive__visual">
+          <!-- Neural network / data flow diagram -->
+          <svg viewBox="0 0 380 280" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;">
+            <!-- Data Sources (left) -->
+            <rect x="10" y="30" width="90" height="32" rx="6" fill="#ECFEFF" stroke="#06B6D4" stroke-width="1" opacity="0.8"/>
+            <text x="25" y="50" fill="#06B6D4" font-size="9" font-weight="600" font-family="Inter, sans-serif">Market Feeds</text>
+
+            <rect x="10" y="80" width="90" height="32" rx="6" fill="#ECFEFF" stroke="#06B6D4" stroke-width="1" opacity="0.8"/>
+            <text x="17" y="100" fill="#06B6D4" font-size="9" font-weight="600" font-family="Inter, sans-serif">Economic Data</text>
+
+            <rect x="10" y="130" width="90" height="32" rx="6" fill="#ECFEFF" stroke="#06B6D4" stroke-width="1" opacity="0.8"/>
+            <text x="17" y="150" fill="#06B6D4" font-size="9" font-weight="600" font-family="Inter, sans-serif">Geo Signals</text>
+
+            <rect x="10" y="180" width="90" height="32" rx="6" fill="#ECFEFF" stroke="#06B6D4" stroke-width="1" opacity="0.8"/>
+            <text x="14" y="200" fill="#06B6D4" font-size="9" font-weight="600" font-family="Inter, sans-serif">Sentiment Data</text>
+
+            <!-- Connections to hidden layer -->
+            <line x1="100" y1="46" x2="150" y2="80" stroke="#06B6D4" stroke-width="1" opacity="0.3"/>
+            <line x1="100" y1="46" x2="150" y2="130" stroke="#06B6D4" stroke-width="1" opacity="0.2"/>
+            <line x1="100" y1="96" x2="150" y2="80" stroke="#06B6D4" stroke-width="1" opacity="0.3"/>
+            <line x1="100" y1="96" x2="150" y2="130" stroke="#06B6D4" stroke-width="1" opacity="0.3"/>
+            <line x1="100" y1="96" x2="150" y2="180" stroke="#06B6D4" stroke-width="1" opacity="0.2"/>
+            <line x1="100" y1="146" x2="150" y2="130" stroke="#06B6D4" stroke-width="1" opacity="0.3"/>
+            <line x1="100" y1="146" x2="150" y2="180" stroke="#06B6D4" stroke-width="1" opacity="0.3"/>
+            <line x1="100" y1="196" x2="150" y2="130" stroke="#06B6D4" stroke-width="1" opacity="0.2"/>
+            <line x1="100" y1="196" x2="150" y2="180" stroke="#06B6D4" stroke-width="1" opacity="0.3"/>
+
+            <!-- Hidden layer 1 -->
+            <circle cx="155" cy="80" r="12" fill="#ECFEFF" stroke="#06B6D4" stroke-width="1.5" opacity="0.9">
+              <animate attributeName="opacity" values="0.6;1;0.6" dur="3s" repeatCount="indefinite" begin="0s"/>
+            </circle>
+            <circle cx="155" cy="130" r="12" fill="#ECFEFF" stroke="#06B6D4" stroke-width="1.5" opacity="0.9">
+              <animate attributeName="opacity" values="0.6;1;0.6" dur="3s" repeatCount="indefinite" begin="0.5s"/>
+            </circle>
+            <circle cx="155" cy="180" r="12" fill="#ECFEFF" stroke="#06B6D4" stroke-width="1.5" opacity="0.9">
+              <animate attributeName="opacity" values="0.6;1;0.6" dur="3s" repeatCount="indefinite" begin="1s"/>
+            </circle>
+
+            <!-- Connections to hidden layer 2 -->
+            <line x1="167" y1="80" x2="215" y2="100" stroke="#06B6D4" stroke-width="1" opacity="0.3"/>
+            <line x1="167" y1="80" x2="215" y2="155" stroke="#06B6D4" stroke-width="1" opacity="0.2"/>
+            <line x1="167" y1="130" x2="215" y2="100" stroke="#06B6D4" stroke-width="1" opacity="0.3"/>
+            <line x1="167" y1="130" x2="215" y2="155" stroke="#06B6D4" stroke-width="1" opacity="0.3"/>
+            <line x1="167" y1="180" x2="215" y2="100" stroke="#06B6D4" stroke-width="1" opacity="0.2"/>
+            <line x1="167" y1="180" x2="215" y2="155" stroke="#06B6D4" stroke-width="1" opacity="0.3"/>
+
+            <!-- Hidden layer 2 -->
+            <circle cx="220" cy="100" r="14" fill="#06B6D4" fill-opacity="0.15" stroke="#06B6D4" stroke-width="1.5">
+              <animate attributeName="fill-opacity" values="0.1;0.25;0.1" dur="2.5s" repeatCount="indefinite" begin="0.3s"/>
+            </circle>
+            <circle cx="220" cy="155" r="14" fill="#06B6D4" fill-opacity="0.15" stroke="#06B6D4" stroke-width="1.5">
+              <animate attributeName="fill-opacity" values="0.1;0.25;0.1" dur="2.5s" repeatCount="indefinite" begin="0.8s"/>
+            </circle>
+
+            <!-- Connections to output -->
+            <line x1="234" y1="100" x2="285" y2="128" stroke="#06B6D4" stroke-width="1.5" opacity="0.4"/>
+            <line x1="234" y1="155" x2="285" y2="128" stroke="#06B6D4" stroke-width="1.5" opacity="0.4"/>
+
+            <!-- Output node -->
+            <circle cx="290" cy="128" r="18" fill="#06B6D4" fill-opacity="0.25" stroke="#06B6D4" stroke-width="2">
+              <animate attributeName="r" values="18;20;18" dur="2s" repeatCount="indefinite"/>
+            </circle>
+            <text x="280" y="132" fill="#06B6D4" font-size="9" font-weight="700" font-family="Inter, sans-serif">AI</text>
+
+            <!-- Output arrow -->
+            <line x1="308" y1="128" x2="340" y2="128" stroke="#06B6D4" stroke-width="2" opacity="0.6" stroke-linecap="round"/>
+            <polygon points="345,128 338,123 338,133" fill="#06B6D4" opacity="0.6"/>
+
+            <!-- Prediction output -->
+            <rect x="348" y="108" width="28" height="40" rx="6" fill="#06B6D4" fill-opacity="0.15" stroke="#06B6D4" stroke-width="1"/>
+            <text x="352" y="125" fill="#06B6D4" font-size="7" font-weight="600" font-family="Inter, sans-serif">FX</text>
+            <text x="349" y="140" fill="#06B6D4" font-size="7" font-weight="600" font-family="Inter, sans-serif">Rate</text>
+
+            <!-- Label -->
+            <text x="115" y="250" fill="#94A3B8" font-size="10" font-weight="600" font-family="Inter, sans-serif">Ensemble Neural Network</text>
+            <rect x="105" y="236" width="170" height="22" rx="4" fill="none" stroke="#94A3B8" stroke-width="0.5" stroke-dasharray="3 3" opacity="0.5"/>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Row 2: Strategy (reverse) -->
+      <div class="deepdive__row deepdive__row--reverse">
+        <div class="deepdive__info">
+          <span class="deepdive__tag" style="background: #ECFEFF; color: #06B6D4;">Strategy</span>
+          <h3 class="deepdive__title">Customise your FX strategy</h3>
+          <p class="deepdive__text">Define your risk tolerance, target currencies, and conversion windows. The AI optimises execution within your parameters.</p>
+          <ul class="deepdive__list">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#06B6D4" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              Risk tolerance configuration
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#06B6D4" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              Target rate alerts
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#06B6D4" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              Auto-execute on threshold
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#06B6D4" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              Partial conversion strategies
+            </li>
+          </ul>
+        </div>
+        <div class="deepdive__visual">
+          <!-- Strategy settings dashboard mockup -->
+          <div class="dashboard-mock" style="background: #1A1F36;">
+            <div class="dashboard-mock__header">
+              <span class="dashboard-mock__title">FX Strategy Settings</span>
+              <span class="dashboard-mock__status" style="background: rgba(6,182,212,0.2); color: #06B6D4;">Active</span>
+            </div>
+            <!-- Risk Tolerance Slider -->
+            <div style="margin-bottom: 20px;">
+              <div style="display:flex; justify-content:space-between; margin-bottom:8px;">
+                <span style="font-size:0.75rem; color:rgba(255,255,255,0.5);">Risk Tolerance</span>
+                <span style="font-size:0.75rem; font-weight:600; color:#06B6D4;">Moderate</span>
+              </div>
+              <div style="background:rgba(255,255,255,0.08); border-radius:4px; height:6px; position:relative;">
+                <div style="background: linear-gradient(90deg, #10B981, #06B6D4, #F59E0B); border-radius:4px; height:100%; width:55%;"></div>
+                <div style="position:absolute; top:-4px; left:53%; width:14px; height:14px; background:#06B6D4; border-radius:50%; border:2px solid #fff;"></div>
+              </div>
+            </div>
+            <!-- Conversion Window -->
+            <div style="margin-bottom: 20px;">
+              <div style="display:flex; justify-content:space-between; margin-bottom:8px;">
+                <span style="font-size:0.75rem; color:rgba(255,255,255,0.5);">Conversion Window</span>
+                <span style="font-size:0.75rem; font-weight:600; color:#fff;">5 business days</span>
+              </div>
+              <div style="background:rgba(255,255,255,0.08); border-radius:4px; height:6px; position:relative;">
+                <div style="background:#06B6D4; border-radius:4px; height:100%; width:40%;"></div>
+                <div style="position:absolute; top:-4px; left:38%; width:14px; height:14px; background:#06B6D4; border-radius:50%; border:2px solid #fff;"></div>
+              </div>
+            </div>
+            <!-- Target Pairs -->
+            <div class="dashboard-mock__row">
+              <span class="dashboard-mock__label">Target Pairs</span>
+              <span class="dashboard-mock__value">GBP/EUR, GBP/USD, GBP/CNY</span>
+            </div>
+            <div class="dashboard-mock__row">
+              <span class="dashboard-mock__label">Auto-execute</span>
+              <span class="dashboard-mock__value" style="color: #10B981;">Enabled</span>
+            </div>
+            <div class="dashboard-mock__row">
+              <span class="dashboard-mock__label">Target Rate (GBP/EUR)</span>
+              <span class="dashboard-mock__value">&ge; 1.2800</span>
+            </div>
+            <div class="dashboard-mock__row">
+              <span class="dashboard-mock__label">Partial Conversion</span>
+              <span class="dashboard-mock__value">25% increments</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row 3: Analytics -->
+      <div class="deepdive__row">
+        <div class="deepdive__info">
+          <span class="deepdive__tag" style="background: #ECFEFF; color: #06B6D4;">Analytics</span>
+          <h3 class="deepdive__title">Historical backtesting and performance</h3>
+          <p class="deepdive__text">Validate AI recommendations against historical data. Track savings, monitor prediction accuracy, and refine your strategy over time.</p>
+          <ul class="deepdive__list">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#06B6D4" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              Historical rate backtesting
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#06B6D4" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              Savings attribution reports
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#06B6D4" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              Prediction accuracy metrics
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#06B6D4" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              Strategy performance dashboards
+            </li>
+          </ul>
+        </div>
+        <div class="deepdive__visual">
+          <!-- Performance metrics dashboard -->
+          <div class="dashboard-mock" style="background: #1A1F36;">
+            <div class="dashboard-mock__header">
+              <span class="dashboard-mock__title">AI FX Performance</span>
+              <span class="dashboard-mock__status" style="background: rgba(16,185,129,0.2); color: #10B981;">Last 90 days</span>
+            </div>
+            <!-- Metric cards row -->
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:16px;">
+              <div style="background:rgba(255,255,255,0.05); border-radius:8px; padding:12px; border:1px solid rgba(255,255,255,0.08);">
+                <div style="font-size:0.6875rem; color:rgba(255,255,255,0.4); margin-bottom:4px;">Total FX Savings</div>
+                <div style="font-size:1.25rem; font-weight:700; color:#10B981;">&pound;47,820</div>
+                <div style="font-size:0.6875rem; color:#10B981; margin-top:2px;">+23% vs manual</div>
+              </div>
+              <div style="background:rgba(255,255,255,0.05); border-radius:8px; padding:12px; border:1px solid rgba(255,255,255,0.08);">
+                <div style="font-size:0.6875rem; color:rgba(255,255,255,0.4); margin-bottom:4px;">Prediction Accuracy</div>
+                <div style="font-size:1.25rem; font-weight:700; color:#06B6D4;">91.3%</div>
+                <div style="font-size:0.6875rem; color:#06B6D4; margin-top:2px;">Direction accuracy</div>
+              </div>
+              <div style="background:rgba(255,255,255,0.05); border-radius:8px; padding:12px; border:1px solid rgba(255,255,255,0.08);">
+                <div style="font-size:0.6875rem; color:rgba(255,255,255,0.4); margin-bottom:4px;">Avg Savings per Trade</div>
+                <div style="font-size:1.25rem; font-weight:700; color:#fff;">28 bps</div>
+                <div style="font-size:0.6875rem; color:rgba(255,255,255,0.5); margin-top:2px;">vs spot conversion</div>
+              </div>
+              <div style="background:rgba(255,255,255,0.05); border-radius:8px; padding:12px; border:1px solid rgba(255,255,255,0.08);">
+                <div style="font-size:0.6875rem; color:rgba(255,255,255,0.4); margin-bottom:4px;">Trades Executed</div>
+                <div style="font-size:1.25rem; font-weight:700; color:#fff;">1,247</div>
+                <div style="font-size:0.6875rem; color:rgba(255,255,255,0.5); margin-top:2px;">AI-optimised</div>
+              </div>
+            </div>
+            <!-- Mini sparkline bar chart -->
+            <div style="display:flex; align-items:flex-end; gap:4px; height:40px; padding-top:8px; border-top:1px solid rgba(255,255,255,0.06);">
+              <div style="flex:1; background:rgba(6,182,212,0.3); border-radius:2px 2px 0 0; height:45%;"></div>
+              <div style="flex:1; background:rgba(6,182,212,0.3); border-radius:2px 2px 0 0; height:60%;"></div>
+              <div style="flex:1; background:rgba(6,182,212,0.4); border-radius:2px 2px 0 0; height:50%;"></div>
+              <div style="flex:1; background:rgba(6,182,212,0.4); border-radius:2px 2px 0 0; height:75%;"></div>
+              <div style="flex:1; background:rgba(6,182,212,0.5); border-radius:2px 2px 0 0; height:65%;"></div>
+              <div style="flex:1; background:rgba(6,182,212,0.5); border-radius:2px 2px 0 0; height:80%;"></div>
+              <div style="flex:1; background:rgba(6,182,212,0.6); border-radius:2px 2px 0 0; height:70%;"></div>
+              <div style="flex:1; background:rgba(6,182,212,0.6); border-radius:2px 2px 0 0; height:90%;"></div>
+              <div style="flex:1; background:rgba(6,182,212,0.7); border-radius:2px 2px 0 0; height:85%;"></div>
+              <div style="flex:1; background:#06B6D4; border-radius:2px 2px 0 0; height:100%;"></div>
+            </div>
+            <div style="font-size:0.6875rem; color:rgba(255,255,255,0.3); margin-top:6px; text-align:center;">Monthly savings trend</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== USE CASES ========== -->
+  <section class="usecases">
+    <div class="container">
+      <div class="usecases__header">
+        <h2>Smarter FX for every scenario</h2>
+      </div>
+
+      <div class="usecases__grid">
+        <!-- Use Case 1: Treasury Teams -->
+        <div class="usecase-card">
+          <div class="usecase-card__icon" style="background: #ECFEFF; color: #06B6D4;">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#06B6D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="3" width="20" height="14" rx="2"/>
+              <line x1="8" y1="21" x2="16" y2="21"/>
+              <line x1="12" y1="17" x2="12" y2="21"/>
+            </svg>
+          </div>
+          <h4 class="usecase-card__title">Treasury Teams</h4>
+          <p class="usecase-card__pain">Managing large FX exposures across multiple currency pairs with unpredictable rate movements.</p>
+          <p class="usecase-card__solution">AI-optimised conversion timing and hedging recommendations that adapt to market conditions in real time.</p>
+        </div>
+
+        <!-- Use Case 2: Platform Payout Timing -->
+        <div class="usecase-card">
+          <div class="usecase-card__icon" style="background: #ECFEFF; color: #06B6D4;">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#06B6D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+            </svg>
+          </div>
+          <h4 class="usecase-card__title">Platform Payout Timing</h4>
+          <p class="usecase-card__pain">Optimising when to convert and disburse funds to sellers and partners in different currencies.</p>
+          <p class="usecase-card__solution">Automated batch conversion at AI-identified optimal windows, reducing FX costs on every payout cycle.</p>
+        </div>
+
+        <!-- Use Case 3: Recurring CNY Payments -->
+        <div class="usecase-card">
+          <div class="usecase-card__icon" style="background: #ECFEFF; color: #06B6D4;">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#06B6D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="12" y1="1" x2="12" y2="23"/>
+              <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+            </svg>
+          </div>
+          <h4 class="usecase-card__title">Recurring CNY Payments</h4>
+          <p class="usecase-card__pain">Regular payments to Chinese suppliers where GBP/CNY timing can significantly impact costs.</p>
+          <p class="usecase-card__solution">Corridor-specific AI models that learn seasonal patterns and execute at the best available rates.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROOF BAR ========== -->
+  <section class="proof-bar">
+    <div class="container">
+      <div class="proof-bar__grid">
+        <div class="proof-bar__item">
+          <div class="proof-bar__number">15-40 bps</div>
+          <div class="proof-bar__label">Typical savings</div>
+        </div>
+        <div class="proof-bar__item">
+          <div class="proof-bar__number">200+</div>
+          <div class="proof-bar__label">Currency pairs</div>
+        </div>
+        <div class="proof-bar__item">
+          <div class="proof-bar__number">Real-time</div>
+          <div class="proof-bar__label">Predictions</div>
+        </div>
+        <div class="proof-bar__item">
+          <div class="proof-bar__number">Since 2020</div>
+          <div class="proof-bar__label">AI-powered</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA ========== -->
+  <section class="product-cta">
+    <div class="container">
+      <div class="product-cta__banner">
+        <h2 class="product-cta__title">Ready to optimise your FX?</h2>
+        <p class="product-cta__desc">See how AI-powered FX management can reduce your currency costs.</p>
+        <div class="product-cta__actions">
+          <a href="#" class="btn btn--accent">Contact Sales</a>
+          <a href="#" class="btn btn--ghost" style="color:#fff; border-color:rgba(255,255,255,0.3);">Book a Demo</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <svg width="24" height="24" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="18" r="8" fill="#1677FF"/><circle cx="16" cy="7" r="5" fill="#1677FF"/><path d="M8 14L3 8" stroke="#1677FF" stroke-width="2.5" stroke-linecap="round"/><path d="M24 14L29 8" stroke="#1677FF" stroke-width="2.5" stroke-linecap="round"/></svg>
+            WorldFirst
+          </div>
+          <p class="footer__desc">Making global payments simple since 2004. Part of Ant International, serving 240,000+ businesses in 200+ markets worldwide.</p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="LinkedIn">in</a>
+            <a href="#" class="footer__social-link" aria-label="Twitter">&#x1D54F;</a>
+            <a href="#" class="footer__social-link" aria-label="Facebook">f</a>
+            <a href="#" class="footer__social-link" aria-label="YouTube">&#9654;</a>
+          </div>
+        </div>
+        <div>
+          <h5 class="footer__column-title">Products</h5>
+          <a href="../personal.html" class="footer__link">Personal Account</a>
+          <a href="../business.html" class="footer__link">World Account</a>
+          <a href="../enterprise.html" class="footer__link">Enterprise API</a>
+          <a href="#" class="footer__link">World Card</a>
+          <a href="#" class="footer__link">FX Risk Management</a>
+          <a href="#" class="footer__link">Collections</a>
+        </div>
+        <div>
+          <h5 class="footer__column-title">Company</h5>
+          <a href="#" class="footer__link">About us</a>
+          <a href="#" class="footer__link">Careers</a>
+          <a href="#" class="footer__link">Press &amp; Media</a>
+          <a href="#" class="footer__link">Blog</a>
+          <a href="#" class="footer__link">Partners</a>
+          <a href="#" class="footer__link">Contact</a>
+        </div>
+        <div>
+          <h5 class="footer__column-title">Resources</h5>
+          <a href="#" class="footer__link">Help centre</a>
+          <a href="#" class="footer__link">API Documentation</a>
+          <a href="#" class="footer__link">Currency converter</a>
+          <a href="#" class="footer__link">Business guides</a>
+          <a href="#" class="footer__link">E-commerce guides</a>
+          <a href="#" class="footer__link">Trustpilot reviews</a>
+        </div>
+        <div>
+          <h5 class="footer__column-title">Legal</h5>
+          <a href="#" class="footer__link">Terms of service</a>
+          <a href="#" class="footer__link">Privacy policy</a>
+          <a href="#" class="footer__link">Cookie policy</a>
+          <a href="#" class="footer__link">Regulatory info</a>
+          <a href="#" class="footer__link">Complaints</a>
+          <a href="#" class="footer__link">Modern slavery</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2024 WorldFirst. All rights reserved. Authorised by the FCA (FRN: 900508)</span>
+        <div class="footer__legal-links">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Cookies</a>
+          <a href="#">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../js/main.js"></script>
+</body>
+</html>
