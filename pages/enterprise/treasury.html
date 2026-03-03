@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real-time Treasury — Enterprise | WorldFirst UK</title>
+  <meta name="description" content="Unified treasury dashboard with real-time balance monitoring, automated cash sweeping, and liquidity optimisation across all entities and currencies.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/enterprise-products.css">
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <!-- Logo: Ant International | WorldFirst -->
+      <a href="../../index.html" class="header__logo">
+        <div class="logo-ant">
+          <svg width="28" height="28" viewBox="0 0 32 32" fill="none">
+            <circle cx="16" cy="18" r="8" fill="#1677FF"/>
+            <circle cx="16" cy="7" r="5" fill="#1677FF"/>
+            <path d="M8 14L3 8" stroke="#1677FF" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M24 14L29 8" stroke="#1677FF" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+          <span class="logo-ant__text">Ant<br>International</span>
+        </div>
+        <span class="logo-divider"></span>
+        <span class="logo-brand">WorldFirst</span>
+      </a>
+
+      <!-- Main Navigation with Mega Dropdowns -->
+      <nav class="nav" id="mainNav">
+        <div class="nav__item nav__item--has-dropdown">
+          <a href="../business.html" class="nav__link">Business <svg class="nav__arrow" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 9l6 6 6-6"/></svg></a>
+          <div class="mega-dropdown">
+            <div class="mega-dropdown__featured">
+              <div class="mega-dropdown__featured-visual">
+                <svg viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg"><rect width="200" height="120" rx="8" fill="#FFF3ED"/><rect x="20" y="20" width="70" height="45" rx="6" fill="#FFE0CC"/><rect x="30" y="30" width="50" height="12" rx="3" fill="#FFCAAA"/><rect x="30" y="47" width="35" height="8" rx="2" fill="#FFCAAA"/><circle cx="140" cy="45" r="22" fill="#FFE0CC"/><rect x="110" y="75" width="70" height="25" rx="6" fill="#FFE0CC"/></svg>
+              </div>
+              <div class="mega-dropdown__featured-content">
+                <h4><a href="../business.html">World Account &rarr;</a></h4>
+                <p>Multi-currency accounts, competitive FX, and global transfers &mdash; everything you need to pay and get paid internationally.</p>
+              </div>
+            </div>
+            <div class="mega-dropdown__columns">
+              <div class="mega-dropdown__col">
+                <h5>Products</h5>
+                <ul>
+                  <li><a href="../business.html#collect">Receive Payments</a></li>
+                  <li><a href="../business.html#pay">Send Payments</a></li>
+                  <li><a href="../business.html">Pay with a Virtual Card</a></li>
+                  <li><a href="../business.html">Fix a Future FX Rate</a></li>
+                  <li><a href="../business.html#manage">Manage Team &amp; Accounts</a></li>
+                  <li><a href="../business.html">Integrate Accounting Software</a></li>
+                </ul>
+              </div>
+              <div class="mega-dropdown__col">
+                <h5>Industries</h5>
+                <ul>
+                  <li><a href="../business.html">Importer &amp; Exporter</a></li>
+                  <li><a href="../business.html">E-commerce Seller</a></li>
+                  <li><a href="../business.html">Pay to China</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="mega-dropdown__sidebar">
+              <a href="../business.html#pricing">Pricing</a>
+              <a href="../business.html">Why Choose WorldFirst?</a>
+              <a href="../business.html">Help Centre</a>
+              <a href="../business.html">World Card with Cashback</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav__item nav__item--has-dropdown">
+          <a href="../enterprise.html" class="nav__link">Enterprise <svg class="nav__arrow" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 9l6 6 6-6"/></svg></a>
+          <div class="mega-dropdown">
+            <div class="mega-dropdown__featured">
+              <div class="mega-dropdown__featured-visual">
+                <svg viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg"><rect width="200" height="120" rx="8" fill="#F5F3FF"/><rect x="20" y="15" width="65" height="90" rx="6" fill="#E8E0FF"/><rect x="30" y="25" width="45" height="12" rx="2" fill="#D4C8FF"/><rect x="30" y="42" width="45" height="12" rx="2" fill="#D4C8FF"/><rect x="30" y="59" width="45" height="12" rx="2" fill="#D4C8FF"/><rect x="105" y="25" width="75" height="70" rx="6" fill="#E8E0FF"/><circle cx="142" cy="55" r="18" fill="#D4C8FF"/></svg>
+              </div>
+              <div class="mega-dropdown__featured-content">
+                <h4><a href="../enterprise.html">Enterprise Solutions &rarr;</a></h4>
+                <p>AI-driven financial suite for digital platforms operating across borders with seamless API integration.</p>
+              </div>
+            </div>
+            <div class="mega-dropdown__columns">
+              <div class="mega-dropdown__col">
+                <h5>Solutions</h5>
+                <ul>
+                  <li><a href="api.html">API Integration</a></li>
+                  <li><a href="checkout.html">Global Checkout</a></li>
+                  <li><a href="account.html">Multi-Currency Accounts</a></li>
+                  <li><a href="spend.html">Spend Management</a></li>
+                  <li><a href="ai-fx.html">AI FX Engine</a></li>
+                  <li><a href="treasury.html">Real-time Treasury</a></li>
+                  <li><a href="embedded-finance.html">Embedded Finance</a></li>
+                </ul>
+              </div>
+              <div class="mega-dropdown__col">
+                <h5>Industries</h5>
+                <ul>
+                  <li><a href="../enterprise.html">Marketplaces</a></li>
+                  <li><a href="../enterprise.html">Digital Platforms</a></li>
+                  <li><a href="../enterprise.html">Financial Institutions</a></li>
+                  <li><a href="../enterprise.html">SaaS Platforms</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="mega-dropdown__sidebar">
+              <a href="../enterprise.html#pricing">Enterprise Pricing</a>
+              <a href="../enterprise.html">Talk to Sales</a>
+              <a href="../enterprise.html">Documentation</a>
+              <a href="../enterprise.html">Case Studies</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav__item nav__item--has-dropdown">
+          <a href="../personal.html" class="nav__link">Personal <svg class="nav__arrow" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 9l6 6 6-6"/></svg></a>
+          <div class="mega-dropdown">
+            <div class="mega-dropdown__featured">
+              <div class="mega-dropdown__featured-visual">
+                <svg viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg"><rect width="200" height="120" rx="8" fill="#EFF6FF"/><rect x="50" y="10" width="100" height="100" rx="14" fill="#DBEAFE"/><circle cx="100" cy="45" r="16" fill="#BFDBFE"/><rect x="70" y="68" width="60" height="24" rx="4" fill="#BFDBFE"/><circle cx="30" cy="35" r="10" fill="#DBEAFE" opacity="0.6"/><circle cx="170" cy="85" r="8" fill="#DBEAFE" opacity="0.6"/></svg>
+              </div>
+              <div class="mega-dropdown__featured-content">
+                <h4><a href="../personal.html">Personal Account &rarr;</a></h4>
+                <p>Send money abroad, receive foreign income, and manage multiple currencies &mdash; all from your phone.</p>
+              </div>
+            </div>
+            <div class="mega-dropdown__columns">
+              <div class="mega-dropdown__col">
+                <h5>Services</h5>
+                <ul>
+                  <li><a href="../personal.html">International Transfers</a></li>
+                  <li><a href="../personal.html">Currency Exchange</a></li>
+                  <li><a href="../personal.html">Multi-currency Wallet</a></li>
+                  <li><a href="../personal.html">Recurring Payments</a></li>
+                </ul>
+              </div>
+              <div class="mega-dropdown__col">
+                <h5>Use Cases</h5>
+                <ul>
+                  <li><a href="../personal.html">Send Money Abroad</a></li>
+                  <li><a href="../personal.html">Receive Foreign Income</a></li>
+                  <li><a href="../personal.html">Travel Money</a></li>
+                  <li><a href="../personal.html">Expat Services</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="mega-dropdown__sidebar">
+              <a href="../personal.html#pricing">Personal Pricing</a>
+              <a href="../personal.html">FAQs</a>
+              <a href="../personal.html">Download App</a>
+              <a href="../personal.html">Security</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav__item nav__item--has-dropdown">
+          <a href="#" class="nav__link">About Us <svg class="nav__arrow" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 9l6 6 6-6"/></svg></a>
+          <div class="mega-dropdown mega-dropdown--compact">
+            <div class="mega-dropdown__columns">
+              <div class="mega-dropdown__col">
+                <h5>Company</h5>
+                <ul>
+                  <li><a href="#">About WorldFirst</a></li>
+                  <li><a href="#">Our Story</a></li>
+                  <li><a href="#">Careers</a></li>
+                  <li><a href="#">Press &amp; Media</a></li>
+                </ul>
+              </div>
+              <div class="mega-dropdown__col">
+                <h5>Resources</h5>
+                <ul>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Help Centre</a></li>
+                  <li><a href="#">Partners</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Header Right -->
+      <div class="nav__actions">
+        <div class="region-selector">
+          <span class="region-flag">&#127468;&#127463;</span>
+          <svg class="nav__arrow" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <a href="#" class="btn btn--secondary btn--sm">Log in</a>
+        <a href="#" class="btn btn--primary btn--sm">Sign Up</a>
+      </div>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========== PRODUCT SUB-NAV ========== -->
+  <nav class="product-subnav">
+    <div class="product-subnav__inner">
+      <a href="index.html" class="product-subnav__link">
+        <span class="product-subnav__dot" style="background:#7C3AED"></span> Overview
+      </a>
+      <a href="api.html" class="product-subnav__link">
+        <span class="product-subnav__dot" style="background:#2563EB"></span> API
+      </a>
+      <a href="checkout.html" class="product-subnav__link">
+        <span class="product-subnav__dot" style="background:#10B981"></span> Checkout
+      </a>
+      <a href="account.html" class="product-subnav__link">
+        <span class="product-subnav__dot" style="background:#7C3AED"></span> Account
+      </a>
+      <a href="spend.html" class="product-subnav__link">
+        <span class="product-subnav__dot" style="background:#F59E0B"></span> Spend
+      </a>
+      <a href="ai-fx.html" class="product-subnav__link">
+        <span class="product-subnav__dot" style="background:#06B6D4"></span> AI FX
+      </a>
+      <a href="treasury.html" class="product-subnav__link product-subnav__link--active">
+        <span class="product-subnav__dot" style="background:#D97706"></span> Treasury
+      </a>
+      <a href="embedded-finance.html" class="product-subnav__link">
+        <span class="product-subnav__dot" style="background:#EC4899"></span> Embedded Finance
+      </a>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="product-hero product-hero--treasury">
+    <div class="container product-hero__inner">
+      <div class="product-hero__content">
+        <!-- Breadcrumb -->
+        <div class="product-hero__breadcrumb">
+          <a href="../enterprise.html">Enterprise</a>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+          <span>Real-time Treasury</span>
+        </div>
+
+        <!-- Tag -->
+        <div class="product-hero__tag" style="background: rgba(217,119,6,0.2); border-color: rgba(217,119,6,0.3);">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FCD34D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M2 10h20"/><path d="M6 14h4"/></svg>
+          Treasury Management
+        </div>
+
+        <h1 class="product-hero__title">Real-time treasury visibility and control, globally</h1>
+        <p class="product-hero__desc">Unified dashboard across all entities, real-time balance monitoring, automated cash sweeping, and liquidity optimisation &mdash; manage your global treasury from one place.</p>
+
+        <div class="product-hero__cta">
+          <a href="#" class="btn btn--accent">Contact Sales</a>
+          <a href="api.html" class="btn btn--ghost">View API Docs</a>
+        </div>
+      </div>
+
+      <!-- Hero Visual: Treasury Dashboard Mockup -->
+      <div class="product-hero__visual">
+        <div class="dashboard-mock">
+          <div class="dashboard-mock__header">
+            <span class="dashboard-mock__title">Global Treasury Overview</span>
+            <span class="dashboard-mock__status" style="background: rgba(34,197,94,0.2); color: #22C55E;">Live</span>
+          </div>
+
+          <!-- Mini bar chart -->
+          <div style="display:flex; align-items:flex-end; gap:8px; margin-bottom:16px; padding:12px 0; border-bottom:1px solid rgba(255,255,255,0.06);">
+            <div style="display:flex; flex-direction:column; align-items:center; gap:4px; flex:1;">
+              <div style="width:100%; height:60px; background:linear-gradient(180deg, #D97706, #F59E0B); border-radius:4px 4px 0 0; opacity:0.9;"></div>
+              <span style="font-size:0.625rem; color:rgba(255,255,255,0.4);">GBP</span>
+            </div>
+            <div style="display:flex; flex-direction:column; align-items:center; gap:4px; flex:1;">
+              <div style="width:100%; height:45px; background:linear-gradient(180deg, #2563EB, #60A5FA); border-radius:4px 4px 0 0; opacity:0.9;"></div>
+              <span style="font-size:0.625rem; color:rgba(255,255,255,0.4);">USD</span>
+            </div>
+            <div style="display:flex; flex-direction:column; align-items:center; gap:4px; flex:1;">
+              <div style="width:100%; height:35px; background:linear-gradient(180deg, #10B981, #34D399); border-radius:4px 4px 0 0; opacity:0.9;"></div>
+              <span style="font-size:0.625rem; color:rgba(255,255,255,0.4);">EUR</span>
+            </div>
+            <div style="display:flex; flex-direction:column; align-items:center; gap:4px; flex:1;">
+              <div style="width:100%; height:20px; background:linear-gradient(180deg, #7C3AED, #A78BFA); border-radius:4px 4px 0 0; opacity:0.9;"></div>
+              <span style="font-size:0.625rem; color:rgba(255,255,255,0.4);">JPY</span>
+            </div>
+            <div style="display:flex; flex-direction:column; align-items:center; gap:4px; flex:1;">
+              <div style="width:100%; height:15px; background:linear-gradient(180deg, #EC4899, #F472B6); border-radius:4px 4px 0 0; opacity:0.9;"></div>
+              <span style="font-size:0.625rem; color:rgba(255,255,255,0.4);">CNY</span>
+            </div>
+          </div>
+
+          <div class="dashboard-mock__row">
+            <span class="dashboard-mock__label">Total Balance</span>
+            <span class="dashboard-mock__value">&pound;2,450,000</span>
+          </div>
+          <div class="dashboard-mock__row">
+            <span class="dashboard-mock__label">USD Holdings</span>
+            <span class="dashboard-mock__value">$1,230,000</span>
+          </div>
+          <div class="dashboard-mock__row">
+            <span class="dashboard-mock__label">EUR Holdings</span>
+            <span class="dashboard-mock__value">&euro;890,000</span>
+          </div>
+          <div class="dashboard-mock__row">
+            <span class="dashboard-mock__label">Pending Sweeps</span>
+            <span class="dashboard-mock__value" style="color: #FCD34D;">3 active</span>
+          </div>
+          <div class="dashboard-mock__row">
+            <span class="dashboard-mock__label">Cash Forecast</span>
+            <span class="dashboard-mock__value" style="color: #22C55E;">+&pound;340K (7d)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== KEY BENEFITS ========== -->
+  <section class="benefits">
+    <div class="container">
+      <div class="benefits__header">
+        <div class="benefits__label" style="color: #D97706;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D97706" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          Why choose Real-time Treasury
+        </div>
+        <h2 class="benefits__title">Complete treasury control at your fingertips</h2>
+      </div>
+
+      <div class="benefits__grid">
+        <!-- Benefit 1 -->
+        <div class="benefit-card">
+          <div class="benefit-card__icon" style="background: #FFF7ED; color: #D97706;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D97706" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+          <h4 class="benefit-card__title">Real-time Global View</h4>
+          <p class="benefit-card__desc">See all balances, positions, and cash flows across every entity and currency in real time. No more spreadsheet reconciliation.</p>
+        </div>
+
+        <!-- Benefit 2 -->
+        <div class="benefit-card">
+          <div class="benefit-card__icon" style="background: #FFF7ED; color: #D97706;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D97706" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 1l4 4-4 4"/><path d="M3 11V9a4 4 0 014-4h14"/><path d="M7 23l-4-4 4-4"/><path d="M21 13v2a4 4 0 01-4 4H3"/></svg>
+          </div>
+          <h4 class="benefit-card__title">Automated Sweeping</h4>
+          <p class="benefit-card__desc">Configure rules to automatically sweep excess balances across accounts. Optimise liquidity without manual intervention.</p>
+        </div>
+
+        <!-- Benefit 3 -->
+        <div class="benefit-card">
+          <div class="benefit-card__icon" style="background: #FFF7ED; color: #D97706;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D97706" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          </div>
+          <h4 class="benefit-card__title">Liquidity Optimisation</h4>
+          <p class="benefit-card__desc">AI-assisted cash positioning that ensures funds are where they need to be. Reduce idle balances and borrowing costs.</p>
+        </div>
+
+        <!-- Benefit 4 -->
+        <div class="benefit-card">
+          <div class="benefit-card__icon" style="background: #FFF7ED; color: #D97706;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D97706" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/><path d="M7 8h2"/><path d="M7 11h2"/><path d="M15 8h2"/><path d="M15 11h2"/></svg>
+          </div>
+          <h4 class="benefit-card__title">Multi-Entity Consolidation</h4>
+          <p class="benefit-card__desc">Aggregate treasury data across subsidiaries, branches, and legal entities into a single consolidated view.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FEATURE DEEP-DIVE ========== -->
+  <section class="deepdive deepdive--gray">
+    <div class="container">
+      <div class="deepdive__header">
+        <h2>Treasury infrastructure for the modern CFO</h2>
+      </div>
+
+      <!-- Row 1: Dashboard -->
+      <div class="deepdive__row">
+        <div class="deepdive__info">
+          <span class="deepdive__tag" style="background: #FFF7ED; color: #D97706;">Dashboard</span>
+          <h3 class="deepdive__title">Unified treasury dashboard</h3>
+          <p class="deepdive__text">Real-time visibility into all your accounts, balances, and cash flows across every entity and currency pair. Customisable views, alerts, and drill-down capabilities.</p>
+          <ul class="deepdive__list">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D97706" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+              Real-time balance monitoring
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D97706" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+              Customisable dashboard widgets
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D97706" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+              Automated alerting and escalation
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D97706" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+              Historical trend analysis
+            </li>
+          </ul>
+        </div>
+        <div class="deepdive__visual">
+          <!-- Abstract dashboard SVG with bars, lines, and KPI boxes -->
+          <svg viewBox="0 0 400 280" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%; height:auto;">
+            <!-- Background -->
+            <rect width="400" height="280" rx="12" fill="#1A1F36"/>
+            <!-- Header bar -->
+            <rect x="16" y="16" width="368" height="36" rx="6" fill="rgba(255,255,255,0.05)"/>
+            <rect x="28" y="28" width="80" height="12" rx="3" fill="rgba(255,255,255,0.15)"/>
+            <circle cx="360" cy="34" r="6" fill="#22C55E" opacity="0.8"/>
+            <!-- KPI boxes -->
+            <rect x="16" y="64" width="115" height="60" rx="8" fill="rgba(217,119,6,0.15)"/>
+            <rect x="28" y="76" width="50" height="8" rx="2" fill="rgba(255,255,255,0.2)"/>
+            <rect x="28" y="92" width="70" height="14" rx="3" fill="rgba(217,119,6,0.6)"/>
+            <rect x="142" y="64" width="115" height="60" rx="8" fill="rgba(37,99,235,0.15)"/>
+            <rect x="154" y="76" width="50" height="8" rx="2" fill="rgba(255,255,255,0.2)"/>
+            <rect x="154" y="92" width="70" height="14" rx="3" fill="rgba(37,99,235,0.6)"/>
+            <rect x="268" y="64" width="116" height="60" rx="8" fill="rgba(16,185,129,0.15)"/>
+            <rect x="280" y="76" width="50" height="8" rx="2" fill="rgba(255,255,255,0.2)"/>
+            <rect x="280" y="92" width="70" height="14" rx="3" fill="rgba(16,185,129,0.6)"/>
+            <!-- Line chart area -->
+            <rect x="16" y="136" width="236" height="128" rx="8" fill="rgba(255,255,255,0.03)"/>
+            <polyline points="32,240 72,220 112,230 152,200 192,210 232,180" stroke="#D97706" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <polyline points="32,245 72,235 112,240 152,225 192,230 232,215" stroke="#2563EB" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/>
+            <!-- Grid lines -->
+            <line x1="32" y1="176" x2="236" y2="176" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+            <line x1="32" y1="208" x2="236" y2="208" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+            <line x1="32" y1="240" x2="236" y2="240" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+            <!-- Bar chart sidebar -->
+            <rect x="268" y="136" width="116" height="128" rx="8" fill="rgba(255,255,255,0.03)"/>
+            <rect x="280" y="188" width="20" height="60" rx="3" fill="#D97706" opacity="0.7"/>
+            <rect x="308" y="204" width="20" height="44" rx="3" fill="#2563EB" opacity="0.7"/>
+            <rect x="336" y="216" width="20" height="32" rx="3" fill="#10B981" opacity="0.7"/>
+            <rect x="280" y="148" width="50" height="8" rx="2" fill="rgba(255,255,255,0.15)"/>
+            <rect x="280" y="162" width="35" height="6" rx="2" fill="rgba(255,255,255,0.08)"/>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Row 2: Cash Pooling (reverse) -->
+      <div class="deepdive__row deepdive__row--reverse">
+        <div class="deepdive__info">
+          <span class="deepdive__tag" style="background: #FFF7ED; color: #D97706;">Cash Pooling</span>
+          <h3 class="deepdive__title">Intelligent cash pooling and sweeping</h3>
+          <p class="deepdive__text">Define rules for automated cash concentration and distribution. Physical and notional pooling across entities and currencies.</p>
+          <ul class="deepdive__list">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D97706" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+              Zero-balance account sweeping
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D97706" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+              Target balance maintenance
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D97706" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+              Cross-currency pooling
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D97706" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+              Scheduled and event-triggered sweeps
+            </li>
+          </ul>
+        </div>
+        <div class="deepdive__visual">
+          <!-- Flow diagram: entities -> pool -> distribution -->
+          <svg viewBox="0 0 400 280" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%; height:auto;">
+            <!-- Entity boxes (left) -->
+            <rect x="20" y="30" width="100" height="40" rx="8" fill="#FFF7ED" stroke="#D97706" stroke-width="1.5"/>
+            <text x="70" y="55" text-anchor="middle" font-size="11" font-weight="600" fill="#D97706">Entity A (GBP)</text>
+            <rect x="20" y="90" width="100" height="40" rx="8" fill="#EFF6FF" stroke="#2563EB" stroke-width="1.5"/>
+            <text x="70" y="115" text-anchor="middle" font-size="11" font-weight="600" fill="#2563EB">Entity B (USD)</text>
+            <rect x="20" y="150" width="100" height="40" rx="8" fill="#ECFDF5" stroke="#10B981" stroke-width="1.5"/>
+            <text x="70" y="175" text-anchor="middle" font-size="11" font-weight="600" fill="#10B981">Entity C (EUR)</text>
+            <rect x="20" y="210" width="100" height="40" rx="8" fill="#F5F3FF" stroke="#7C3AED" stroke-width="1.5"/>
+            <text x="70" y="235" text-anchor="middle" font-size="11" font-weight="600" fill="#7C3AED">Entity D (JPY)</text>
+            <!-- Arrows to pool -->
+            <path d="M120 50 L155 140" stroke="#D97706" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#arrowGold)"/>
+            <path d="M120 110 L155 140" stroke="#2563EB" stroke-width="1.5" stroke-dasharray="4 3"/>
+            <path d="M120 170 L155 140" stroke="#10B981" stroke-width="1.5" stroke-dasharray="4 3"/>
+            <path d="M120 230 L155 140" stroke="#7C3AED" stroke-width="1.5" stroke-dasharray="4 3"/>
+            <!-- Central pool -->
+            <rect x="155" y="105" width="90" height="70" rx="12" fill="#D97706" opacity="0.15" stroke="#D97706" stroke-width="2"/>
+            <text x="200" y="135" text-anchor="middle" font-size="12" font-weight="700" fill="#D97706">Treasury</text>
+            <text x="200" y="152" text-anchor="middle" font-size="10" font-weight="500" fill="#92400E">Pool</text>
+            <!-- Arrows from pool -->
+            <path d="M245 125 L280 60" stroke="#D97706" stroke-width="1.5" stroke-dasharray="4 3"/>
+            <path d="M245 140 L280 140" stroke="#D97706" stroke-width="1.5" stroke-dasharray="4 3"/>
+            <path d="M245 155 L280 220" stroke="#D97706" stroke-width="1.5" stroke-dasharray="4 3"/>
+            <!-- Distribution boxes (right) -->
+            <rect x="280" y="30" width="100" height="55" rx="8" fill="rgba(217,119,6,0.08)" stroke="#D97706" stroke-width="1"/>
+            <text x="330" y="52" text-anchor="middle" font-size="10" font-weight="600" fill="#92400E">Operations</text>
+            <text x="330" y="68" text-anchor="middle" font-size="9" fill="#B45309">Auto-funded</text>
+            <rect x="280" y="112" width="100" height="55" rx="8" fill="rgba(217,119,6,0.08)" stroke="#D97706" stroke-width="1"/>
+            <text x="330" y="134" text-anchor="middle" font-size="10" font-weight="600" fill="#92400E">Payroll</text>
+            <text x="330" y="150" text-anchor="middle" font-size="9" fill="#B45309">Scheduled</text>
+            <rect x="280" y="194" width="100" height="55" rx="8" fill="rgba(217,119,6,0.08)" stroke="#D97706" stroke-width="1"/>
+            <text x="330" y="216" text-anchor="middle" font-size="10" font-weight="600" fill="#92400E">Investments</text>
+            <text x="330" y="232" text-anchor="middle" font-size="9" fill="#B45309">Surplus sweep</text>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Row 3: Reporting -->
+      <div class="deepdive__row">
+        <div class="deepdive__info">
+          <span class="deepdive__tag" style="background: #FFF7ED; color: #D97706;">Reporting</span>
+          <h3 class="deepdive__title">Treasury reporting and analytics</h3>
+          <p class="deepdive__text">Generate board-ready reports on cash positions, FX exposure, counterparty risk, and liquidity forecasts. Automated scheduling and distribution.</p>
+          <ul class="deepdive__list">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D97706" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+              Cash position reports
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D97706" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+              FX exposure analysis
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D97706" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+              Liquidity forecasting
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D97706" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+              Regulatory compliance reporting
+            </li>
+          </ul>
+        </div>
+        <div class="deepdive__visual">
+          <!-- Dashboard mock with charts and tables -->
+          <svg viewBox="0 0 400 280" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%; height:auto;">
+            <!-- Background -->
+            <rect width="400" height="280" rx="12" fill="#1A1F36"/>
+            <!-- Report header -->
+            <rect x="16" y="16" width="368" height="32" rx="6" fill="rgba(255,255,255,0.05)"/>
+            <rect x="28" y="26" width="100" height="12" rx="3" fill="rgba(255,255,255,0.15)"/>
+            <rect x="320" y="26" width="48" height="12" rx="3" fill="rgba(217,119,6,0.4)"/>
+            <!-- Donut chart -->
+            <rect x="16" y="60" width="170" height="130" rx="8" fill="rgba(255,255,255,0.03)"/>
+            <circle cx="100" cy="125" r="40" stroke="rgba(255,255,255,0.08)" stroke-width="12" fill="none"/>
+            <circle cx="100" cy="125" r="40" stroke="#D97706" stroke-width="12" fill="none" stroke-dasharray="88 163" stroke-dashoffset="0" stroke-linecap="round"/>
+            <circle cx="100" cy="125" r="40" stroke="#2563EB" stroke-width="12" fill="none" stroke-dasharray="50 201" stroke-dashoffset="-88" stroke-linecap="round"/>
+            <circle cx="100" cy="125" r="40" stroke="#10B981" stroke-width="12" fill="none" stroke-dasharray="38 213" stroke-dashoffset="-138" stroke-linecap="round"/>
+            <circle cx="100" cy="125" r="40" stroke="#7C3AED" stroke-width="12" fill="none" stroke-dasharray="25 226" stroke-dashoffset="-176" stroke-linecap="round"/>
+            <text x="100" y="122" text-anchor="middle" font-size="11" font-weight="700" fill="white">Total</text>
+            <text x="100" y="136" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.5)">Exposure</text>
+            <rect x="28" y="72" width="60" height="8" rx="2" fill="rgba(255,255,255,0.12)"/>
+            <!-- Table section -->
+            <rect x="198" y="60" width="186" height="130" rx="8" fill="rgba(255,255,255,0.03)"/>
+            <rect x="210" y="72" width="80" height="8" rx="2" fill="rgba(255,255,255,0.12)"/>
+            <!-- Table rows -->
+            <line x1="210" y1="90" x2="372" y2="90" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+            <rect x="210" y="96" width="40" height="8" rx="2" fill="rgba(255,255,255,0.1)"/>
+            <rect x="300" y="96" width="60" height="8" rx="2" fill="rgba(217,119,6,0.4)"/>
+            <line x1="210" y1="114" x2="372" y2="114" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+            <rect x="210" y="120" width="40" height="8" rx="2" fill="rgba(255,255,255,0.1)"/>
+            <rect x="300" y="120" width="50" height="8" rx="2" fill="rgba(37,99,235,0.4)"/>
+            <line x1="210" y1="138" x2="372" y2="138" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+            <rect x="210" y="144" width="40" height="8" rx="2" fill="rgba(255,255,255,0.1)"/>
+            <rect x="300" y="144" width="40" height="8" rx="2" fill="rgba(16,185,129,0.4)"/>
+            <line x1="210" y1="162" x2="372" y2="162" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+            <rect x="210" y="168" width="40" height="8" rx="2" fill="rgba(255,255,255,0.1)"/>
+            <rect x="300" y="168" width="30" height="8" rx="2" fill="rgba(124,58,237,0.4)"/>
+            <!-- Forecast chart -->
+            <rect x="16" y="202" width="368" height="62" rx="8" fill="rgba(255,255,255,0.03)"/>
+            <rect x="28" y="212" width="70" height="8" rx="2" fill="rgba(255,255,255,0.12)"/>
+            <!-- Forecast bars -->
+            <rect x="28" y="232" width="36" height="20" rx="3" fill="rgba(217,119,6,0.5)"/>
+            <rect x="72" y="228" width="36" height="24" rx="3" fill="rgba(217,119,6,0.6)"/>
+            <rect x="116" y="225" width="36" height="27" rx="3" fill="rgba(217,119,6,0.7)"/>
+            <rect x="160" y="222" width="36" height="30" rx="3" fill="#D97706" opacity="0.8"/>
+            <rect x="204" y="230" width="36" height="22" rx="3" fill="rgba(217,119,6,0.3)" stroke="#D97706" stroke-width="1" stroke-dasharray="3 2"/>
+            <rect x="248" y="234" width="36" height="18" rx="3" fill="rgba(217,119,6,0.2)" stroke="#D97706" stroke-width="1" stroke-dasharray="3 2"/>
+            <rect x="292" y="236" width="36" height="16" rx="3" fill="rgba(217,119,6,0.15)" stroke="#D97706" stroke-width="1" stroke-dasharray="3 2"/>
+            <rect x="336" y="238" width="36" height="14" rx="3" fill="rgba(217,119,6,0.1)" stroke="#D97706" stroke-width="1" stroke-dasharray="3 2"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== USE CASES ========== -->
+  <section class="usecases usecases--gray">
+    <div class="container">
+      <div class="usecases__header">
+        <h2>Treasury solutions for every challenge</h2>
+      </div>
+
+      <div class="usecases__grid">
+        <!-- Use Case 1 -->
+        <div class="usecase-card">
+          <div class="usecase-card__icon" style="background: #FFF7ED; color: #D97706;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D97706" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+          </div>
+          <h4 class="usecase-card__title">Multi-Region CFOs</h4>
+          <p class="usecase-card__pain">Fragmented visibility across regional banks and entities makes global cash management a manual nightmare.</p>
+          <p class="usecase-card__solution">Single dashboard consolidating all entities, with automated sweeping and real-time alerts on position changes.</p>
+        </div>
+
+        <!-- Use Case 2 -->
+        <div class="usecase-card">
+          <div class="usecase-card__icon" style="background: #FFF7ED; color: #D97706;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D97706" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+          </div>
+          <h4 class="usecase-card__title">Escrow Requirements</h4>
+          <p class="usecase-card__pain">Platforms that need to hold, segregate, and release funds according to transaction milestones.</p>
+          <p class="usecase-card__solution">Automated escrow management with milestone-based release, full audit trail, and regulatory compliance.</p>
+        </div>
+
+        <!-- Use Case 3 -->
+        <div class="usecase-card">
+          <div class="usecase-card__icon" style="background: #FFF7ED; color: #D97706;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D97706" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+          </div>
+          <h4 class="usecase-card__title">Idle Balance Optimisation</h4>
+          <p class="usecase-card__pain">Cash sitting in low-yield accounts across multiple currencies and entities.</p>
+          <p class="usecase-card__solution">AI-assisted liquidity positioning that identifies optimal sweep targets and currency conversion opportunities.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROOF BAR ========== -->
+  <section class="proof-bar">
+    <div class="container">
+      <div class="proof-bar__grid">
+        <div class="proof-bar__item">
+          <div class="proof-bar__number">Real-time</div>
+          <div class="proof-bar__label">visibility</div>
+        </div>
+        <div class="proof-bar__item">
+          <div class="proof-bar__number">60+</div>
+          <div class="proof-bar__label">currencies</div>
+        </div>
+        <div class="proof-bar__item">
+          <div class="proof-bar__number">Automated</div>
+          <div class="proof-bar__label">sweeping</div>
+        </div>
+        <div class="proof-bar__item">
+          <div class="proof-bar__number">Multi-entity</div>
+          <div class="proof-bar__label">support</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA ========== -->
+  <section class="product-cta">
+    <div class="container">
+      <div class="product-cta__banner">
+        <h2 class="product-cta__title">Ready to transform your treasury?</h2>
+        <p class="product-cta__desc">Get real-time visibility and control over your global treasury operations.</p>
+        <div class="product-cta__actions">
+          <a href="#" class="btn btn--accent">Contact Sales</a>
+          <a href="#" class="btn btn--ghost" style="color:#fff; border-color:rgba(255,255,255,0.3);">Book a Demo</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <svg width="24" height="24" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="18" r="8" fill="#1677FF"/><circle cx="16" cy="7" r="5" fill="#1677FF"/><path d="M8 14L3 8" stroke="#1677FF" stroke-width="2.5" stroke-linecap="round"/><path d="M24 14L29 8" stroke="#1677FF" stroke-width="2.5" stroke-linecap="round"/></svg>
+            WorldFirst
+          </div>
+          <p class="footer__desc">Making global payments simple since 2004. Part of Ant International, serving 240,000+ businesses in 200+ markets worldwide.</p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="LinkedIn">in</a>
+            <a href="#" class="footer__social-link" aria-label="Twitter">&#120143;</a>
+            <a href="#" class="footer__social-link" aria-label="Facebook">f</a>
+            <a href="#" class="footer__social-link" aria-label="YouTube">&#9654;</a>
+          </div>
+        </div>
+        <div>
+          <h5 class="footer__column-title">Products</h5>
+          <a href="../personal.html" class="footer__link">Personal Account</a>
+          <a href="../business.html" class="footer__link">World Account</a>
+          <a href="../enterprise.html" class="footer__link">Enterprise API</a>
+          <a href="#" class="footer__link">World Card</a>
+          <a href="#" class="footer__link">FX Risk Management</a>
+          <a href="#" class="footer__link">Collections</a>
+        </div>
+        <div>
+          <h5 class="footer__column-title">Company</h5>
+          <a href="#" class="footer__link">About us</a>
+          <a href="#" class="footer__link">Careers</a>
+          <a href="#" class="footer__link">Press &amp; Media</a>
+          <a href="#" class="footer__link">Blog</a>
+          <a href="#" class="footer__link">Partners</a>
+          <a href="#" class="footer__link">Contact</a>
+        </div>
+        <div>
+          <h5 class="footer__column-title">Resources</h5>
+          <a href="#" class="footer__link">Help centre</a>
+          <a href="#" class="footer__link">API Documentation</a>
+          <a href="#" class="footer__link">Currency converter</a>
+          <a href="#" class="footer__link">Business guides</a>
+          <a href="#" class="footer__link">E-commerce guides</a>
+          <a href="#" class="footer__link">Trustpilot reviews</a>
+        </div>
+        <div>
+          <h5 class="footer__column-title">Legal</h5>
+          <a href="#" class="footer__link">Terms of service</a>
+          <a href="#" class="footer__link">Privacy policy</a>
+          <a href="#" class="footer__link">Cookie policy</a>
+          <a href="#" class="footer__link">Regulatory info</a>
+          <a href="#" class="footer__link">Complaints</a>
+          <a href="#" class="footer__link">Modern slavery</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2024 WorldFirst. All rights reserved. Authorised by the FCA (FRN: 900508)</span>
+        <div class="footer__legal-links">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Cookies</a>
+          <a href="#">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../js/main.js"></script>
+</body>
+</html>
