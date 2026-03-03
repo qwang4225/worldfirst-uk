@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Account — Multi-Currency Accounts at Scale | WorldFirst Enterprise</title>
+  <meta name="description" content="Programmatically open and manage multi-currency accounts with local bank details in 60+ currencies. Automate reconciliation, manage sub-accounts, and give your users local receiving capabilities.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/enterprise-products.css">
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <!-- Logo: Ant International | WorldFirst -->
+      <a href="../../index.html" class="header__logo">
+        <div class="logo-ant">
+          <svg width="28" height="28" viewBox="0 0 32 32" fill="none">
+            <circle cx="16" cy="18" r="8" fill="#1677FF"/>
+            <circle cx="16" cy="7" r="5" fill="#1677FF"/>
+            <path d="M8 14L3 8" stroke="#1677FF" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M24 14L29 8" stroke="#1677FF" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+          <span class="logo-ant__text">Ant<br>International</span>
+        </div>
+        <span class="logo-divider"></span>
+        <span class="logo-brand">WorldFirst</span>
+      </a>
+
+      <!-- Main Navigation with Mega Dropdowns -->
+      <nav class="nav" id="mainNav">
+        <div class="nav__item nav__item--has-dropdown">
+          <a href="../business.html" class="nav__link">Business <svg class="nav__arrow" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 9l6 6 6-6"/></svg></a>
+          <div class="mega-dropdown">
+            <div class="mega-dropdown__featured">
+              <div class="mega-dropdown__featured-visual">
+                <svg viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg"><rect width="200" height="120" rx="8" fill="#FFF3ED"/><rect x="20" y="20" width="70" height="45" rx="6" fill="#FFE0CC"/><rect x="30" y="30" width="50" height="12" rx="3" fill="#FFCAAA"/><rect x="30" y="47" width="35" height="8" rx="2" fill="#FFCAAA"/><circle cx="140" cy="45" r="22" fill="#FFE0CC"/><rect x="110" y="75" width="70" height="25" rx="6" fill="#FFE0CC"/></svg>
+              </div>
+              <div class="mega-dropdown__featured-content">
+                <h4><a href="../business.html">World Account &rarr;</a></h4>
+                <p>Multi-currency accounts, competitive FX, and global transfers &mdash; everything you need to pay and get paid internationally.</p>
+              </div>
+            </div>
+            <div class="mega-dropdown__columns">
+              <div class="mega-dropdown__col">
+                <h5>Products</h5>
+                <ul>
+                  <li><a href="../business.html#collect">Receive Payments</a></li>
+                  <li><a href="../business.html#pay">Send Payments</a></li>
+                  <li><a href="../business.html">Pay with a Virtual Card</a></li>
+                  <li><a href="../business.html">Fix a Future FX Rate</a></li>
+                  <li><a href="../business.html#manage">Manage Team &amp; Accounts</a></li>
+                  <li><a href="../business.html">Integrate Accounting Software</a></li>
+                </ul>
+              </div>
+              <div class="mega-dropdown__col">
+                <h5>Industries</h5>
+                <ul>
+                  <li><a href="../business.html">Importer &amp; Exporter</a></li>
+                  <li><a href="../business.html">E-commerce Seller</a></li>
+                  <li><a href="../business.html">Pay to China</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="mega-dropdown__sidebar">
+              <a href="../business.html#pricing">Pricing</a>
+              <a href="../business.html">Why Choose WorldFirst?</a>
+              <a href="../business.html">Help Centre</a>
+              <a href="../business.html">World Card with Cashback</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav__item nav__item--has-dropdown">
+          <a href="../enterprise.html" class="nav__link nav__link--active">Enterprise <svg class="nav__arrow" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 9l6 6 6-6"/></svg></a>
+          <div class="mega-dropdown">
+            <div class="mega-dropdown__featured">
+              <div class="mega-dropdown__featured-visual">
+                <svg viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg"><rect width="200" height="120" rx="8" fill="#F5F3FF"/><rect x="20" y="15" width="65" height="90" rx="6" fill="#E8E0FF"/><rect x="30" y="25" width="45" height="12" rx="2" fill="#D4C8FF"/><rect x="30" y="42" width="45" height="12" rx="2" fill="#D4C8FF"/><rect x="30" y="59" width="45" height="12" rx="2" fill="#D4C8FF"/><rect x="105" y="25" width="75" height="70" rx="6" fill="#E8E0FF"/><circle cx="142" cy="55" r="18" fill="#D4C8FF"/></svg>
+              </div>
+              <div class="mega-dropdown__featured-content">
+                <h4><a href="../enterprise.html">Enterprise Solutions &rarr;</a></h4>
+                <p>AI-driven financial suite for digital platforms operating across borders with seamless API integration.</p>
+              </div>
+            </div>
+            <div class="mega-dropdown__columns">
+              <div class="mega-dropdown__col">
+                <h5>Products</h5>
+                <ul>
+                  <li><a href="api.html">API Integration</a></li>
+                  <li><a href="checkout.html">Checkout</a></li>
+                  <li><a href="account.html">Account</a></li>
+                  <li><a href="spend.html">Spend</a></li>
+                  <li><a href="ai-fx.html">AI FX Engine</a></li>
+                  <li><a href="treasury.html">Treasury</a></li>
+                  <li><a href="embedded-finance.html">Embedded Finance</a></li>
+                </ul>
+              </div>
+              <div class="mega-dropdown__col">
+                <h5>Industries</h5>
+                <ul>
+                  <li><a href="../enterprise.html">Marketplaces</a></li>
+                  <li><a href="../enterprise.html">Digital Platforms</a></li>
+                  <li><a href="../enterprise.html">Financial Institutions</a></li>
+                  <li><a href="../enterprise.html">SaaS Platforms</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="mega-dropdown__sidebar">
+              <a href="../enterprise.html#pricing">Enterprise Pricing</a>
+              <a href="../enterprise.html">Talk to Sales</a>
+              <a href="../enterprise.html">Documentation</a>
+              <a href="../enterprise.html">Case Studies</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav__item nav__item--has-dropdown">
+          <a href="../personal.html" class="nav__link">Personal <svg class="nav__arrow" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 9l6 6 6-6"/></svg></a>
+          <div class="mega-dropdown">
+            <div class="mega-dropdown__featured">
+              <div class="mega-dropdown__featured-visual">
+                <svg viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg"><rect width="200" height="120" rx="8" fill="#EFF6FF"/><rect x="50" y="10" width="100" height="100" rx="14" fill="#DBEAFE"/><circle cx="100" cy="45" r="16" fill="#BFDBFE"/><rect x="70" y="68" width="60" height="24" rx="4" fill="#BFDBFE"/><circle cx="30" cy="35" r="10" fill="#DBEAFE" opacity="0.6"/><circle cx="170" cy="85" r="8" fill="#DBEAFE" opacity="0.6"/></svg>
+              </div>
+              <div class="mega-dropdown__featured-content">
+                <h4><a href="../personal.html">Personal Account &rarr;</a></h4>
+                <p>Send money abroad, receive foreign income, and manage multiple currencies &mdash; all from your phone.</p>
+              </div>
+            </div>
+            <div class="mega-dropdown__columns">
+              <div class="mega-dropdown__col">
+                <h5>Services</h5>
+                <ul>
+                  <li><a href="../personal.html">International Transfers</a></li>
+                  <li><a href="../personal.html">Currency Exchange</a></li>
+                  <li><a href="../personal.html">Multi-currency Wallet</a></li>
+                  <li><a href="../personal.html">Recurring Payments</a></li>
+                </ul>
+              </div>
+              <div class="mega-dropdown__col">
+                <h5>Use Cases</h5>
+                <ul>
+                  <li><a href="../personal.html">Send Money Abroad</a></li>
+                  <li><a href="../personal.html">Receive Foreign Income</a></li>
+                  <li><a href="../personal.html">Travel Money</a></li>
+                  <li><a href="../personal.html">Expat Services</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="mega-dropdown__sidebar">
+              <a href="../personal.html#pricing">Personal Pricing</a>
+              <a href="../personal.html">FAQs</a>
+              <a href="../personal.html">Download App</a>
+              <a href="../personal.html">Security</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav__item nav__item--has-dropdown">
+          <a href="#" class="nav__link">About Us <svg class="nav__arrow" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 9l6 6 6-6"/></svg></a>
+          <div class="mega-dropdown mega-dropdown--compact">
+            <div class="mega-dropdown__columns">
+              <div class="mega-dropdown__col">
+                <h5>Company</h5>
+                <ul>
+                  <li><a href="#">About WorldFirst</a></li>
+                  <li><a href="#">Our Story</a></li>
+                  <li><a href="#">Careers</a></li>
+                  <li><a href="#">Press &amp; Media</a></li>
+                </ul>
+              </div>
+              <div class="mega-dropdown__col">
+                <h5>Resources</h5>
+                <ul>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Help Centre</a></li>
+                  <li><a href="#">Partners</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Header Right -->
+      <div class="nav__actions">
+        <div class="region-selector">
+          <span class="region-flag">&#127468;&#127463;</span>
+          <svg class="nav__arrow" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <a href="#" class="btn btn--secondary btn--sm">Log in</a>
+        <a href="#" class="btn btn--primary btn--sm">Sign Up</a>
+      </div>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========== PRODUCT SUB-NAV ========== -->
+  <nav class="product-subnav">
+    <div class="product-subnav__inner">
+      <a href="index.html" class="product-subnav__link">
+        <span class="product-subnav__dot" style="background: #7C3AED;"></span>
+        Overview
+      </a>
+      <a href="api.html" class="product-subnav__link">
+        <span class="product-subnav__dot" style="background: #2563EB;"></span>
+        API
+      </a>
+      <a href="checkout.html" class="product-subnav__link">
+        <span class="product-subnav__dot" style="background: #10B981;"></span>
+        Checkout
+      </a>
+      <a href="account.html" class="product-subnav__link product-subnav__link--active">
+        <span class="product-subnav__dot" style="background: #7C3AED;"></span>
+        Account
+      </a>
+      <a href="spend.html" class="product-subnav__link">
+        <span class="product-subnav__dot" style="background: #F59E0B;"></span>
+        Spend
+      </a>
+      <a href="ai-fx.html" class="product-subnav__link">
+        <span class="product-subnav__dot" style="background: #06B6D4;"></span>
+        AI FX
+      </a>
+      <a href="treasury.html" class="product-subnav__link">
+        <span class="product-subnav__dot" style="background: #D97706;"></span>
+        Treasury
+      </a>
+      <a href="embedded-finance.html" class="product-subnav__link">
+        <span class="product-subnav__dot" style="background: #EC4899;"></span>
+        Embedded Finance
+      </a>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="product-hero product-hero--account">
+    <div class="container product-hero__inner">
+      <div class="product-hero__content">
+        <!-- Breadcrumb -->
+        <div class="product-hero__breadcrumb">
+          <a href="../enterprise.html">Enterprise</a>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 5l7 7-7 7"/></svg>
+          <span>Account</span>
+        </div>
+
+        <!-- Tag -->
+        <div class="product-hero__tag" style="background: rgba(124, 58, 237, 0.2); border-color: rgba(124, 58, 237, 0.3); color: #C4B5FD;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="3"/><path d="M2 10h20"/></svg>
+          Multi-Currency Accounts
+        </div>
+
+        <!-- Title -->
+        <h1 class="product-hero__title">Multi-currency accounts at scale, via API</h1>
+
+        <!-- Description -->
+        <p class="product-hero__desc">Programmatically open and manage multi-currency accounts with local bank details in 60+ currencies. Automate reconciliation, manage sub-accounts, and give your users local receiving capabilities.</p>
+
+        <!-- CTAs -->
+        <div class="product-hero__cta">
+          <a href="#" class="btn btn--accent">Contact Sales</a>
+          <a href="#" class="btn btn--outline-light">View API Docs</a>
+        </div>
+      </div>
+
+      <!-- Hero Visual: Dashboard Mockup -->
+      <div class="product-hero__visual">
+        <div class="product-hero__mockup">
+          <div class="dashboard-mock">
+            <div class="dashboard-mock__header">
+              <span class="dashboard-mock__title">Account Balances</span>
+              <span class="dashboard-mock__status" style="background: rgba(124, 58, 237, 0.2); color: #C4B5FD;">Live</span>
+            </div>
+            <!-- GBP Row -->
+            <div class="dashboard-mock__row">
+              <span class="dashboard-mock__label" style="display: flex; align-items: center; gap: 8px;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#1E40AF"/><text x="12" y="16" font-size="10" fill="#fff" text-anchor="middle" font-weight="700">&#163;</text></svg>
+                GBP
+              </span>
+              <span class="dashboard-mock__value">&pound;125,430.00</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 6px; padding: 0 0 6px; margin-top: -4px;">
+              <span style="display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: #10B981;"></span>
+              <span style="font-size: 0.6875rem; color: rgba(255,255,255,0.4);">Active &middot; Sort code &amp; account number</span>
+            </div>
+            <!-- USD Row -->
+            <div class="dashboard-mock__row">
+              <span class="dashboard-mock__label" style="display: flex; align-items: center; gap: 8px;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#047857"/><text x="12" y="16" font-size="10" fill="#fff" text-anchor="middle" font-weight="700">$</text></svg>
+                USD
+              </span>
+              <span class="dashboard-mock__value">$89,200.00</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 6px; padding: 0 0 6px; margin-top: -4px;">
+              <span style="display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: #10B981;"></span>
+              <span style="font-size: 0.6875rem; color: rgba(255,255,255,0.4);">Active &middot; ACH routing &amp; account number</span>
+            </div>
+            <!-- EUR Row -->
+            <div class="dashboard-mock__row">
+              <span class="dashboard-mock__label" style="display: flex; align-items: center; gap: 8px;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#1D4ED8"/><text x="12" y="16" font-size="10" fill="#fff" text-anchor="middle" font-weight="700">&euro;</text></svg>
+                EUR
+              </span>
+              <span class="dashboard-mock__value">&euro;67,100.00</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 6px; padding: 0 0 6px; margin-top: -4px;">
+              <span style="display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: #10B981;"></span>
+              <span style="font-size: 0.6875rem; color: rgba(255,255,255,0.4);">Active &middot; IBAN</span>
+            </div>
+            <!-- Summary bar -->
+            <div style="margin-top: 12px; padding-top: 12px; border-top: 1px solid rgba(255,255,255,0.1); display: flex; justify-content: space-between; align-items: center;">
+              <span style="font-size: 0.6875rem; color: rgba(255,255,255,0.4);">3 of 60+ currencies active</span>
+              <span style="font-size: 0.6875rem; color: #C4B5FD; font-weight: 600;">View all &rarr;</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== KEY BENEFITS ========== -->
+  <section class="benefits">
+    <div class="container">
+      <div class="benefits__header">
+        <div class="benefits__label" style="color: #7C3AED;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="2"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2z"/></svg>
+          Why choose our Accounts
+        </div>
+        <h2 class="benefits__title">Accounts infrastructure built for platforms</h2>
+      </div>
+
+      <div class="benefits__grid">
+        <!-- Card 1: Scale Account Opening -->
+        <div class="benefit-card">
+          <div class="benefit-card__icon" style="background: var(--ep-account-light);">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <line x1="19" y1="8" x2="19" y2="14"/>
+              <line x1="22" y1="11" x2="16" y2="11"/>
+            </svg>
+          </div>
+          <h4 class="benefit-card__title">Scale Account Opening</h4>
+          <p class="benefit-card__desc">Programmatically create accounts for your users via API. Automated KYB verification and instant activation.</p>
+        </div>
+
+        <!-- Card 2: Local Currency Collection -->
+        <div class="benefit-card">
+          <div class="benefit-card__icon" style="background: var(--ep-account-light);">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M2 12h20"/>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            </svg>
+          </div>
+          <h4 class="benefit-card__title">Local Currency Collection</h4>
+          <p class="benefit-card__desc">Named local bank accounts in 60+ currencies. Your users receive funds as if they have a local bank account.</p>
+        </div>
+
+        <!-- Card 3: Automated Reconciliation -->
+        <div class="benefit-card">
+          <div class="benefit-card__icon" style="background: var(--ep-account-light);">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 11 12 14 22 4"/>
+              <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
+            </svg>
+          </div>
+          <h4 class="benefit-card__title">Automated Reconciliation</h4>
+          <p class="benefit-card__desc">Real-time transaction matching and automated reconciliation. Webhooks for every movement, zero manual effort.</p>
+        </div>
+
+        <!-- Card 4: Flexible Hierarchy -->
+        <div class="benefit-card">
+          <div class="benefit-card__icon" style="background: var(--ep-account-light);">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="7" height="7" rx="1"/>
+              <rect x="14" y="3" width="7" height="7" rx="1"/>
+              <rect x="3" y="14" width="7" height="7" rx="1"/>
+              <rect x="14" y="14" width="7" height="7" rx="1"/>
+            </svg>
+          </div>
+          <h4 class="benefit-card__title">Flexible Hierarchy</h4>
+          <p class="benefit-card__desc">Sub-accounts, virtual accounts, and multi-entity structures. Design the account architecture your platform needs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FEATURE DEEP-DIVE ========== -->
+  <section class="deepdive deepdive--gray">
+    <div class="container">
+      <!-- Row 1: Account Hierarchy -->
+      <div class="deepdive__row">
+        <div class="deepdive__info">
+          <div class="deepdive__tag" style="background: var(--ep-account-light); color: #7C3AED;">Account Hierarchy</div>
+          <h3 class="deepdive__title">Account Hierarchy</h3>
+          <p class="deepdive__text">Account hierarchy model supporting parent-child relationships, virtual accounts, and multi-entity grouping. Organise your platform's finances with the structure that fits your business model.</p>
+          <ul class="deepdive__list">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              Parent-child account relationships
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              Virtual accounts for segregation
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              Multi-entity grouping and permissions
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              Cascading policies and controls
+            </li>
+          </ul>
+        </div>
+        <div class="deepdive__visual">
+          <!-- Tree diagram: Platform Account -> Entity Accounts -> Sub-accounts -->
+          <svg width="380" height="280" viewBox="0 0 380 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Platform Account (root) -->
+            <rect x="115" y="10" width="150" height="44" rx="8" fill="#7C3AED"/>
+            <text x="190" y="36" text-anchor="middle" fill="#fff" font-size="12" font-weight="600" font-family="Inter, sans-serif">Platform Account</text>
+            <!-- Connectors from root -->
+            <line x1="155" y1="54" x2="80" y2="100" stroke="#7C3AED" stroke-width="2" stroke-dasharray="4 3" opacity="0.5"/>
+            <line x1="190" y1="54" x2="190" y2="100" stroke="#7C3AED" stroke-width="2" stroke-dasharray="4 3" opacity="0.5"/>
+            <line x1="225" y1="54" x2="300" y2="100" stroke="#7C3AED" stroke-width="2" stroke-dasharray="4 3" opacity="0.5"/>
+            <!-- Entity Accounts (level 2) -->
+            <rect x="15" y="100" width="130" height="40" rx="6" fill="#E9E0FF" stroke="#7C3AED" stroke-width="1.5"/>
+            <text x="80" y="124" text-anchor="middle" fill="#5B21B6" font-size="11" font-weight="600" font-family="Inter, sans-serif">Entity: UK Ltd</text>
+            <rect x="155" y="100" width="130" height="40" rx="6" fill="#E9E0FF" stroke="#7C3AED" stroke-width="1.5"/>
+            <text x="220" y="124" text-anchor="middle" fill="#5B21B6" font-size="11" font-weight="600" font-family="Inter, sans-serif">Entity: US Inc</text>
+            <rect x="235" y="100" width="130" height="40" rx="6" fill="#E9E0FF" stroke="#7C3AED" stroke-width="1.5"/>
+            <text x="300" y="124" text-anchor="middle" fill="#5B21B6" font-size="11" font-weight="600" font-family="Inter, sans-serif">Entity: EU GmbH</text>
+            <!-- Connectors to sub-accounts -->
+            <line x1="50" y1="140" x2="35" y2="180" stroke="#C4B5FD" stroke-width="1.5" stroke-dasharray="3 2"/>
+            <line x1="110" y1="140" x2="125" y2="180" stroke="#C4B5FD" stroke-width="1.5" stroke-dasharray="3 2"/>
+            <line x1="190" y1="140" x2="190" y2="180" stroke="#C4B5FD" stroke-width="1.5" stroke-dasharray="3 2"/>
+            <line x1="300" y1="140" x2="280" y2="180" stroke="#C4B5FD" stroke-width="1.5" stroke-dasharray="3 2"/>
+            <line x1="300" y1="140" x2="345" y2="180" stroke="#C4B5FD" stroke-width="1.5" stroke-dasharray="3 2"/>
+            <!-- Sub-accounts (level 3) -->
+            <rect x="2" y="180" width="65" height="32" rx="5" fill="#F5F3FF" stroke="#C4B5FD" stroke-width="1"/>
+            <text x="34" y="200" text-anchor="middle" fill="#6D28D9" font-size="9" font-weight="500" font-family="Inter, sans-serif">GBP Sub</text>
+            <rect x="92" y="180" width="65" height="32" rx="5" fill="#F5F3FF" stroke="#C4B5FD" stroke-width="1"/>
+            <text x="124" y="200" text-anchor="middle" fill="#6D28D9" font-size="9" font-weight="500" font-family="Inter, sans-serif">EUR Sub</text>
+            <rect x="162" y="180" width="65" height="32" rx="5" fill="#F5F3FF" stroke="#C4B5FD" stroke-width="1"/>
+            <text x="194" y="200" text-anchor="middle" fill="#6D28D9" font-size="9" font-weight="500" font-family="Inter, sans-serif">USD Sub</text>
+            <rect x="247" y="180" width="65" height="32" rx="5" fill="#F5F3FF" stroke="#C4B5FD" stroke-width="1"/>
+            <text x="279" y="200" text-anchor="middle" fill="#6D28D9" font-size="9" font-weight="500" font-family="Inter, sans-serif">EUR Sub</text>
+            <rect x="317" y="180" width="60" height="32" rx="5" fill="#F5F3FF" stroke="#C4B5FD" stroke-width="1"/>
+            <text x="347" y="200" text-anchor="middle" fill="#6D28D9" font-size="9" font-weight="500" font-family="Inter, sans-serif">CHF Sub</text>
+            <!-- Legend -->
+            <rect x="100" y="235" width="10" height="10" rx="2" fill="#7C3AED"/>
+            <text x="116" y="244" fill="#6B7280" font-size="9" font-family="Inter, sans-serif">Platform</text>
+            <rect x="165" y="235" width="10" height="10" rx="2" fill="#E9E0FF" stroke="#7C3AED" stroke-width="1"/>
+            <text x="181" y="244" fill="#6B7280" font-size="9" font-family="Inter, sans-serif">Entity</text>
+            <rect x="215" y="235" width="10" height="10" rx="2" fill="#F5F3FF" stroke="#C4B5FD" stroke-width="1"/>
+            <text x="231" y="244" fill="#6B7280" font-size="9" font-family="Inter, sans-serif">Sub-account</text>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Row 2: Currency Wallets (Reverse) -->
+      <div class="deepdive__row deepdive__row--reverse">
+        <div class="deepdive__info">
+          <div class="deepdive__tag" style="background: var(--ep-account-light); color: #7C3AED;">Currency Wallets</div>
+          <h3 class="deepdive__title">Currency Wallets</h3>
+          <p class="deepdive__text">Each account holds multiple currency wallets with local receiving details. Auto-convert or hold in native currency. Your users get dedicated IBANs, sort codes, and routing numbers across markets.</p>
+          <ul class="deepdive__list">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              Local bank details per currency
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              Auto-convert or hold in native currency
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              Real-time balance visibility
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              Instant internal transfers between wallets
+            </li>
+          </ul>
+        </div>
+        <div class="deepdive__visual">
+          <!-- Wallet mockup showing multiple currencies -->
+          <svg width="360" height="280" viewBox="0 0 360 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Wallet container -->
+            <rect x="20" y="10" width="320" height="260" rx="12" fill="#F9FAFB" stroke="#E5E7EB" stroke-width="1"/>
+            <text x="40" y="38" fill="#1A1F36" font-size="13" font-weight="700" font-family="Inter, sans-serif">Currency Wallets</text>
+            <!-- GBP Wallet -->
+            <rect x="35" y="52" width="290" height="52" rx="8" fill="#fff" stroke="#E5E7EB" stroke-width="1"/>
+            <circle cx="60" cy="78" r="14" fill="#1E40AF"/>
+            <text x="60" y="82" text-anchor="middle" fill="#fff" font-size="10" font-weight="700" font-family="Inter, sans-serif">&#163;</text>
+            <text x="84" y="73" fill="#1A1F36" font-size="12" font-weight="600" font-family="Inter, sans-serif">British Pound</text>
+            <text x="84" y="88" fill="#6B7280" font-size="9" font-family="Inter, sans-serif">Sort: 04-00-75 &middot; Acc: 31926819</text>
+            <text x="295" y="73" text-anchor="end" fill="#1A1F36" font-size="12" font-weight="700" font-family="Inter, sans-serif">&#163;125,430</text>
+            <circle cx="302" cy="78" r="4" fill="#10B981"/>
+            <!-- USD Wallet -->
+            <rect x="35" y="112" width="290" height="52" rx="8" fill="#fff" stroke="#E5E7EB" stroke-width="1"/>
+            <circle cx="60" cy="138" r="14" fill="#047857"/>
+            <text x="60" y="142" text-anchor="middle" fill="#fff" font-size="10" font-weight="700" font-family="Inter, sans-serif">$</text>
+            <text x="84" y="133" fill="#1A1F36" font-size="12" font-weight="600" font-family="Inter, sans-serif">US Dollar</text>
+            <text x="84" y="148" fill="#6B7280" font-size="9" font-family="Inter, sans-serif">ABA: 026009593 &middot; Acc: 8829104</text>
+            <text x="295" y="133" text-anchor="end" fill="#1A1F36" font-size="12" font-weight="700" font-family="Inter, sans-serif">$89,200</text>
+            <circle cx="302" cy="138" r="4" fill="#10B981"/>
+            <!-- EUR Wallet -->
+            <rect x="35" y="172" width="290" height="52" rx="8" fill="#fff" stroke="#E5E7EB" stroke-width="1"/>
+            <circle cx="60" cy="198" r="14" fill="#1D4ED8"/>
+            <text x="60" y="202" text-anchor="middle" fill="#fff" font-size="10" font-weight="700" font-family="Inter, sans-serif">&euro;</text>
+            <text x="84" y="193" fill="#1A1F36" font-size="12" font-weight="600" font-family="Inter, sans-serif">Euro</text>
+            <text x="84" y="208" fill="#6B7280" font-size="9" font-family="Inter, sans-serif">IBAN: DE89 3704 0044 0532 0130 00</text>
+            <text x="295" y="193" text-anchor="end" fill="#1A1F36" font-size="12" font-weight="700" font-family="Inter, sans-serif">&euro;67,100</text>
+            <circle cx="302" cy="198" r="4" fill="#10B981"/>
+            <!-- Add currency row -->
+            <rect x="35" y="232" width="290" height="32" rx="8" fill="#F5F3FF" stroke="#C4B5FD" stroke-width="1" stroke-dasharray="4 3"/>
+            <text x="180" y="252" text-anchor="middle" fill="#7C3AED" font-size="11" font-weight="600" font-family="Inter, sans-serif">+ Add currency wallet</text>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Row 3: Compliance-Ready KYB -->
+      <div class="deepdive__row">
+        <div class="deepdive__info">
+          <div class="deepdive__tag" style="background: var(--ep-account-light); color: #7C3AED;">Compliance</div>
+          <h3 class="deepdive__title">Compliance-Ready KYB</h3>
+          <p class="deepdive__text">Streamlined Know-Your-Business flows with automated document collection, verification, and ongoing monitoring. Reduce onboarding friction while maintaining full regulatory compliance.</p>
+          <ul class="deepdive__list">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              Automated document collection
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              Real-time identity verification
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              Ongoing compliance monitoring
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              200+ market coverage
+            </li>
+          </ul>
+        </div>
+        <div class="deepdive__visual">
+          <!-- KYB Flow Diagram -->
+          <div class="flow-diagram">
+            <div class="flow-diagram__step">
+              <span class="flow-diagram__step-num" style="background: #7C3AED;">1</span>
+              Submit business details via API
+            </div>
+            <div class="flow-diagram__connector" style="background: #C4B5FD;"></div>
+            <div class="flow-diagram__step">
+              <span class="flow-diagram__step-num" style="background: #7C3AED;">2</span>
+              Automated document collection
+            </div>
+            <div class="flow-diagram__connector" style="background: #C4B5FD;"></div>
+            <div class="flow-diagram__step">
+              <span class="flow-diagram__step-num" style="background: #7C3AED;">3</span>
+              Identity &amp; business verification
+            </div>
+            <div class="flow-diagram__connector" style="background: #C4B5FD;"></div>
+            <div class="flow-diagram__step">
+              <span class="flow-diagram__step-num" style="background: #7C3AED;">4</span>
+              Risk assessment &amp; screening
+            </div>
+            <div class="flow-diagram__connector" style="background: #C4B5FD;"></div>
+            <div class="flow-diagram__step">
+              <span class="flow-diagram__step-num" style="background: #10B981;">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+              </span>
+              Account activated &amp; ongoing monitoring
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== USE CASES ========== -->
+  <section class="usecases">
+    <div class="container">
+      <div class="usecases__header">
+        <h2>Built for platforms managing accounts at scale</h2>
+      </div>
+
+      <div class="usecases__grid">
+        <!-- Use Case 1: Marketplace Sellers -->
+        <div class="usecase-card">
+          <div class="usecase-card__icon" style="background: var(--ep-account-light);">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+              <polyline points="9 22 9 12 15 12 15 22"/>
+            </svg>
+          </div>
+          <h4 class="usecase-card__title">Marketplace Sellers</h4>
+          <p class="usecase-card__pain">Onboarding thousands of sellers who need local receiving accounts across markets.</p>
+          <p class="usecase-card__solution">API-driven account creation with automated KYB and instant local bank details.</p>
+        </div>
+
+        <!-- Use Case 2: Treasury Teams -->
+        <div class="usecase-card">
+          <div class="usecase-card__icon" style="background: var(--ep-account-light);">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="3" width="20" height="14" rx="2"/>
+              <path d="M8 21h8"/>
+              <path d="M12 17v4"/>
+              <path d="M6 8h.01M6 12h.01M10 8h.01M10 12h.01M14 8h.01M14 12h.01M18 8h.01M18 12h.01"/>
+            </svg>
+          </div>
+          <h4 class="usecase-card__title">Treasury Teams</h4>
+          <p class="usecase-card__pain">Managing accounts across multiple regional entities with different currencies.</p>
+          <p class="usecase-card__solution">Unified multi-entity account structure with real-time visibility and automated sweeping.</p>
+        </div>
+
+        <!-- Use Case 3: Fund Holding -->
+        <div class="usecase-card">
+          <div class="usecase-card__icon" style="background: var(--ep-account-light);">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+          </div>
+          <h4 class="usecase-card__title">Fund Holding</h4>
+          <p class="usecase-card__pain">Platforms that need to hold and manage funds on behalf of users compliantly.</p>
+          <p class="usecase-card__solution">Segregated accounts with regulatory compliance built in across 200+ markets.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROOF BAR ========== -->
+  <section class="proof-bar">
+    <div class="container">
+      <div class="proof-bar__grid">
+        <div class="proof-bar__item">
+          <div class="proof-bar__number">1.5M+</div>
+          <div class="proof-bar__label">businesses</div>
+        </div>
+        <div class="proof-bar__item">
+          <div class="proof-bar__number">60+</div>
+          <div class="proof-bar__label">currencies</div>
+        </div>
+        <div class="proof-bar__item">
+          <div class="proof-bar__number">200+</div>
+          <div class="proof-bar__label">countries</div>
+        </div>
+        <div class="proof-bar__item">
+          <div class="proof-bar__number">Instant</div>
+          <div class="proof-bar__label">account creation</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA ========== -->
+  <section class="product-cta">
+    <div class="container">
+      <div class="product-cta__banner">
+        <h2 class="product-cta__title">Ready to scale your account infrastructure?</h2>
+        <p class="product-cta__desc">Speak with our enterprise team to explore how multi-currency accounts can power your platform.</p>
+        <div class="product-cta__actions">
+          <a href="#" class="btn btn--accent">Contact Sales</a>
+          <a href="#" class="btn btn--outline-light">Book a Demo</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <svg width="24" height="24" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="18" r="8" fill="#1677FF"/><circle cx="16" cy="7" r="5" fill="#1677FF"/><path d="M8 14L3 8" stroke="#1677FF" stroke-width="2.5" stroke-linecap="round"/><path d="M24 14L29 8" stroke="#1677FF" stroke-width="2.5" stroke-linecap="round"/></svg>
+            WorldFirst
+          </div>
+          <p class="footer__desc">Making global payments simple since 2004. Part of Ant International, serving 240,000+ businesses in 200+ markets worldwide.</p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="LinkedIn">in</a>
+            <a href="#" class="footer__social-link" aria-label="Twitter">&#120143;</a>
+            <a href="#" class="footer__social-link" aria-label="Facebook">f</a>
+            <a href="#" class="footer__social-link" aria-label="YouTube">&#9654;</a>
+          </div>
+        </div>
+        <div>
+          <h5 class="footer__column-title">Products</h5>
+          <a href="../personal.html" class="footer__link">Personal Account</a>
+          <a href="../business.html" class="footer__link">World Account</a>
+          <a href="../enterprise.html" class="footer__link">Enterprise API</a>
+          <a href="#" class="footer__link">World Card</a>
+          <a href="#" class="footer__link">FX Risk Management</a>
+          <a href="#" class="footer__link">Collections</a>
+        </div>
+        <div>
+          <h5 class="footer__column-title">Company</h5>
+          <a href="#" class="footer__link">About us</a>
+          <a href="#" class="footer__link">Careers</a>
+          <a href="#" class="footer__link">Press &amp; Media</a>
+          <a href="#" class="footer__link">Blog</a>
+          <a href="#" class="footer__link">Partners</a>
+          <a href="#" class="footer__link">Contact</a>
+        </div>
+        <div>
+          <h5 class="footer__column-title">Resources</h5>
+          <a href="#" class="footer__link">Help centre</a>
+          <a href="#" class="footer__link">API Documentation</a>
+          <a href="#" class="footer__link">Currency converter</a>
+          <a href="#" class="footer__link">Business guides</a>
+          <a href="#" class="footer__link">E-commerce guides</a>
+          <a href="#" class="footer__link">Trustpilot reviews</a>
+        </div>
+        <div>
+          <h5 class="footer__column-title">Legal</h5>
+          <a href="#" class="footer__link">Terms of service</a>
+          <a href="#" class="footer__link">Privacy policy</a>
+          <a href="#" class="footer__link">Cookie policy</a>
+          <a href="#" class="footer__link">Regulatory info</a>
+          <a href="#" class="footer__link">Complaints</a>
+          <a href="#" class="footer__link">Modern slavery</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2024 WorldFirst. All rights reserved. Authorised by the FCA (FRN: 900508)</span>
+        <div class="footer__legal-links">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Cookies</a>
+          <a href="#">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../js/main.js"></script>
+</body>
+</html>
