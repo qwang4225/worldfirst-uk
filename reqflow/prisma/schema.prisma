@@ -1,0 +1,210 @@
+generator client {
+  provider = "prisma-client-js"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String   @id @default(uuid())
+  name      String
+  email     String   @unique
+  password  String   @default("")
+  avatar    String?
+  role      String   @default("DEVELOPER")
+  locale    String   @default("en")
+  createdAt DateTime @default(now())
+
+  projectMembers ProjectMember[]
+  requirements   Requirement[]   @relation("SubmittedBy")
+  assignedReqs   Requirement[]   @relation("AssignedTo")
+  workLogs       WorkLog[]
+  comments       Comment[]
+  uploadedFiles  ProjectFile[]
+  notifications  Notification[]
+}
+
+model Project {
+  id            String   @id @default(uuid())
+  name          String
+  nameZh        String   @default("")
+  description   String?
+  descriptionZh String?
+  status        String   @default("INITIATION")
+  startDate     DateTime?
+  endDate       DateTime?
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  members      ProjectMember[]
+  requirements Requirement[]
+  milestones   Milestone[]
+  files        ProjectFile[]
+  workLogs     WorkLog[]
+}
+
+model ProjectMember {
+  id        String   @id @default(uuid())
+  projectId String
+  userId    String
+  role      String   @default("MEMBER")
+  joinedAt  DateTime @default(now())
+
+  project Project @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  user    User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([projectId, userId])
+}
+
+model Requirement {
+  id                 String    @id @default(uuid())
+  projectId          String
+  submittedById      String
+  assignedToId       String?
+  title              String
+  titleZh            String    @default("")
+  requester          String    @default("")
+  contactEmail       String    @default("")
+  desiredLaunchDate  DateTime?
+  estimatedStartDate DateTime?
+  isHardDeadline     Boolean   @default(false)
+  hardDeadlineReason String?
+  goal               String    @default("OTHER")
+  goalDetail         String?
+  successMetric      String?
+  successMetricOwner String?
+  successDataProvider String?
+  pageScope          String?
+  audience           String?
+  targetRegions      String?
+  customerType       String?
+  contentAssets      String?
+  designNeeded       Boolean   @default(false)
+  figmaLink          String?
+  trackingRequirements String?
+  seoReviewPoints    String?
+  acceptanceCriteria String?
+  dependencies       String?
+  priority           String    @default("P2")
+  priorityReason     String?
+  status             String    @default("DRAFT")
+  kanbanColumn       String    @default("BACKLOG")
+  sortOrder          Int       @default(0)
+  estimatedHours     Float?
+  actualHours        Float?
+  tags               String?
+  shareToken         String?   @unique
+  milestoneId        String?
+  createdAt          DateTime  @default(now())
+  updatedAt          DateTime  @updatedAt
+
+  project       Project           @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  submittedBy   User              @relation("SubmittedBy", fields: [submittedById], references: [id])
+  assignedTo    User?             @relation("AssignedTo", fields: [assignedToId], references: [id])
+  milestone     Milestone?        @relation(fields: [milestoneId], references: [id])
+  attachments   RequirementFile[]
+  comments      Comment[]
+  workLogs      WorkLog[]
+  statusHistory StatusHistory[]
+}
+
+model RequirementFile {
+  id            String   @id @default(uuid())
+  requirementId String
+  filename      String
+  originalName  String
+  mimeType      String
+  size          Int
+  path          String
+  createdAt     DateTime @default(now())
+
+  requirement Requirement @relation(fields: [requirementId], references: [id], onDelete: Cascade)
+}
+
+model Milestone {
+  id          String    @id @default(uuid())
+  projectId   String
+  title       String
+  titleZh     String    @default("")
+  dueDate     DateTime
+  completedAt DateTime?
+  description String?
+
+  project      Project       @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  requirements Requirement[]
+}
+
+model WorkLog {
+  id            String   @id @default(uuid())
+  userId        String
+  requirementId String?
+  projectId     String
+  date          DateTime
+  hours         Float
+  description   String?
+  createdAt     DateTime @default(now())
+
+  user        User         @relation(fields: [userId], references: [id])
+  requirement Requirement? @relation(fields: [requirementId], references: [id])
+  project     Project      @relation(fields: [projectId], references: [id], onDelete: Cascade)
+}
+
+model Comment {
+  id            String   @id @default(uuid())
+  requirementId String
+  authorId      String
+  content       String
+  contentZh     String?
+  parentId      String?
+  isInternal    Boolean  @default(false)
+  createdAt     DateTime @default(now())
+
+  requirement Requirement @relation(fields: [requirementId], references: [id], onDelete: Cascade)
+  author      User        @relation(fields: [authorId], references: [id])
+  parent      Comment?    @relation("CommentReplies", fields: [parentId], references: [id])
+  replies     Comment[]   @relation("CommentReplies")
+}
+
+model ProjectFile {
+  id            String   @id @default(uuid())
+  projectId     String
+  uploadedById  String
+  filename      String
+  originalName  String
+  mimeType      String
+  size          Int
+  path          String
+  category      String   @default("OTHER")
+  requirementId String?
+  createdAt     DateTime @default(now())
+
+  project    Project @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  uploadedBy User    @relation(fields: [uploadedById], references: [id])
+}
+
+model StatusHistory {
+  id            String   @id @default(uuid())
+  requirementId String
+  fromStatus    String
+  toStatus      String
+  changedById   String?
+  createdAt     DateTime @default(now())
+
+  requirement Requirement @relation(fields: [requirementId], references: [id], onDelete: Cascade)
+}
+
+model Notification {
+  id        String   @id @default(uuid())
+  userId    String
+  type      String
+  title     String
+  message   String
+  link      String?
+  isRead    Boolean  @default(false)
+  createdAt DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
