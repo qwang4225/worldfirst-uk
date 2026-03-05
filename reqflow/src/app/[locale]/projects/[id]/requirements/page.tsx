@@ -9,7 +9,7 @@ import RequirementForm from '@/components/forms/RequirementForm';
 import { cn } from '@/lib/utils';
 import { PRIORITY_COLORS, KANBAN_STATUS_COLORS } from '@/types';
 import type { KanbanColumn, Priority } from '@/types';
-import { Plus, Search } from 'lucide-react';
+import { Plus, Search, Download } from 'lucide-react';
 
 interface Req {
   id: string; title: string; titleZh: string; priority: string; goal: string;
@@ -29,19 +29,27 @@ export default function RequirementsPage() {
   const { currentProject } = useProjectStore();
   const { openRequirementDrawer } = useUIStore();
   const [reqs, setReqs] = useState<Req[]>([]);
+  const [loading, setLoading] = useState(true);
   const [search, setSearch] = useState('');
   const [priority, setPriority] = useState('');
   const [status, setStatus] = useState('');
 
   const load = useCallback(async () => {
     if (!currentProject) return;
+    setLoading(true);
     const p = new URLSearchParams();
     if (search) p.set('search', search);
     if (priority) p.set('priority', priority);
     if (status) p.set('kanbanColumn', status);
     const r = await fetch(`/api/projects/${currentProject.id}/requirements?${p}`);
     if (r.ok) setReqs(await r.json());
+    setLoading(false);
   }, [currentProject, search, priority, status]);
+
+  const exportCsv = () => {
+    if (!currentProject) return;
+    window.open(`/api/projects/${currentProject.id}/export?format=csv`, '_blank');
+  };
 
   useEffect(() => { load(); }, [load]);
 
@@ -51,10 +59,16 @@ export default function RequirementsPage() {
     <div>
       <div className="flex items-center justify-between mb-4">
         <h2 className="text-lg font-semibold text-slate-900">{t('nav.requirements')}</h2>
-        <button onClick={() => openRequirementDrawer()}
-          className="flex items-center gap-1.5 px-3 py-2 bg-[#0066FF] text-white rounded-md text-sm font-medium hover:bg-[#0052cc]">
-          <Plus size={16} />{t('req.newRequirement')}
-        </button>
+        <div className="flex items-center gap-2">
+          <button onClick={exportCsv}
+            className="flex items-center gap-1.5 px-3 py-2 border border-slate-200 rounded-md text-sm text-slate-600 hover:bg-slate-50">
+            <Download size={16} />{t('common.export')}
+          </button>
+          <button onClick={() => openRequirementDrawer()}
+            className="flex items-center gap-1.5 px-3 py-2 bg-[#0066FF] text-white rounded-md text-sm font-medium hover:bg-[#0052cc]">
+            <Plus size={16} />{t('req.newRequirement')}
+          </button>
+        </div>
       </div>
 
       <div className="flex items-center gap-2 mb-4">
@@ -105,7 +119,20 @@ export default function RequirementsPage() {
             ))}
           </tbody>
         </table>
-        {reqs.length === 0 && (
+        {loading && reqs.length === 0 && (
+          <div className="divide-y divide-slate-100">
+            {[1, 2, 3, 4].map((i) => (
+              <div key={i} className="px-4 py-3 flex gap-4 animate-pulse">
+                <div className="h-4 bg-slate-200 rounded w-48" />
+                <div className="h-4 bg-slate-200 rounded w-12" />
+                <div className="h-4 bg-slate-200 rounded w-20" />
+                <div className="h-4 bg-slate-200 rounded w-24" />
+                <div className="h-4 bg-slate-200 rounded w-16" />
+              </div>
+            ))}
+          </div>
+        )}
+        {!loading && reqs.length === 0 && (
           <div className="text-center py-12 text-slate-400">
             <p className="text-sm">{t('empty.noRequirements')}</p>
             <p className="text-xs mt-1">{t('empty.noRequirementsDesc')}</p>

@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 import { Toaster } from 'sonner';
 import NotificationPanel from '@/components/layout/NotificationPanel';
+import KeyboardShortcuts from '@/components/layout/KeyboardShortcuts';
 import '../globals.css';
 
 export const metadata = {
@@ -32,6 +33,7 @@ export default async function LocaleLayout({
         <NextIntlClientProvider messages={messages}>
           {children}
           <NotificationPanel />
+          <KeyboardShortcuts />
           <Toaster position="top-right" richColors />
         </NextIntlClientProvider>
       </body>
